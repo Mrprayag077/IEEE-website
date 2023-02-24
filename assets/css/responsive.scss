@@ -1,0 +1,1984 @@
+@media only screen and (max-width : 767px) {
+
+    $all-size: 15px;
+
+    /*----- Default CSS -----*/
+    body {
+        font-size: $all-size;
+    }
+    .ptb-100 {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .pt-100 {
+        padding-top: 50px;
+    }
+    .pb-70 {
+        padding-bottom: 20px;
+    }
+    .pb-100 {
+        padding-bottom: 50px;
+    }
+    .container {
+        max-width: 540px;
+    }
+    .container-fluid {
+        max-width: 540px;
+    }
+    /*----- End Default CSS -----*/
+
+    /*----- Sass CSS -----*/
+    /*-- Banner --*/
+    .banner-area {
+        height: 100%;
+        text-align: center;
+        padding-top: 190px;
+        padding-bottom: 80px;    
+
+        .banner-shape {
+            img {
+                &:nth-child(1) {
+                    right: 0;
+                    left: 0;
+                    max-width: 100%;
+                    position: relative;
+                    top: 0;
+                }
+            }
+        }
+    }
+    .banner-content {
+        margin-left: auto;
+        margin-right: auto;
+
+        span {
+            font-size: 16px;
+        }
+        h1 {
+            font-size: 32px;
+            line-height: 54px;
+        }
+        p {
+            font-size: 16px;
+        }
+        .banner-btn {
+            .banner-btn-right {
+                padding-right: 18px;
+                padding-left: 16px;
+                height: 45px;
+                line-height: 45px;
+                margin-left: 0;
+            }
+        }
+    }
+    .cmn-btn {
+        padding-right: 15px;
+        padding-left: 20px;
+        height: 45px;
+        line-height: 45px;
+    }
+    /*-- End Banner --*/
+
+    /*-- Service --*/
+    .section-title {
+        margin-bottom: 30px;
+        text-align: center;
+
+        h2 {
+            font-size: 25px;
+        }
+    }
+    .service-area {
+        .service-shape {
+            top: 0;
+        }
+    }
+    .service-item {
+        padding: 30px 15px 26px;
+        text-align: center;
+    }
+    /*-- End Service --*/
+
+    /*-- About --*/
+    .about-area {
+        .about-content {
+            ul {
+                li {
+                    padding-left: 40px;
+                }
+            }
+        }
+        .about-img {
+            text-align: center;
+
+            img {
+                &:nth-child(1) {
+                    margin-top: 30px;
+                }
+                &:nth-child(2) {
+                    display: none;
+                }
+                &:nth-child(3) {
+                    display: none;
+                }
+                &:nth-child(4) {
+                    display: none;
+                }
+            }
+        }
+    }
+    /*-- End About --*/
+
+    /*-- Inquiry --*/
+    .inquiry-area {
+        text-align: center;
+        padding-top: 50px;
+
+        .inquiry-shape {
+            img {
+                &:nth-child(5) {
+                    display: none;
+                }
+            }
+        }
+        .inquiry-img {
+            text-align: center;
+        }
+        .inquiry-content {
+            padding-top: 30px;
+            padding-bottom: 50px;
+
+            .section-title {
+                h2 {
+                    font-size: 25px;
+                }
+            }
+        }
+    }
+    /*-- End Inquiry --*/
+
+    /*-- Feature --*/
+    .feature-area {
+        text-align: center;
+
+        .feature-content {
+            .feature-top {
+                h2 {
+                    font-size: 25px;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+    /*-- End Feature --*/
+
+    /*-- Counter --*/
+    .counter-area {
+        h2 {
+            font-size: 25px;
+            margin-bottom: 30px;
+        }
+        .counter-item {
+            img {
+                display: none;
+            }
+            h3 {
+                font-size: 40px;
+                line-height: 40px;
+
+                .target {
+                    font-size: 25px;
+                }
+            }
+        }
+    }
+    /*-- End Counter --*/
+
+    /*-- Application --*/
+    .application-area {
+        .application-shape {
+            img {
+                &:nth-child(1) {
+                    top: 50px;
+                    max-width: 100%;
+                }
+                &:nth-child(2) {
+                    display: none;
+                }
+            }
+        }
+        .application-content {
+            margin-right: auto;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .application-img {
+            padding-right: 15px;
+
+            img {
+                border-radius: 15px;
+            }
+        }
+    }
+    /*-- End Application --*/
+
+    /*-- Pricing --*/
+    .pricing-item {
+        margin-left: 15px;
+        margin-right: 15px;
+
+        .top {
+            span {
+                font-size: 24px;
+                padding-top: 12px;
+                padding-bottom: 12px;
+
+                i {
+                    font-size: 22px;
+                }
+            }
+        }
+        .middle {
+            background-color: #d3d9fd;
+            padding-top: 16px;
+            padding-bottom: 20px;
+
+            h3 {
+                font-size: 35px;
+
+                span {
+                    font-size: 20px;
+                }
+            }
+        }
+        .end {
+            padding: 30px 15px 30px;
+            text-align: center;
+        }
+    }
+    /*-- End Pricing --*/
+
+    /*-- Feedback --*/
+    .feedback-area {
+        text-align: center;
+
+        .feedback-content {
+            p {
+                font-size: 18px;
+                line-height: 32px;
+            }
+        }
+        #thumbs {
+            position: relative;
+        }
+        .owl-prev {
+            display: none !important;
+        }
+        .owl-next {
+            display: none !important;
+        }
+        .outer {
+            .shape {
+                position: relative;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                margin-bottom: 30px;
+            }
+        }
+    }
+    /*-- End Feedback --*/
+
+    /*-- FAQ --*/
+    .faq-area {
+        .faq-content {
+            .accordion { 
+                p {
+                    display: none;
+                    padding: 20px 15px 20px;
+                    margin-bottom: 0;
+                }
+                li {
+                    a {
+                        padding: 13px 45px 13px 15px;
+                    }
+                }
+            }
+        }
+    }
+    /*-- End FAQ --*/
+
+    /*-- Mind --*/
+    .mind-area {
+        text-align: center;
+
+        .mind-left {
+            margin-bottom: 30px;
+
+            h2 {
+                font-size: 25px;
+            }
+        }
+        .mind-right {
+            text-align: center;
+        }
+    }
+    /*-- End Mind --*/
+
+    /*-- Copyright --*/
+    .copyright-area {
+        .copyright-item {
+            text-align: center;
+
+            p {
+                margin-bottom: 15px;
+            }
+            ul {
+                text-align: center;
+            }
+        }
+    }
+    /*-- End Copyright --*/
+    /*----- End Sass CSS -----*/
+
+    /*----- IT Startup CSS -----*/
+    /*-- Banner --*/
+    .banner-area.two {
+        .banner-content {
+            margin-top: 0;
+
+            h1 {
+                font-size: 34px;
+                line-height: 54px;
+            }
+        }
+        .banner-shape-two {
+            img {
+                position: relative;
+                right: 0;
+                bottom: 0;
+                max-width: 100%;
+                margin-bottom: 30px;
+            }
+            span {
+                font-size: 116px;
+                top: 150px;
+                left: -105px;
+                line-height: 175px;
+            }
+        }
+    }
+    /*-- End Banner CSS --*/
+
+    /*-- Services --*/
+    .section-title.two {
+        h2 {
+            font-size: 25px;
+        }
+    }
+    /*-- End Services --*/
+
+    /*-- Design --*/
+    .design-area {
+        .design-content {
+            text-align: center;
+
+            .section-title.two {
+                margin-bottom: 30px;
+            }
+            ul {
+                li {
+                    font-size: 16px;
+                    flex: 0 0 100%;
+                    max-width: 100%;
+
+                    i {
+                        top: 2px;
+                    }
+                }
+            }
+        }
+    }
+    /*-- End Design --*/
+
+    /*-- Counter --*/
+    .counter-area.two {
+        padding-bottom: 90px;
+    }
+    /*-- End Counter --*/
+
+    /*-- Video --*/
+    .video-area {
+        margin-top: -70px;
+        
+        .video-img {
+            .video-main {
+                a {
+                    height: 60px;
+                    width: 115px;
+                    font-size: 45px;
+
+                    i {
+                        line-height: 60px;
+                    }
+                }
+            }
+            .video-shape {
+                img {
+                    &:nth-child(1) {
+                        display: none;
+                    }
+                    &:nth-child(2) {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+    /*-- End Video --*/
+
+    /*-- Feature --*/
+    .feature-item {
+        padding: 30px 15px 28px;
+
+        h3 {
+            font-size: 20px;
+        }
+    }
+    /*-- End Feature --*/
+
+    /*-- Clients --*/
+    .client-area {
+        text-align: center;
+
+        h2 {
+            font-size: 25px;
+        }
+        .client-slider {
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .client-img {
+            position: relative;
+            top: 0;
+            right: 0;
+            left: 0;
+            max-width: 100%;
+            margin: 0 auto;
+            text-align: center;
+            margin-bottom: 30px;
+
+            img {
+                max-width: 100%;
+            }
+        }
+        .owl-theme .owl-nav {
+            margin-top: 20px;
+            position: relative;
+            bottom: 0;
+            right: 0;
+            left: 0;
+        }
+    }
+    /*-- End Clients --*/
+
+    /*-- Team --*/
+    .team-area {
+        padding-top: 50px;
+
+        .team-content {
+            text-align: center;
+        }
+        .team-item {
+            &.two {
+                margin-top: 0;
+            }
+            img {
+                border-radius: 5px;
+            }
+        }
+    }
+    /*-- End Team --*/  
+
+    /*-- Blog --*/
+    .blog-item {
+        padding: 30px 15px 32px;
+
+        h3 {
+            font-size: 20px;
+        }
+    }
+    /*-- End Blog --*/
+
+    /*-- Subscribe --*/
+    .subscribe-area {
+        .subscribe-item {
+            .newsletter-form {
+                .cmn-btn {
+                    position: relative;
+                    display: block;
+                    width: 100%;
+                    margin-top: 15px;
+                }
+            }
+        }
+    }
+    /*-- End Subscribe --*/
+    /*----- End IT Startup CSS -----*/
+
+    /*----- Digital CSS -----*/
+    /*-- Banner --*/
+    .banner-area.three {
+        height: 100%;
+
+        .banner-img {
+            margin-top: 30px;
+
+            img {
+                &:nth-child(2) {
+                    display: none;
+                }
+                &:nth-child(3) {
+                    display: none;     
+                }
+                &:nth-child(4) {
+                    display: none;
+                }
+                &:nth-child(5) {
+                    display: none;
+                }
+                &:nth-child(6) {
+                    display: none;
+                }
+                &:nth-child(7) {
+                    display: none;
+                }
+                &:nth-child(8) {
+                    display: none;
+                }
+            }
+        }
+        .banner-content {
+            margin-top: 0;
+
+            span {
+                padding: 6px 25px;
+                font-size: 14px;
+            }
+            h1 {
+                line-height: 52px;
+                margin-bottom: 4px;
+            }
+            p {
+                font-size: 18px;
+            }
+        }
+        .banner-contact {
+            margin-top: 30px;
+            margin-right: 0;
+
+            ul {
+                padding-left: 15px;
+
+                li {
+                    padding-left: 40px;
+                    margin-right: 10px;
+                    text-align: left;
+                    margin-bottom: 15px;
+                    display: block;
+
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                    i {
+                        font-size: 18px;
+
+                        &:after {
+                            left: -15px;
+                        }
+                    }
+                    span {
+                        font-size: 14px;
+                    }
+                    a {
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+    }
+    /*-- End Banner --*/
+
+    /*-- Service --*/
+    .service-item-three {
+        padding: 30px 15px 50px;
+    }
+    .section-title.three {
+        h2 {
+            font-size: 25px;
+        }
+    }
+    /*-- End Service --*/
+
+    /*-- About --*/
+    .about-area-two {
+        text-align: center;
+        
+        .about-content {
+            padding-left: 15px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+    /*-- End About --*/
+
+    /*-- Watch --*/
+    .watch-area {
+        .container-fluid {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+        .watch-item {
+            .watch-inner {
+                h2 {
+                    font-size: 25px;
+                }
+            }
+        }
+    }
+    /*-- End Watch --*/
+
+    /*-- Service --*/
+    .service-area.four {
+        text-align: center;
+
+        .section-title.three {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+    }
+    /*-- End Service --*/
+
+    /*-- Portfolio --*/
+    .portfolio-area {
+        .owl-theme .owl-nav {
+            position: relative;
+            top: 0;
+            max-width: 100%;
+            text-align: center;
+        }
+    }
+    /*-- End Portfolio --*/
+
+    /*-- Team --*/
+    .team-area-two {
+        text-align: center;
+    }
+    /*-- End Team --*/
+
+    /*-- Testimonials --*/
+    .testimonials-area {
+        .testimonials-item {
+            p {
+                font-size: 17px;
+            }
+        }
+        .owl-prev {
+            top: unset;
+            left: 0;
+            bottom: 0;
+        }
+        .owl-next {
+            top: unset;
+            right: 0;
+            bottom: 0;
+        }
+        .testimonials-img {
+            img {
+                &:nth-child(1) {
+                    display: none;
+                }
+                &:nth-child(2) {
+                    display: none;
+                }
+                &:nth-child(3) {
+                    display: none;
+                }
+                &:nth-child(4) {
+                    display: none;
+                }
+                &:nth-child(5) {
+                    display: none;
+                }
+                &:nth-child(6) {
+                    display: none;
+                }
+            }
+        }
+    }
+    /*-- End Testimonials --*/
+
+    /*-- Talk --*/
+    .talk-area {
+        text-align: center;
+
+        .talk-shape {
+            img {
+                &:nth-child(2) {
+                    top: 0;
+                }
+            }
+        }
+    }
+    /*-- End Talk --*/
+    /*----- End Digital CSS -----*/
+
+    /*----- About CSS -----*/
+    .page-title-area {
+        height: 400px;
+
+        .bg-text {
+            span {
+                font-size: 155px;
+                top: 0;
+                left: -189px;
+                line-height: 195px;
+            }
+        }
+        .title-item {
+            margin-top: 110px;
+
+            h2 {
+                font-size: 32px;
+            }
+        }
+    }
+    .app-area {
+        .app-img {
+            img {
+                max-width: 100%;
+            }
+        }
+        .app-content {
+            text-align: center;
+
+            ul {
+                margin: 0;
+                padding: 0;
+
+                li {
+                    margin-right: 5px;
+
+                    a {
+                        max-width: 120px;
+                    }
+                }
+            }
+        }
+    }
+    @keyframes app-ani-one {
+        30% {
+            transform: rotate(2deg);
+        }
+        70% {
+            transform: rotate(-3deg);
+        }
+    }
+    .pagination-area {
+        ul {
+            li {
+                margin-left: 1px;
+                margin-right: 1px;
+
+                a {
+                    padding: 3px 8px;
+                }
+            }
+        }
+    }
+    /*----- End About CSS -----*/
+
+    /*----- Service Details CSS -----*/
+    .service-details-area {
+        .details-app {
+            text-align: center;
+        }
+        .details-service {
+            text-align: center;
+
+            h3 {
+                font-size: 25px;
+            }
+        }
+        .details-share {
+            text-align: center;
+
+            ul {
+                li {
+                    margin-bottom: 5px;
+                }
+            }
+        }
+    }
+    /*----- End Service Details CSS -----*/
+
+    /*----- Project Details CSS -----*/
+    .project-details-area {
+        .details-item {
+            text-align: center;
+            margin-bottom: 30px;
+
+            .details-img {  
+                h2 {
+                    font-size: 25px;
+                }
+            }
+            .details-fact {
+                text-align: left;
+
+                .content {
+                    h3 {
+                        font-size: 22px;
+                    }
+                    
+                }
+            }
+        }
+    }
+    /*----- End Project Details CSS -----*/
+
+    /*----- Blog Details CSS -----*/
+    .blog-details-area {
+        .details-item {
+            margin-bottom: 30px;
+
+            .details-img {
+                h2 {
+                    font-size: 25px;
+                }
+            }
+            .details-quote {
+                padding: 30px 15px 30px;
+
+                h3 {
+                    font-size: 20px;
+                }
+            }
+            .details-digital {
+                text-align: center;
+
+                h3 {
+                    font-size: 22px;
+                }
+            }
+            .details-text-img {
+                text-align: center;
+            }
+            .details-tags {
+                padding: 15px 10px;
+                text-align: center;
+
+                .left {
+                    margin-bottom: 10px;
+                }
+                .right {
+                    text-align: center;
+                }
+            }
+            .details-user {
+                img {
+                    &:nth-child(1) {
+                        left: 10px;
+                    }
+                }
+                .top {
+                    padding: 50px 10px 25px 125px;
+
+                    .top-right {
+                        text-align: left;
+                    }
+                }
+                .bottom {
+                    padding: 25px 10px 30px 125px;
+                }
+            }
+            .details-comment {
+                ul {
+                    li {
+                        padding-left: 115px;
+
+                        &:last-child {
+                            margin-left: 0;
+                        }
+                    }
+                }
+            }
+            .details-form {
+                padding: 25px 15px 25px;
+            }
+        }
+    }
+    .widget-area {
+        .widget-item {
+            padding: 25px 15px 30px;
+        }
+        .recent {
+            .recent-inner {
+                ul {
+                    li {
+                        a {
+                            font-size: 17px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    /*----- End Blog Details CSS -----*/
+
+    /*----- Contact CSS -----*/
+    .contact-area {
+        #contactForm {
+            padding: 20px 15px 20px;
+        }
+    }
+    .contact-info-area {
+        .info-item {
+            h2 {
+                font-size: 25px;
+            }
+            .mail-call {
+                li {
+                    a {
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+    /*----- End Contact CSS -----*/
+
+    /*----- User CSS -----*/
+    .user-form-area {
+        padding-right: 15px;
+        padding-left: 15px;
+        padding-top: 50px;
+        padding-bottom: 50px;    
+
+        .user-img {
+            background-image: unset;
+            margin-bottom: 30px;
+
+            img {
+                display: block;
+            }
+        }
+        .user-content {
+            height: 100%;
+
+            .user-content-inner {
+                max-width: 100%;
+            }
+        }
+    }
+    /*----- End User CSS -----*/
+
+    /*----- Error CSS -----*/
+    .error-area {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    /*----- End Error CSS -----*/
+
+    /*----- Rules CSS -----*/
+    .rules-area {
+        text-align: center;
+    }
+    /*----- End Rules CSS -----*/
+
+}
+
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+    $all-size: 15px;
+
+    /*----- Default CSS -----*/
+    body {
+        font-size: $all-size;
+    }
+    .ptb-100 {
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+    .pt-100 {
+        padding-top: 70px;
+    }
+    .pb-70 {
+        padding-bottom: 40px;
+    }
+    .pb-100 {
+        padding-bottom: 70px;
+    }
+    .container {
+        max-width: 720px;
+    }
+    .container-fluid {
+        max-width: 720px;
+    }
+    /*----- End Default CSS -----*/
+
+    /*----- Sass CSS -----*/
+    /*-- Banner --*/
+    .banner-area {
+        height: 100%;
+        text-align: center;
+        padding-top: 190px;
+        padding-bottom: 80px;    
+
+        .banner-shape {
+            img {
+                &:nth-child(1) {
+                    right: 0;
+                    left: 0;
+                    max-width: 100%;
+                    position: relative;
+                    top: 0;
+                }
+            }
+        }
+    }
+    .banner-content {
+        margin-left: auto;
+        margin-right: auto;
+
+        span {
+            font-size: 16px;
+        }
+        h1 {
+            font-size: 40px;
+            line-height: 56px;
+        }
+        p {
+            font-size: 16px;
+        }
+        .banner-btn {
+            .banner-btn-right {
+                padding-right: 18px;
+                padding-left: 16px;
+                height: 45px;
+                line-height: 45px;
+                margin-left: 15px;
+            }
+        }
+    }
+    .cmn-btn {
+        padding-right: 15px;
+        padding-left: 20px;
+        height: 45px;
+        line-height: 45px;
+    }
+    /*-- End Banner --*/
+
+    /*-- Service --*/
+    .section-title {
+        margin-bottom: 30px;
+        text-align: center;
+
+        h2 {
+            font-size: 30px;
+        }
+    }
+    .service-area {
+        .service-shape {
+            top: 0;
+        }
+    }
+    .service-item {
+        padding: 30px 15px 26px;
+        text-align: center;
+    }
+    /*-- End Service --*/
+
+    /*-- About --*/
+    .about-area {
+        .about-content {
+            ul {
+                li {
+                    padding-left: 40px;
+                }
+            }
+        }
+        .about-img {
+            text-align: center;
+
+            img {
+                &:nth-child(1) {
+                    margin-top: 30px;
+                }
+                &:nth-child(2) {
+                    display: none;
+                }
+                &:nth-child(3) {
+                    display: none;
+                }
+                &:nth-child(4) {
+                    display: none;
+                }
+            }
+        }
+    }
+    /*-- End About --*/
+
+    /*-- Inquiry --*/
+    .inquiry-area {
+        text-align: center;
+        padding-top: 50px;
+
+        .inquiry-shape {
+            img {
+                &:nth-child(5) {
+                    display: none;
+                }
+            }
+        }
+        .inquiry-img {
+            text-align: center;
+        }
+        .inquiry-content {
+            padding-top: 30px;
+            padding-bottom: 50px;
+
+            .section-title {
+                h2 {
+                    font-size: 30px;
+                }
+            }
+        }
+    }
+    /*-- End Inquiry --*/
+
+    /*-- Feature --*/
+    .feature-area {
+        text-align: center;
+
+        .feature-content {
+            .feature-top {
+                h2 {
+                    font-size: 30px;
+                    margin-bottom: 10px;
+                }
+            }
+            .feature-inner {
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+        }
+    }
+    /*-- End Feature --*/
+
+    /*-- Counter --*/
+    .counter-area {
+        h2 {
+            font-size: 30px;
+            margin-bottom: 30px;
+        }
+        .counter-item {
+            img {
+                display: none;
+            }
+            h3 {
+                font-size: 40px;
+                line-height: 40px;
+
+                .target {
+                    font-size: 25px;
+                }
+            }
+        }
+    }
+    /*-- End Counter --*/
+
+    /*-- Application --*/
+    .application-area {
+        .application-shape {
+            img {
+                &:nth-child(1) {
+                    top: 50px;
+                    max-width: 100%;
+                }
+                &:nth-child(2) {
+                    display: none;
+                }
+            }
+        }
+        .application-content {
+            margin-right: auto;
+
+            .section-title {
+                text-align: left;
+            }
+        }
+        .application-img {
+            padding-right: 15px;
+
+            img {
+                border-radius: 15px;
+            }
+        }
+    }
+    /*-- End Application --*/
+
+    /*-- Pricing --*/
+    .pricing-item {
+        margin-left: 15px;
+        margin-right: 15px;
+
+        .top {
+            span {
+                font-size: 24px;
+                padding-top: 12px;
+                padding-bottom: 12px;
+
+                i {
+                    font-size: 22px;
+                }
+            }
+        }
+        .middle {
+            background-color: #d3d9fd;
+            padding-top: 16px;
+            padding-bottom: 20px;
+
+            h3 {
+                font-size: 35px;
+
+                span {
+                    font-size: 20px;
+                }
+            }
+        }
+        .end {
+            padding: 30px 15px 30px;
+            text-align: center;
+        }
+    }
+    /*-- End Pricing --*/
+
+    /*-- Feedback --*/
+    .feedback-area {
+        text-align: center;
+
+        .feedback-content {
+            p {
+                font-size: 23px;
+                line-height: 32px;
+            }
+        }
+        #thumbs {
+            position: relative;
+        }
+        .owl-prev {
+            display: none !important;
+        }
+        .owl-next {
+            display: none !important;
+        }
+        .outer {
+            .shape {
+                position: relative;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                margin-bottom: 30px;
+            }
+        }
+    }
+    /*-- End Feedback --*/
+
+    /*-- FAQ --*/
+    .faq-area {
+        .faq-content {
+            .accordion { 
+                p {
+                    display: none;
+                    padding: 20px 15px 20px;
+                    margin-bottom: 0;
+                }
+                li {
+                    a {
+                        padding: 13px 45px 13px 15px;
+                    }
+                }
+            }
+        }
+    }
+    /*-- End FAQ --*/
+
+    /*-- Mind --*/
+    .mind-area {
+        text-align: center;
+
+        .mind-left {
+            margin-bottom: 30px;
+
+            h2 {
+                font-size: 30px;
+            }
+        }
+        .mind-right {
+            text-align: center;
+        }
+    }
+    /*-- End Mind --*/
+    
+    /*-- Copyright --*/
+    .copyright-area {
+        .copyright-item {
+            text-align: center;
+
+            p {
+                margin-bottom: 15px;
+            }
+            ul {
+                text-align: center;
+            }
+        }
+    }
+    /*-- End Copyright --*/
+    /*----- End Sass CSS -----*/
+
+        /*----- IT Startup CSS -----*/
+    /*-- Banner --*/
+    .banner-area.two {
+        .banner-content {
+            margin-top: 0;
+
+            h1 {
+                font-size: 34px;
+                line-height: 54px;
+            }
+        }
+        .banner-shape-two {
+            img {
+                position: relative;
+                right: 0;
+                bottom: 0;
+                max-width: 100%;
+                margin-bottom: 30px;
+            }
+            span {
+                font-size: 116px;
+                top: 150px;
+                left: -105px;
+                line-height: 175px;
+            }
+        }
+    }
+    /*-- End Banner CSS --*/
+
+    /*-- Services --*/
+    .section-title.two {
+        h2 {
+            font-size: 30px;
+        }
+    }
+    /*-- End Services --*/
+
+    /*-- Design --*/
+    .design-area {
+        .design-content {
+            text-align: center;
+
+            .section-title.two {
+                margin-bottom: 30px;
+            }
+            ul {
+                li {
+                    font-size: 16px;
+
+                    i {
+                        top: 2px;
+                    }
+                }
+            }
+        }
+    }
+    /*-- End Design --*/
+
+    /*-- Counter --*/
+    .counter-area.two {
+        padding-bottom: 200px;
+    }
+    /*-- End Counter --*/
+    
+    /*-- Video --*/
+    .video-area {
+        margin-top: -160px;
+        
+        .video-img {
+            .video-main {
+                a {
+                    height: 60px;
+                    width: 115px;
+                    font-size: 45px;
+
+                    i {
+                        line-height: 60px;
+                    }
+                }
+            }
+            .video-shape {
+                img {
+                    &:nth-child(1) {
+                        display: none;
+                    }
+                    &:nth-child(2) {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+    /*-- End Video --*/
+
+    /*-- Feature --*/
+    .feature-item {
+        padding: 30px 15px 28px;
+
+        h3 {
+            font-size: 20px;
+        }
+    }
+    /*-- End Feature --*/
+
+    /*-- Clients --*/
+    .client-area {
+        text-align: center;
+
+        h2 {
+            font-size: 30px;
+        }
+        .client-slider {
+            margin-left: auto;
+            margin-right: auto;
+        } 
+        .client-img {
+            position: relative;
+            top: 0;
+            right: 0;
+            left: 0;
+            max-width: 100%;
+            margin: 0 auto;
+            text-align: center;
+            margin-bottom: 30px;
+
+            img {
+                max-width: 100%;
+            }
+        }
+        .owl-theme .owl-nav {
+            margin-top: 20px;
+            position: relative;
+            bottom: 0;
+            right: 0;
+            left: 0;
+        }
+    }
+    /*-- End Clients --*/
+
+    /*-- Team --*/
+    .team-area {
+        padding-top: 70px;
+
+        .team-content {
+            text-align: center;
+        }
+        .team-item {
+            &.two {
+                margin-top: 0;
+            }
+            img {
+                border-radius: 5px;
+            }
+        }
+    }
+    /*-- End Team --*/  
+
+    /*-- Blog --*/
+    .blog-item {
+        padding: 30px 15px 32px;
+
+        h3 {
+            font-size: 20px;
+        }
+    }
+    /*-- End Blog --*/
+
+    /*-- Subscribe --*/
+    .subscribe-area {
+        .subscribe-item {
+            .newsletter-form {
+                .cmn-btn {
+                    position: relative;
+                    display: block;
+                    width: 100%;
+                    margin-top: 15px;
+                }
+            }
+        }
+    }
+    /*-- End Subscribe --*/
+    /*----- End IT Startup CSS -----*/
+
+    /*----- Digital CSS -----*/
+    /*-- Banner --*/
+    .banner-area.three {
+        height: 100%;
+
+        .banner-img {
+            margin-top: 30px;
+
+            img {
+                &:nth-child(2) {
+                    display: none;
+                }
+                &:nth-child(3) {
+                    display: none;     
+                }
+                &:nth-child(4) {
+                    display: none;
+                }
+                &:nth-child(5) {
+                    display: none;
+                }
+                &:nth-child(6) {
+                    display: none;
+                }
+                &:nth-child(7) {
+                    display: none;
+                }
+                &:nth-child(8) {
+                    display: none;
+                }
+            }
+        }
+        .banner-content {
+            margin-top: 0;
+
+            span {
+                padding: 6px 25px;
+                font-size: 14px;
+            }
+            h1 {
+                line-height: 52px;
+                margin-bottom: 4px;
+            }
+            p {
+                font-size: 18px;
+            }
+        }
+        .banner-contact {
+            margin-top: 30px;
+            margin-right: 0;
+
+            ul {
+                li {
+                    padding-left: 40px;
+                    margin-right: 20px;
+                    text-align: left;
+                    margin-bottom: 10px;
+
+                    i {
+                        font-size: 18px;
+
+                        &:after {
+                            left: -15px;
+                        }
+                    }
+                    span {
+                        font-size: 14px;
+                    }
+                    a {
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+    }
+    /*-- End Banner --*/
+
+    /*-- Service --*/
+    .service-item-three {
+        padding: 30px 15px 50px;
+    }
+    .section-title.three {
+        h2 {
+            font-size: 30px;
+        }
+    }
+    /*-- End Service --*/
+
+    /*-- About --*/
+    .about-area-two {
+        text-align: center;
+        
+        .about-content {
+            padding-left: 15px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+    /*-- End About --*/
+
+    /*-- Watch --*/
+    .watch-area {
+        .container-fluid {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+        .watch-item {
+            .watch-inner {
+                h2 {
+                    font-size: 30px;
+                }
+            }
+        }
+    }
+    /*-- End Watch --*/
+
+    /*-- Service --*/
+    .service-area.four {
+        text-align: center;
+
+        .section-title.three {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+    }
+    /*-- End Service --*/
+
+    /*-- Portfolio --*/
+    .portfolio-area {
+        .section-title.three {
+            text-align: left;
+        }
+    }
+    /*-- End Portfolio --*/
+
+    /*-- Team --*/
+    .team-area-two {
+        text-align: center;
+    }
+    /*-- End Team --*/
+
+    /*-- Testimonials --*/
+    .testimonials-area {
+        .testimonials-item {
+            p {
+                font-size: 20px;
+            }
+        }
+        .owl-prev {
+            top: unset;
+            left: 0;
+            bottom: 0;
+        }
+        .owl-next {
+            top: unset;
+            right: 0;
+            bottom: 0;
+        }
+        .testimonials-img {
+            img {
+                &:nth-child(1) {
+                    display: none;
+                }
+                &:nth-child(2) {
+                    display: none;
+                }
+                &:nth-child(3) {
+                    display: none;
+                }
+                &:nth-child(4) {
+                    display: none;
+                }
+                &:nth-child(5) {
+                    display: none;
+                }
+                &:nth-child(6) {
+                    display: none;
+                }
+            }
+        }
+    }
+    /*-- End Testimonials --*/
+
+    /*-- Talk --*/
+    .talk-area {
+        text-align: center;
+    }
+    /*-- End Talk --*/
+    /*----- End Digital CSS -----*/
+
+    /*----- About CSS -----*/
+    .page-title-area {
+        height: 400px;
+
+        .bg-text {
+            span {
+                font-size: 155px;
+                top: 0;
+                left: -189px;
+                line-height: 195px;
+            }
+        }
+        .title-item {
+            margin-top: 110px;
+
+        }
+    }
+    .app-area {
+        .app-content {
+            text-align: center;
+
+            ul {
+                margin: 0;
+                padding: 0;
+
+                li {
+                    margin-right: 5px;
+
+                    a {
+                        max-width: 120px;
+                    }
+                }
+            }
+        }
+    }
+    @keyframes app-ani-one {
+        30% {
+            transform: rotate(2deg);
+        }
+        70% {
+            transform: rotate(-3deg);
+        }
+    }
+    /*----- End About CSS -----*/
+
+    /*----- Project Details CSS -----*/
+    .project-details-area {
+        .details-item {
+            margin-bottom: 30px;
+        }
+    }
+    /*----- End Project Details CSS -----*/
+
+    /*----- Blog Details CSS -----*/
+    .blog-details-area {
+        .details-item {
+            margin-bottom: 30px;
+
+            .details-tags {
+                text-align: center;
+
+                .right {
+                    text-align: center;
+                    margin-top: 15px;
+                }
+            }
+        }
+    }
+    /*----- End Blog Details CSS -----*/
+
+    /*----- User CSS -----*/
+    .user-form-area {
+        padding-right: 15px;
+        padding-left: 15px;
+        padding-top: 70px;
+        padding-bottom: 70px;    
+
+        .user-img {
+            background-image: unset;
+            margin-bottom: 30px;
+
+            img {
+                display: block;
+            }
+        }
+        .user-content {
+            height: 100%;
+
+            .user-content-inner {
+                max-width: 100%;
+            }
+        }
+    }
+    /*----- End User CSS -----*/
+
+    /*----- Rules CSS -----*/
+    .rules-area {
+        text-align: center;
+    }
+    /*----- End Rules CSS -----*/
+
+}
+
+@media only screen and (min-width : 576px) and (max-width : 767px) {
+
+    .counter-area .counter-item h3 {
+        font-size: 32px;
+    }
+    .counter-area .counter-item p {
+        font-size: 14px;
+    }
+
+}
+
+@media only screen and (min-width : 992px) and (max-width : 1199px) {
+
+    .banner-area .banner-shape img:nth-child(1) {
+        top: 195px;
+        max-width: 451px;
+    }
+    .main-nav nav .navbar-nav .nav-item a {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .side-nav .left-btn {
+        padding-right: 17px;
+        padding-left: 17px;
+        margin-right: 5px;
+        font-size: 15px;
+    }
+    .side-nav .cmn-btn {
+        padding-right: 10px;
+        font-size: 15px;
+        padding-left: 13px;
+    }
+    .banner-area.two .banner-shape-two img {
+        right: 10px;
+        max-width: 430px;
+    }
+    .video-area .video-img .video-shape img:nth-child(2) {
+        display: none;
+    }
+    .client-area .client-img {
+        right: 15px;
+    }
+    .blog-item {
+        padding: 30px 15px 32px;
+    }
+    .banner-area.three .banner-content h1 {
+        font-size: 60px;
+        line-height: 88px;
+    }
+    .service-item-three {
+        padding: 30px 15px 55px;
+    }
+    .user-form-area .user-content {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+}
+
+@media only screen and (min-width : 1200px) and (max-width : 1799px) {
+
+    .user-form-area .user-content {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+}
+
+@media only screen and (min-width: 1800px) {
+    .banner-area.two .banner-shape-two img {
+        right: 155px;
+        max-width: 720px;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+
+    .mobile-nav .logo {
+        max-width: 85px;
+    }
+    .mean-container {
+        .mean-bar {
+            background-color: #2948ff;
+        }
+        a.meanmenu-reveal span {
+            position: relative;
+            margin-top: -7px;
+            top: 9px;
+        }
+    }
+    .mobile-nav.mean-container .mean-nav ul li a.active {
+        color: #2948ff;
+    }
+    .navbar-nav {
+        height: 320px;
+        overflow-y: auto;
+    }
+    .side-nav {
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 5px;
+        box-shadow: 0px 10px 20px 0px #d3d9fd78;
+
+        .left-btn {
+            padding-right: 15px;
+            padding-left: 20px;
+            height: 45px;
+            line-height: 45px;
+            margin-right: 5px;
+        }
+    }
+
+}
+
+@media (min-width: 1300px) {
+    .container, .container-lg, .container-md, .container-sm, .container-xl {
+        max-width: 1320px;
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width : 1199px) and (max-width : 1350px) {
+
+    .banner-area {
+        .banner-shape {
+            img {
+                &:nth-child(1) {
+                    top: 180px;
+                    max-width: 625px;
+                } 
+            }  
+        } 
+    }
+    .application-area {
+        .application-content {
+            max-width: 640px;
+        }
+    }
+    .banner-area.two {
+        .banner-shape-two {
+            img {
+                max-width: 540px;
+            }
+        }
+    }
+
+}
+
+@media only screen and (min-width: 2700px) {
+
+    .banner-area.two {
+        .banner-shape-two {
+            img {
+                right: 435px;
+            }
+        }
+    }
+
+}

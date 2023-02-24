@@ -1,0 +1,1533 @@
+@media only screen and (max-width: 767px) {
+  /*----- Default CSS -----*/
+  body {
+    font-size: 15px;
+  }
+  .ptb-100 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .pt-100 {
+    padding-top: 50px;
+  }
+  .pb-70 {
+    padding-bottom: 20px;
+  }
+  .pb-100 {
+    padding-bottom: 50px;
+  }
+  .container {
+    max-width: 540px;
+  }
+  .container-fluid {
+    max-width: 540px;
+  }
+  /*----- End Default CSS -----*/
+  /*----- Sass CSS -----*/
+  /*-- Banner --*/
+  .banner-area {
+    height: 100%;
+    text-align: center;
+    padding-top: 190px;
+    padding-bottom: 80px;
+  }
+  .banner-area .banner-shape img:nth-child(1) {
+    right: 0;
+    left: 0;
+    max-width: 100%;
+    position: relative;
+    top: 0;
+  }
+  .banner-content {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .banner-content span {
+    font-size: 16px;
+  }
+  .banner-content h1 {
+    font-size: 32px;
+    line-height: 54px;
+  }
+  .banner-content p {
+    font-size: 16px;
+  }
+  .banner-content .banner-btn .banner-btn-right {
+    padding-right: 18px;
+    padding-left: 16px;
+    height: 45px;
+    line-height: 45px;
+    margin-left: 0;
+  }
+  .cmn-btn {
+    padding-right: 15px;
+    padding-left: 20px;
+    height: 45px;
+    line-height: 45px;
+  }
+  /*-- End Banner --*/
+  /*-- Service --*/
+  .section-title {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .section-title h2 {
+    font-size: 25px;
+  }
+  .service-area .service-shape {
+    top: 0;
+  }
+  .service-item {
+    padding: 30px 15px 26px;
+    text-align: center;
+  }
+  /*-- End Service --*/
+  /*-- About --*/
+  .about-area .about-content ul li {
+    padding-left: 40px;
+  }
+  .about-area .about-img {
+    text-align: center;
+  }
+  .about-area .about-img img:nth-child(1) {
+    margin-top: 30px;
+  }
+  .about-area .about-img img:nth-child(2) {
+    display: none;
+  }
+  .about-area .about-img img:nth-child(3) {
+    display: none;
+  }
+  .about-area .about-img img:nth-child(4) {
+    display: none;
+  }
+  /*-- End About --*/
+  /*-- Inquiry --*/
+  .inquiry-area {
+    text-align: center;
+    padding-top: 50px;
+  }
+  .inquiry-area .inquiry-shape img:nth-child(5) {
+    display: none;
+  }
+  .inquiry-area .inquiry-img {
+    text-align: center;
+  }
+  .inquiry-area .inquiry-content {
+    padding-top: 30px;
+    padding-bottom: 50px;
+  }
+  .inquiry-area .inquiry-content .section-title h2 {
+    font-size: 25px;
+  }
+  /*-- End Inquiry --*/
+  /*-- Feature --*/
+  .feature-area {
+    text-align: center;
+  }
+  .feature-area .feature-content .feature-top h2 {
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+  /*-- End Feature --*/
+  /*-- Counter --*/
+  .counter-area h2 {
+    font-size: 25px;
+    margin-bottom: 30px;
+  }
+  .counter-area .counter-item img {
+    display: none;
+  }
+  .counter-area .counter-item h3 {
+    font-size: 40px;
+    line-height: 40px;
+  }
+  .counter-area .counter-item h3 .target {
+    font-size: 25px;
+  }
+  /*-- End Counter --*/
+  /*-- Application --*/
+  .application-area .application-shape img:nth-child(1) {
+    top: 50px;
+    max-width: 100%;
+  }
+  .application-area .application-shape img:nth-child(2) {
+    display: none;
+  }
+  .application-area .application-content {
+    margin-right: auto;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .application-area .application-img {
+    padding-right: 15px;
+  }
+  .application-area .application-img img {
+    border-radius: 15px;
+  }
+  /*-- End Application --*/
+  /*-- Pricing --*/
+  .pricing-item {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  .pricing-item .top span {
+    font-size: 24px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+  .pricing-item .top span i {
+    font-size: 22px;
+  }
+  .pricing-item .middle {
+    background-color: #d3d9fd;
+    padding-top: 16px;
+    padding-bottom: 20px;
+  }
+  .pricing-item .middle h3 {
+    font-size: 35px;
+  }
+  .pricing-item .middle h3 span {
+    font-size: 20px;
+  }
+  .pricing-item .end {
+    padding: 30px 15px 30px;
+    text-align: center;
+  }
+  /*-- End Pricing --*/
+  /*-- Feedback --*/
+  .feedback-area {
+    text-align: center;
+  }
+  .feedback-area .feedback-content p {
+    font-size: 18px;
+    line-height: 32px;
+  }
+  .feedback-area #thumbs {
+    position: relative;
+  }
+  .feedback-area .owl-prev {
+    display: none !important;
+  }
+  .feedback-area .owl-next {
+    display: none !important;
+  }
+  .feedback-area .outer .shape {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-bottom: 30px;
+  }
+  /*-- End Feedback --*/
+  /*-- FAQ --*/
+  .faq-area .faq-content .accordion p {
+    display: none;
+    padding: 20px 15px 20px;
+    margin-bottom: 0;
+  }
+  .faq-area .faq-content .accordion li a {
+    padding: 13px 45px 13px 15px;
+  }
+  /*-- End FAQ --*/
+  /*-- Mind --*/
+  .mind-area {
+    text-align: center;
+  }
+  .mind-area .mind-left {
+    margin-bottom: 30px;
+  }
+  .mind-area .mind-left h2 {
+    font-size: 25px;
+  }
+  .mind-area .mind-right {
+    text-align: center;
+  }
+  /*-- End Mind --*/
+  /*-- Copyright --*/
+  .copyright-area .copyright-item {
+    text-align: center;
+  }
+  .copyright-area .copyright-item p {
+    margin-bottom: 15px;
+  }
+  .copyright-area .copyright-item ul {
+    text-align: center;
+  }
+  /*-- End Copyright --*/
+  /*----- End Sass CSS -----*/
+  /*----- IT Startup CSS -----*/
+  /*-- Banner --*/
+  .banner-area.two .banner-content {
+    margin-top: 0;
+  }
+  .banner-area.two .banner-content h1 {
+    font-size: 34px;
+    line-height: 54px;
+  }
+  .banner-area.two .banner-shape-two img {
+    position: relative;
+    right: 0;
+    bottom: 0;
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
+  .banner-area.two .banner-shape-two span {
+    font-size: 116px;
+    top: 150px;
+    left: -105px;
+    line-height: 175px;
+  }
+  /*-- End Banner CSS --*/
+  /*-- Services --*/
+  .section-title.two h2 {
+    font-size: 25px;
+  }
+  /*-- End Services --*/
+  /*-- Design --*/
+  .design-area .design-content {
+    text-align: center;
+  }
+  .design-area .design-content .section-title.two {
+    margin-bottom: 30px;
+  }
+  .design-area .design-content ul li {
+    font-size: 16px;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .design-area .design-content ul li i {
+    top: 2px;
+  }
+  /*-- End Design --*/
+  /*-- Counter --*/
+  .counter-area.two {
+    padding-bottom: 90px;
+  }
+  /*-- End Counter --*/
+  /*-- Video --*/
+  .video-area {
+    margin-top: -70px;
+  }
+  .video-area .video-img .video-main a {
+    height: 60px;
+    width: 115px;
+    font-size: 45px;
+  }
+  .video-area .video-img .video-main a i {
+    line-height: 60px;
+  }
+  .video-area .video-img .video-shape img:nth-child(1) {
+    display: none;
+  }
+  .video-area .video-img .video-shape img:nth-child(2) {
+    display: none;
+  }
+  /*-- End Video --*/
+  /*-- Feature --*/
+  .feature-item {
+    padding: 30px 15px 28px;
+  }
+  .feature-item h3 {
+    font-size: 20px;
+  }
+  /*-- End Feature --*/
+  /*-- Clients --*/
+  .client-area {
+    text-align: center;
+  }
+  .client-area h2 {
+    font-size: 25px;
+  }
+  .client-area .client-slider {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .client-area .client-img {
+    position: relative;
+    top: 0;
+    right: 0;
+    left: 0;
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .client-area .client-img img {
+    max-width: 100%;
+  }
+  .client-area .owl-theme .owl-nav {
+    margin-top: 20px;
+    position: relative;
+    bottom: 0;
+    right: 0;
+    left: 0;
+  }
+  /*-- End Clients --*/
+  /*-- Team --*/
+  .team-area {
+    padding-top: 50px;
+  }
+  .team-area .team-content {
+    text-align: center;
+  }
+  .team-area .team-item.two {
+    margin-top: 0;
+  }
+  .team-area .team-item img {
+    border-radius: 5px;
+  }
+  /*-- End Team --*/
+  /*-- Blog --*/
+  .blog-item {
+    padding: 30px 15px 32px;
+  }
+  .blog-item h3 {
+    font-size: 20px;
+  }
+  /*-- End Blog --*/
+  /*-- Subscribe --*/
+  .subscribe-area .subscribe-item .newsletter-form .cmn-btn {
+    position: relative;
+    display: block;
+    width: 100%;
+    margin-top: 15px;
+  }
+  /*-- End Subscribe --*/
+  /*----- End IT Startup CSS -----*/
+  /*----- Digital CSS -----*/
+  /*-- Banner --*/
+  .banner-area.three {
+    height: 100%;
+  }
+  .banner-area.three .banner-img {
+    margin-top: 30px;
+  }
+  .banner-area.three .banner-img img:nth-child(2) {
+    display: none;
+  }
+  .banner-area.three .banner-img img:nth-child(3) {
+    display: none;
+  }
+  .banner-area.three .banner-img img:nth-child(4) {
+    display: none;
+  }
+  .banner-area.three .banner-img img:nth-child(5) {
+    display: none;
+  }
+  .banner-area.three .banner-img img:nth-child(6) {
+    display: none;
+  }
+  .banner-area.three .banner-img img:nth-child(7) {
+    display: none;
+  }
+  .banner-area.three .banner-img img:nth-child(8) {
+    display: none;
+  }
+  .banner-area.three .banner-content {
+    margin-top: 0;
+  }
+  .banner-area.three .banner-content span {
+    padding: 6px 25px;
+    font-size: 14px;
+  }
+  .banner-area.three .banner-content h1 {
+    line-height: 52px;
+    margin-bottom: 4px;
+  }
+  .banner-area.three .banner-content p {
+    font-size: 18px;
+  }
+  .banner-area.three .banner-contact {
+    margin-top: 30px;
+    margin-right: 0;
+  }
+  .banner-area.three .banner-contact ul {
+    padding-left: 15px;
+  }
+  .banner-area.three .banner-contact ul li {
+    padding-left: 40px;
+    margin-right: 10px;
+    text-align: left;
+    margin-bottom: 15px;
+    display: block;
+  }
+  .banner-area.three .banner-contact ul li:last-child {
+    margin-bottom: 0;
+  }
+  .banner-area.three .banner-contact ul li i {
+    font-size: 18px;
+  }
+  .banner-area.three .banner-contact ul li i:after {
+    left: -15px;
+  }
+  .banner-area.three .banner-contact ul li span {
+    font-size: 14px;
+  }
+  .banner-area.three .banner-contact ul li a {
+    font-size: 15px;
+  }
+  /*-- End Banner --*/
+  /*-- Service --*/
+  .service-item-three {
+    padding: 30px 15px 50px;
+  }
+  .section-title.three h2 {
+    font-size: 25px;
+  }
+  /*-- End Service --*/
+  /*-- About --*/
+  .about-area-two {
+    text-align: center;
+  }
+  .about-area-two .about-content {
+    padding-left: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /*-- End About --*/
+  /*-- Watch --*/
+  .watch-area .container-fluid {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .watch-area .watch-item .watch-inner h2 {
+    font-size: 25px;
+  }
+  /*-- End Watch --*/
+  /*-- Service --*/
+  .service-area.four {
+    text-align: center;
+  }
+  .service-area.four .section-title.three {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  /*-- End Service --*/
+  /*-- Portfolio --*/
+  .portfolio-area .owl-theme .owl-nav {
+    position: relative;
+    top: 0;
+    max-width: 100%;
+    text-align: center;
+  }
+  /*-- End Portfolio --*/
+  /*-- Team --*/
+  .team-area-two {
+    text-align: center;
+  }
+  /*-- End Team --*/
+  /*-- Testimonials --*/
+  .testimonials-area .testimonials-item p {
+    font-size: 17px;
+  }
+  .testimonials-area .owl-prev {
+    top: unset;
+    left: 0;
+    bottom: 0;
+  }
+  .testimonials-area .owl-next {
+    top: unset;
+    right: 0;
+    bottom: 0;
+  }
+  .testimonials-area .testimonials-img img:nth-child(1) {
+    display: none;
+  }
+  .testimonials-area .testimonials-img img:nth-child(2) {
+    display: none;
+  }
+  .testimonials-area .testimonials-img img:nth-child(3) {
+    display: none;
+  }
+  .testimonials-area .testimonials-img img:nth-child(4) {
+    display: none;
+  }
+  .testimonials-area .testimonials-img img:nth-child(5) {
+    display: none;
+  }
+  .testimonials-area .testimonials-img img:nth-child(6) {
+    display: none;
+  }
+  /*-- End Testimonials --*/
+  /*-- Talk --*/
+  .talk-area {
+    text-align: center;
+  }
+  .talk-area .talk-shape img:nth-child(2) {
+    top: 0;
+  }
+  /*-- End Talk --*/
+  /*----- End Digital CSS -----*/
+  /*----- About CSS -----*/
+  .page-title-area {
+    height: 400px;
+  }
+  .page-title-area .bg-text span {
+    font-size: 155px;
+    top: 0;
+    left: -189px;
+    line-height: 195px;
+  }
+  .page-title-area .title-item {
+    margin-top: 110px;
+  }
+  .page-title-area .title-item h2 {
+    font-size: 32px;
+  }
+  .app-area .app-img img {
+    max-width: 100%;
+  }
+  .app-area .app-content {
+    text-align: center;
+  }
+  .app-area .app-content ul {
+    margin: 0;
+    padding: 0;
+  }
+  .app-area .app-content ul li {
+    margin-right: 5px;
+  }
+  .app-area .app-content ul li a {
+    max-width: 120px;
+  }
+  @-webkit-keyframes app-ani-one {
+    30% {
+      -webkit-transform: rotate(2deg);
+              transform: rotate(2deg);
+    }
+    70% {
+      -webkit-transform: rotate(-3deg);
+              transform: rotate(-3deg);
+    }
+  }
+  @keyframes app-ani-one {
+    30% {
+      -webkit-transform: rotate(2deg);
+              transform: rotate(2deg);
+    }
+    70% {
+      -webkit-transform: rotate(-3deg);
+              transform: rotate(-3deg);
+    }
+  }
+  .pagination-area ul li {
+    margin-left: 1px;
+    margin-right: 1px;
+  }
+  .pagination-area ul li a {
+    padding: 3px 8px;
+  }
+  /*----- End About CSS -----*/
+  /*----- Service Details CSS -----*/
+  .service-details-area .details-app {
+    text-align: center;
+  }
+  .service-details-area .details-service {
+    text-align: center;
+  }
+  .service-details-area .details-service h3 {
+    font-size: 25px;
+  }
+  .service-details-area .details-share {
+    text-align: center;
+  }
+  .service-details-area .details-share ul li {
+    margin-bottom: 5px;
+  }
+  /*----- End Service Details CSS -----*/
+  /*----- Project Details CSS -----*/
+  .project-details-area .details-item {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .project-details-area .details-item .details-img h2 {
+    font-size: 25px;
+  }
+  .project-details-area .details-item .details-fact {
+    text-align: left;
+  }
+  .project-details-area .details-item .details-fact .content h3 {
+    font-size: 22px;
+  }
+  /*----- End Project Details CSS -----*/
+  /*----- Blog Details CSS -----*/
+  .blog-details-area .details-item {
+    margin-bottom: 30px;
+  }
+  .blog-details-area .details-item .details-img h2 {
+    font-size: 25px;
+  }
+  .blog-details-area .details-item .details-quote {
+    padding: 30px 15px 30px;
+  }
+  .blog-details-area .details-item .details-quote h3 {
+    font-size: 20px;
+  }
+  .blog-details-area .details-item .details-digital {
+    text-align: center;
+  }
+  .blog-details-area .details-item .details-digital h3 {
+    font-size: 22px;
+  }
+  .blog-details-area .details-item .details-text-img {
+    text-align: center;
+  }
+  .blog-details-area .details-item .details-tags {
+    padding: 15px 10px;
+    text-align: center;
+  }
+  .blog-details-area .details-item .details-tags .left {
+    margin-bottom: 10px;
+  }
+  .blog-details-area .details-item .details-tags .right {
+    text-align: center;
+  }
+  .blog-details-area .details-item .details-user img:nth-child(1) {
+    left: 10px;
+  }
+  .blog-details-area .details-item .details-user .top {
+    padding: 50px 10px 25px 125px;
+  }
+  .blog-details-area .details-item .details-user .top .top-right {
+    text-align: left;
+  }
+  .blog-details-area .details-item .details-user .bottom {
+    padding: 25px 10px 30px 125px;
+  }
+  .blog-details-area .details-item .details-comment ul li {
+    padding-left: 115px;
+  }
+  .blog-details-area .details-item .details-comment ul li:last-child {
+    margin-left: 0;
+  }
+  .blog-details-area .details-item .details-form {
+    padding: 25px 15px 25px;
+  }
+  .widget-area .widget-item {
+    padding: 25px 15px 30px;
+  }
+  .widget-area .recent .recent-inner ul li a {
+    font-size: 17px;
+  }
+  /*----- End Blog Details CSS -----*/
+  /*----- Contact CSS -----*/
+  .contact-area #contactForm {
+    padding: 20px 15px 20px;
+  }
+  .contact-info-area .info-item h2 {
+    font-size: 25px;
+  }
+  .contact-info-area .info-item .mail-call li a {
+    font-size: 18px;
+  }
+  /*----- End Contact CSS -----*/
+  /*----- User CSS -----*/
+  .user-form-area {
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .user-form-area .user-img {
+    background-image: unset;
+    margin-bottom: 30px;
+  }
+  .user-form-area .user-img img {
+    display: block;
+  }
+  .user-form-area .user-content {
+    height: 100%;
+  }
+  .user-form-area .user-content .user-content-inner {
+    max-width: 100%;
+  }
+  /*----- End User CSS -----*/
+  /*----- Error CSS -----*/
+  .error-area {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  /*----- End Error CSS -----*/
+  /*----- Rules CSS -----*/
+  .rules-area {
+    text-align: center;
+  }
+  /*----- End Rules CSS -----*/
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  /*----- Default CSS -----*/
+  body {
+    font-size: 15px;
+  }
+  .ptb-100 {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  .pt-100 {
+    padding-top: 70px;
+  }
+  .pb-70 {
+    padding-bottom: 40px;
+  }
+  .pb-100 {
+    padding-bottom: 70px;
+  }
+  .container {
+    max-width: 720px;
+  }
+  .container-fluid {
+    max-width: 720px;
+  }
+  /*----- End Default CSS -----*/
+  /*----- Sass CSS -----*/
+  /*-- Banner --*/
+  .banner-area {
+    height: 100%;
+    text-align: center;
+    padding-top: 190px;
+    padding-bottom: 80px;
+  }
+  .banner-area .banner-shape img:nth-child(1) {
+    right: 0;
+    left: 0;
+    max-width: 100%;
+    position: relative;
+    top: 0;
+  }
+  .banner-content {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .banner-content span {
+    font-size: 16px;
+  }
+  .banner-content h1 {
+    font-size: 40px;
+    line-height: 56px;
+  }
+  .banner-content p {
+    font-size: 16px;
+  }
+  .banner-content .banner-btn .banner-btn-right {
+    padding-right: 18px;
+    padding-left: 16px;
+    height: 45px;
+    line-height: 45px;
+    margin-left: 15px;
+  }
+  .cmn-btn {
+    padding-right: 15px;
+    padding-left: 20px;
+    height: 45px;
+    line-height: 45px;
+  }
+  /*-- End Banner --*/
+  /*-- Service --*/
+  .section-title {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .section-title h2 {
+    font-size: 30px;
+  }
+  .service-area .service-shape {
+    top: 0;
+  }
+  .service-item {
+    padding: 30px 15px 26px;
+    text-align: center;
+  }
+  /*-- End Service --*/
+  /*-- About --*/
+  .about-area .about-content ul li {
+    padding-left: 40px;
+  }
+  .about-area .about-img {
+    text-align: center;
+  }
+  .about-area .about-img img:nth-child(1) {
+    margin-top: 30px;
+  }
+  .about-area .about-img img:nth-child(2) {
+    display: none;
+  }
+  .about-area .about-img img:nth-child(3) {
+    display: none;
+  }
+  .about-area .about-img img:nth-child(4) {
+    display: none;
+  }
+  /*-- End About --*/
+  /*-- Inquiry --*/
+  .inquiry-area {
+    text-align: center;
+    padding-top: 50px;
+  }
+  .inquiry-area .inquiry-shape img:nth-child(5) {
+    display: none;
+  }
+  .inquiry-area .inquiry-img {
+    text-align: center;
+  }
+  .inquiry-area .inquiry-content {
+    padding-top: 30px;
+    padding-bottom: 50px;
+  }
+  .inquiry-area .inquiry-content .section-title h2 {
+    font-size: 30px;
+  }
+  /*-- End Inquiry --*/
+  /*-- Feature --*/
+  .feature-area {
+    text-align: center;
+  }
+  .feature-area .feature-content .feature-top h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+  .feature-area .feature-content .feature-inner {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  /*-- End Feature --*/
+  /*-- Counter --*/
+  .counter-area h2 {
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+  .counter-area .counter-item img {
+    display: none;
+  }
+  .counter-area .counter-item h3 {
+    font-size: 40px;
+    line-height: 40px;
+  }
+  .counter-area .counter-item h3 .target {
+    font-size: 25px;
+  }
+  /*-- End Counter --*/
+  /*-- Application --*/
+  .application-area .application-shape img:nth-child(1) {
+    top: 50px;
+    max-width: 100%;
+  }
+  .application-area .application-shape img:nth-child(2) {
+    display: none;
+  }
+  .application-area .application-content {
+    margin-right: auto;
+  }
+  .application-area .application-content .section-title {
+    text-align: left;
+  }
+  .application-area .application-img {
+    padding-right: 15px;
+  }
+  .application-area .application-img img {
+    border-radius: 15px;
+  }
+  /*-- End Application --*/
+  /*-- Pricing --*/
+  .pricing-item {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  .pricing-item .top span {
+    font-size: 24px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+  .pricing-item .top span i {
+    font-size: 22px;
+  }
+  .pricing-item .middle {
+    background-color: #d3d9fd;
+    padding-top: 16px;
+    padding-bottom: 20px;
+  }
+  .pricing-item .middle h3 {
+    font-size: 35px;
+  }
+  .pricing-item .middle h3 span {
+    font-size: 20px;
+  }
+  .pricing-item .end {
+    padding: 30px 15px 30px;
+    text-align: center;
+  }
+  /*-- End Pricing --*/
+  /*-- Feedback --*/
+  .feedback-area {
+    text-align: center;
+  }
+  .feedback-area .feedback-content p {
+    font-size: 23px;
+    line-height: 32px;
+  }
+  .feedback-area #thumbs {
+    position: relative;
+  }
+  .feedback-area .owl-prev {
+    display: none !important;
+  }
+  .feedback-area .owl-next {
+    display: none !important;
+  }
+  .feedback-area .outer .shape {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-bottom: 30px;
+  }
+  /*-- End Feedback --*/
+  /*-- FAQ --*/
+  .faq-area .faq-content .accordion p {
+    display: none;
+    padding: 20px 15px 20px;
+    margin-bottom: 0;
+  }
+  .faq-area .faq-content .accordion li a {
+    padding: 13px 45px 13px 15px;
+  }
+  /*-- End FAQ --*/
+  /*-- Mind --*/
+  .mind-area {
+    text-align: center;
+  }
+  .mind-area .mind-left {
+    margin-bottom: 30px;
+  }
+  .mind-area .mind-left h2 {
+    font-size: 30px;
+  }
+  .mind-area .mind-right {
+    text-align: center;
+  }
+  /*-- End Mind --*/
+  /*-- Copyright --*/
+  .copyright-area .copyright-item {
+    text-align: center;
+  }
+  .copyright-area .copyright-item p {
+    margin-bottom: 15px;
+  }
+  .copyright-area .copyright-item ul {
+    text-align: center;
+  }
+  /*-- End Copyright --*/
+  /*----- End Sass CSS -----*/
+  /*----- IT Startup CSS -----*/
+  /*-- Banner --*/
+  .banner-area.two .banner-content {
+    margin-top: 0;
+  }
+  .banner-area.two .banner-content h1 {
+    font-size: 34px;
+    line-height: 54px;
+  }
+  .banner-area.two .banner-shape-two img {
+    position: relative;
+    right: 0;
+    bottom: 0;
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
+  .banner-area.two .banner-shape-two span {
+    font-size: 116px;
+    top: 150px;
+    left: -105px;
+    line-height: 175px;
+  }
+  /*-- End Banner CSS --*/
+  /*-- Services --*/
+  .section-title.two h2 {
+    font-size: 30px;
+  }
+  /*-- End Services --*/
+  /*-- Design --*/
+  .design-area .design-content {
+    text-align: center;
+  }
+  .design-area .design-content .section-title.two {
+    margin-bottom: 30px;
+  }
+  .design-area .design-content ul li {
+    font-size: 16px;
+  }
+  .design-area .design-content ul li i {
+    top: 2px;
+  }
+  /*-- End Design --*/
+  /*-- Counter --*/
+  .counter-area.two {
+    padding-bottom: 200px;
+  }
+  /*-- End Counter --*/
+  /*-- Video --*/
+  .video-area {
+    margin-top: -160px;
+  }
+  .video-area .video-img .video-main a {
+    height: 60px;
+    width: 115px;
+    font-size: 45px;
+  }
+  .video-area .video-img .video-main a i {
+    line-height: 60px;
+  }
+  .video-area .video-img .video-shape img:nth-child(1) {
+    display: none;
+  }
+  .video-area .video-img .video-shape img:nth-child(2) {
+    display: none;
+  }
+  /*-- End Video --*/
+  /*-- Feature --*/
+  .feature-item {
+    padding: 30px 15px 28px;
+  }
+  .feature-item h3 {
+    font-size: 20px;
+  }
+  /*-- End Feature --*/
+  /*-- Clients --*/
+  .client-area {
+    text-align: center;
+  }
+  .client-area h2 {
+    font-size: 30px;
+  }
+  .client-area .client-slider {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .client-area .client-img {
+    position: relative;
+    top: 0;
+    right: 0;
+    left: 0;
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .client-area .client-img img {
+    max-width: 100%;
+  }
+  .client-area .owl-theme .owl-nav {
+    margin-top: 20px;
+    position: relative;
+    bottom: 0;
+    right: 0;
+    left: 0;
+  }
+  /*-- End Clients --*/
+  /*-- Team --*/
+  .team-area {
+    padding-top: 70px;
+  }
+  .team-area .team-content {
+    text-align: center;
+  }
+  .team-area .team-item.two {
+    margin-top: 0;
+  }
+  .team-area .team-item img {
+    border-radius: 5px;
+  }
+  /*-- End Team --*/
+  /*-- Blog --*/
+  .blog-item {
+    padding: 30px 15px 32px;
+  }
+  .blog-item h3 {
+    font-size: 20px;
+  }
+  /*-- End Blog --*/
+  /*-- Subscribe --*/
+  .subscribe-area .subscribe-item .newsletter-form .cmn-btn {
+    position: relative;
+    display: block;
+    width: 100%;
+    margin-top: 15px;
+  }
+  /*-- End Subscribe --*/
+  /*----- End IT Startup CSS -----*/
+  /*----- Digital CSS -----*/
+  /*-- Banner --*/
+  .banner-area.three {
+    height: 100%;
+  }
+  .banner-area.three .banner-img {
+    margin-top: 30px;
+  }
+  .banner-area.three .banner-img img:nth-child(2) {
+    display: none;
+  }
+  .banner-area.three .banner-img img:nth-child(3) {
+    display: none;
+  }
+  .banner-area.three .banner-img img:nth-child(4) {
+    display: none;
+  }
+  .banner-area.three .banner-img img:nth-child(5) {
+    display: none;
+  }
+  .banner-area.three .banner-img img:nth-child(6) {
+    display: none;
+  }
+  .banner-area.three .banner-img img:nth-child(7) {
+    display: none;
+  }
+  .banner-area.three .banner-img img:nth-child(8) {
+    display: none;
+  }
+  .banner-area.three .banner-content {
+    margin-top: 0;
+  }
+  .banner-area.three .banner-content span {
+    padding: 6px 25px;
+    font-size: 14px;
+  }
+  .banner-area.three .banner-content h1 {
+    line-height: 52px;
+    margin-bottom: 4px;
+  }
+  .banner-area.three .banner-content p {
+    font-size: 18px;
+  }
+  .banner-area.three .banner-contact {
+    margin-top: 30px;
+    margin-right: 0;
+  }
+  .banner-area.three .banner-contact ul li {
+    padding-left: 40px;
+    margin-right: 20px;
+    text-align: left;
+    margin-bottom: 10px;
+  }
+  .banner-area.three .banner-contact ul li i {
+    font-size: 18px;
+  }
+  .banner-area.three .banner-contact ul li i:after {
+    left: -15px;
+  }
+  .banner-area.three .banner-contact ul li span {
+    font-size: 14px;
+  }
+  .banner-area.three .banner-contact ul li a {
+    font-size: 15px;
+  }
+  /*-- End Banner --*/
+  /*-- Service --*/
+  .service-item-three {
+    padding: 30px 15px 50px;
+  }
+  .section-title.three h2 {
+    font-size: 30px;
+  }
+  /*-- End Service --*/
+  /*-- About --*/
+  .about-area-two {
+    text-align: center;
+  }
+  .about-area-two .about-content {
+    padding-left: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /*-- End About --*/
+  /*-- Watch --*/
+  .watch-area .container-fluid {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .watch-area .watch-item .watch-inner h2 {
+    font-size: 30px;
+  }
+  /*-- End Watch --*/
+  /*-- Service --*/
+  .service-area.four {
+    text-align: center;
+  }
+  .service-area.four .section-title.three {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  /*-- End Service --*/
+  /*-- Portfolio --*/
+  .portfolio-area .section-title.three {
+    text-align: left;
+  }
+  /*-- End Portfolio --*/
+  /*-- Team --*/
+  .team-area-two {
+    text-align: center;
+  }
+  /*-- End Team --*/
+  /*-- Testimonials --*/
+  .testimonials-area .testimonials-item p {
+    font-size: 20px;
+  }
+  .testimonials-area .owl-prev {
+    top: unset;
+    left: 0;
+    bottom: 0;
+  }
+  .testimonials-area .owl-next {
+    top: unset;
+    right: 0;
+    bottom: 0;
+  }
+  .testimonials-area .testimonials-img img:nth-child(1) {
+    display: none;
+  }
+  .testimonials-area .testimonials-img img:nth-child(2) {
+    display: none;
+  }
+  .testimonials-area .testimonials-img img:nth-child(3) {
+    display: none;
+  }
+  .testimonials-area .testimonials-img img:nth-child(4) {
+    display: none;
+  }
+  .testimonials-area .testimonials-img img:nth-child(5) {
+    display: none;
+  }
+  .testimonials-area .testimonials-img img:nth-child(6) {
+    display: none;
+  }
+  /*-- End Testimonials --*/
+  /*-- Talk --*/
+  .talk-area {
+    text-align: center;
+  }
+  /*-- End Talk --*/
+  /*----- End Digital CSS -----*/
+  /*----- About CSS -----*/
+  .page-title-area {
+    height: 400px;
+  }
+  .page-title-area .bg-text span {
+    font-size: 155px;
+    top: 0;
+    left: -189px;
+    line-height: 195px;
+  }
+  .page-title-area .title-item {
+    margin-top: 110px;
+  }
+  .app-area .app-content {
+    text-align: center;
+  }
+  .app-area .app-content ul {
+    margin: 0;
+    padding: 0;
+  }
+  .app-area .app-content ul li {
+    margin-right: 5px;
+  }
+  .app-area .app-content ul li a {
+    max-width: 120px;
+  }
+  @-webkit-keyframes app-ani-one {
+    30% {
+      -webkit-transform: rotate(2deg);
+              transform: rotate(2deg);
+    }
+    70% {
+      -webkit-transform: rotate(-3deg);
+              transform: rotate(-3deg);
+    }
+  }
+  @keyframes app-ani-one {
+    30% {
+      -webkit-transform: rotate(2deg);
+              transform: rotate(2deg);
+    }
+    70% {
+      -webkit-transform: rotate(-3deg);
+              transform: rotate(-3deg);
+    }
+  }
+  /*----- End About CSS -----*/
+  /*----- Project Details CSS -----*/
+  .project-details-area .details-item {
+    margin-bottom: 30px;
+  }
+  /*----- End Project Details CSS -----*/
+  /*----- Blog Details CSS -----*/
+  .blog-details-area .details-item {
+    margin-bottom: 30px;
+  }
+  .blog-details-area .details-item .details-tags {
+    text-align: center;
+  }
+  .blog-details-area .details-item .details-tags .right {
+    text-align: center;
+    margin-top: 15px;
+  }
+  /*----- End Blog Details CSS -----*/
+  /*----- User CSS -----*/
+  .user-form-area {
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  .user-form-area .user-img {
+    background-image: unset;
+    margin-bottom: 30px;
+  }
+  .user-form-area .user-img img {
+    display: block;
+  }
+  .user-form-area .user-content {
+    height: 100%;
+  }
+  .user-form-area .user-content .user-content-inner {
+    max-width: 100%;
+  }
+  /*----- End User CSS -----*/
+  /*----- Rules CSS -----*/
+  .rules-area {
+    text-align: center;
+  }
+  /*----- End Rules CSS -----*/
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .counter-area .counter-item h3 {
+    font-size: 32px;
+  }
+  .counter-area .counter-item p {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .banner-area .banner-shape img:nth-child(1) {
+    top: 195px;
+    max-width: 451px;
+  }
+  .main-nav nav .navbar-nav .nav-item a {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  .side-nav .left-btn {
+    padding-right: 17px;
+    padding-left: 17px;
+    margin-right: 5px;
+    font-size: 15px;
+  }
+  .side-nav .cmn-btn {
+    padding-right: 10px;
+    font-size: 15px;
+    padding-left: 13px;
+  }
+  .banner-area.two .banner-shape-two img {
+    right: 10px;
+    max-width: 430px;
+  }
+  .video-area .video-img .video-shape img:nth-child(2) {
+    display: none;
+  }
+  .client-area .client-img {
+    right: 15px;
+  }
+  .blog-item {
+    padding: 30px 15px 32px;
+  }
+  .banner-area.three .banner-content h1 {
+    font-size: 60px;
+    line-height: 88px;
+  }
+  .service-item-three {
+    padding: 30px 15px 55px;
+  }
+  .user-form-area .user-content {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1799px) {
+  .user-form-area .user-content {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+@media only screen and (min-width: 1800px) {
+  .banner-area.two .banner-shape-two img {
+    right: 155px;
+    max-width: 720px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .mobile-nav .logo {
+    max-width: 85px;
+  }
+  .mean-container .mean-bar {
+    background-color: #2948ff;
+  }
+  .mean-container a.meanmenu-reveal span {
+    position: relative;
+    margin-top: -7px;
+    top: 9px;
+  }
+  .mobile-nav.mean-container .mean-nav ul li a.active {
+    color: #2948ff;
+  }
+  .navbar-nav {
+    height: 320px;
+    overflow-y: auto;
+  }
+  .side-nav {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    -webkit-box-shadow: 0px 10px 20px 0px #d3d9fd78;
+            box-shadow: 0px 10px 20px 0px #d3d9fd78;
+  }
+  .side-nav .left-btn {
+    padding-right: 15px;
+    padding-left: 20px;
+    height: 45px;
+    line-height: 45px;
+    margin-right: 5px;
+  }
+}
+
+@media (min-width: 1300px) {
+  .container, .container-lg, .container-md, .container-sm, .container-xl {
+    max-width: 1320px;
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 1199px) and (max-width: 1350px) {
+  .banner-area .banner-shape img:nth-child(1) {
+    top: 180px;
+    max-width: 625px;
+  }
+  .application-area .application-content {
+    max-width: 640px;
+  }
+  .banner-area.two .banner-shape-two img {
+    max-width: 540px;
+  }
+}
+
+@media only screen and (min-width: 2700px) {
+  .banner-area.two .banner-shape-two img {
+    right: 435px;
+  }
+}
+/*# sourceMappingURL=responsive.css.map */
