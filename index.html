@@ -37,11 +37,46 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@100;400;900&display=swap" rel="stylesheet" />
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/brands.min.css"
+        integrity="sha512-L+sMmtHht2t5phORf0xXFdTC0rSlML1XcraLTrABli/0MMMylsJi3XA23ReVQkZ7jLkOEIMicWGItyK4CAt2Xw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+
+    <link rel="icon" type="image/png" href="assets/img/favicon.png">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/brands.min.css"
+        integrity="sha512-L+sMmtHht2t5phORf0xXFdTC0rSlML1XcraLTrABli/0MMMylsJi3XA23ReVQkZ7jLkOEIMicWGItyK4CAt2Xw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/fontawesome.min.css"
+        integrity="sha512-cHxvm20nkjOUySu7jdwiUxgGy11vuVPE9YeK89geLMLMMEOcKFyS2i+8wo0FOwyQO/bL8Bvq1KMsqK4bbOsPnA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/regular.min.css"
+        integrity="sha512-3YMBYASBKTrccbNMWlnn0ZoEOfRjVs9qo/dlNRea196pg78HaO0H/xPPO2n6MIqV6CgTYcWJ1ZB2EgWjeNP6XA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"
+        integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
+
     <script src="https://cdn.jsdelivr.net/npm/kute.js@2.1.2/dist/kute.min.js"></script>
 
     <title>Dilx - IT & Marketing Startup Bootstrap 5 Template</title>
 
-    <link rel="icon" type="image/png" href="assets/img/favicon.png">
+
+
 </head>
 
 
@@ -68,7 +103,7 @@
         <!-- Menu For Mobile Device -->
         <div class="mobile-nav">
             <a href="sass.html" class="logo">
-                <img src="assets/img/logo-two.png" alt="Logo">
+                <img src="https://esciioit.org/wp-content/uploads/2021/09/IEEE-Student-logo-final-png-1.png" alt="Logo">
             </a>
         </div>
 
@@ -77,8 +112,42 @@
             <div class="container-fluid">
                 <nav class="navbar navbar-expand-md navbar-light">
                     <a class="navbar-brand" href="sass.html">
-                        <img src="assets/img/logo.png" class="logo-one" alt="Logo">
-                        <img src="assets/img/logo-two.png" class="logo-two" alt="Logo">
+                        <!-- <img src="assets/img/logo.png" class="logo-one" alt="Logo">
+                        <img src="assets/img/logo-two.png" class="logo-two" alt="Logo"> -->
+
+
+                        <img src="https://esciioit.org/wp-content/uploads/2021/09/IEEE-Student-logo-final-png-1.png"
+                            style="max-width: 45%;max-height: 45%;" class="logo-two" alt="Logo" id="logo-twoo">
+
+                        <style>
+                            .logo-two {
+                                transition: all 0.2s ease-in-out;
+                            }
+
+                            .logo-two:hover {
+                                transform: scale(1.5);
+                            }
+                        </style>
+
+                        <script>
+                            function changeImageSizeOnScroll() {
+                                const image = document.getElementById('logo-twoo');
+                                const scrollPosition = window.scrollY;
+
+                                // set new image width and height based on scroll position
+                                if (scrollPosition > 500) {
+                                    image.style.height = '20%';
+                                    image.style.width = '20%';
+                                } else {
+                                    image.style.height = '45%';
+                                    image.style.width = '45%';
+                                }
+                            }
+
+                            // add event listener for scroll event
+                            window.addEventListener('scroll', changeImageSizeOnScroll);
+                        </script>
+
                     </a>
                     <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
                         <ul class="navbar-nav">
@@ -184,7 +253,7 @@
                                 <a href="contact.html" class="nav-link">Contact</a>
                             </li>
                         </ul>
-                        <!-- <div class="side-nav">
+                        <div class="side-nav">
                             <a class="left-btn" href="sign-in.html">
                                 <i class='bx bx-log-out'></i>
                                 Sign In
@@ -193,7 +262,7 @@
                                 Start Project
                                 <i class='bx bx-plus'></i>
                             </a>
-                        </div> -->
+                        </div>
                     </div>
                 </nav>
             </div>
@@ -207,6 +276,7 @@
 
     <!-- particles.js container -->
     <div id="particles-js"></div>
+
 
     <!-- stats - count particles -->
 
@@ -229,7 +299,7 @@
         particlesJS("particles-js", {
             "particles": {
                 "number": {
-                    "value": 80,
+                    "value": 180,
                     "density": {
                         "enable": true,
                         "value_area": 700
@@ -253,7 +323,7 @@
                     "random": false,
                     "anim": {
                         "enable": false,
-                        "speed": 0.1,
+                        "speed": 0.3,
                         "opacity_min": 0.1,
                         "sync": false
                     }
@@ -335,13 +405,20 @@
     </script>
     <!-- Banner -->
     <div class="banner-area">
-        
+        <div class="banner-shape">
+            <!-- <img class="animate__animated animate__fadeInUp"
+                src="https://templates.hibootstrap.com/dilx/default/assets/img/sass/banner-main.png" alt="Banner"> -->
+            <img src="assets/img/sass/banner-shape1.png" alt="Banner">
+            <img src="assets/img/sass/Untitled11.png" alt="Banner">
+            <!-- <img src="assets/img/sass/banner-shape3.png" alt="Banner"> -->
+            <!-- <img src="assets/img/sass/Untitled1.png" alt="Banner"> -->
+        </div>
         <div class="d-table">
             <div class="d-table-cell">
                 <div class="container-fluid">
                     <div class="banner-content" style="margin-top: 12%;">
                         <span>
-                            <!-- <img src="assets/img/sass/banner-shape4.png" alt="Shape"> -->
+                            <img src="assets/img/sass/banner-shape4.png" alt="Shape">
                             AISSMS -
                             INSITUTIE OF INFORMATION TECHNOLOGY (IOIT), Pune
                         </span>
@@ -365,9 +442,646 @@
                         </div>
 
                     </div>
-                </div>
-                <div class="spacer layer2 flip"></div>
+                    <section id="section07" class="demo">
+                        <a href="#section08"><span></span><span></span><span></span></a>
+                    </section>
 
+                </div>
+
+
+                <div class="spacer layer2 flip" id="pp1">
+
+                </div>
+
+
+
+                <style>
+                    @import url(https://fonts.googleapis.com/css?family=Josefin+Sans:300,400);
+
+                    #sectionn07 {
+                        rotate: 180deg;
+                    }
+
+                    section {
+                        position: relative;
+                        width: 100%;
+                        height: 100%;
+
+
+                    }
+
+                    section::after {
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        content: '';
+                        width: 100%;
+                        height: 80%;
+
+
+                    }
+
+                    section h1 {
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        z-index: 2;
+                        -webkit-transform: translate(-50%, -50%);
+                        transform: translate(-50%, -50%);
+                        color: #fff;
+                        font: normal 300 64px/1 'Josefin Sans', sans-serif;
+                        text-align: center;
+                        white-space: nowrap;
+                    }
+
+
+                    #thanks {
+                        background-color: #fff;
+                    }
+
+                    #thanks::after {
+                        content: none;
+                    }
+
+                    #thanks div {
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        z-index: 2;
+                        -webkit-transform: translate(-50%, -50%);
+                        transform: translate(-50%, -50%);
+                        text-align: center;
+                    }
+
+                    #thanks h2 {
+                        margin-bottom: 60px;
+                        color: #333;
+                        font: normal 300 64px/1 'Josefin Sans', sans-serif;
+                        text-align: center;
+                        white-space: nowrap;
+                    }
+
+                    #thanks p {
+                        color: #333;
+                        font: normal 400 20px/1 'Josefin Sans', sans-serif;
+                    }
+
+                    #thanks p a {
+                        color: #333;
+                        text-decoration: none;
+                        transition: color .3s;
+                    }
+
+                    #thanks p a:hover {
+                        color: #888;
+                    }
+
+                    .demo a {
+                        position: absolute;
+                        bottom: 20px;
+                        left: 50%;
+                        z-index: 2;
+                        display: inline-block;
+                        -webkit-transform: translate(0, -50%);
+                        transform: translate(0, -50%);
+                        color: #fff;
+                        font: normal 400 20px/1 'Josefin Sans', sans-serif;
+                        letter-spacing: .1em;
+                        text-decoration: none;
+                        transition: opacity .3s;
+                    }
+
+                    .demo a:hover {
+                        opacity: .5;
+                    }
+
+
+
+                    #section01 a {
+                        padding-top: 500px;
+                    }
+
+                    #section01 a span {
+                        position: absolute;
+                        top: 0;
+                        left: 50%;
+                        width: 24px;
+                        height: 24px;
+                        margin-left: -12px;
+                        border-left: 1px solid #fff;
+                        border-bottom: 1px solid #fff;
+                        -webkit-transform: rotate(-45deg);
+                        transform: rotate(-45deg);
+                        box-sizing: border-box;
+                    }
+
+
+
+                    #section02 a {
+                        padding-top: 60px;
+                    }
+
+                    #section02 a span {
+                        position: absolute;
+                        top: 0;
+                        left: 50%;
+                        width: 46px;
+                        height: 46px;
+                        margin-left: -23px;
+                        border: 1px solid #fff;
+                        border-radius: 100%;
+                        box-sizing: border-box;
+                    }
+
+                    #section02 a span::after {
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        content: '';
+                        width: 16px;
+                        height: 16px;
+                        margin: -12px 0 0 -8px;
+                        border-left: 1px solid #fff;
+                        border-bottom: 1px solid #fff;
+                        -webkit-transform: rotate(-45deg);
+                        transform: rotate(-45deg);
+                        box-sizing: border-box;
+                    }
+
+
+
+                    #section03 a {
+                        padding-top: 60px;
+                    }
+
+                    #section03 a span {
+                        position: absolute;
+                        top: 0;
+                        left: 50%;
+                        width: 46px;
+                        height: 46px;
+                        margin-left: -23px;
+                        border: 1px solid #fff;
+                        border-radius: 100%;
+                        box-sizing: border-box;
+                    }
+
+                    #section03 a span::after {
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        content: '';
+                        width: 16px;
+                        height: 16px;
+                        margin: -12px 0 0 -8px;
+                        border-left: 1px solid #fff;
+                        border-bottom: 1px solid #fff;
+                        -webkit-transform: rotate(-45deg);
+                        transform: rotate(-45deg);
+                        box-sizing: border-box;
+                    }
+
+                    #section03 a span::before {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        z-index: -1;
+                        content: '';
+                        width: 44px;
+                        height: 44px;
+                        box-shadow: 0 0 0 0 rgba(255, 255, 255, .1);
+                        border-radius: 100%;
+                        opacity: 0;
+                        -webkit-animation: sdb03 3s infinite;
+                        animation: sdb03 3s infinite;
+                        box-sizing: border-box;
+                    }
+
+                    @-webkit-keyframes sdb03 {
+                        0% {
+                            opacity: 0;
+                        }
+
+                        30% {
+                            opacity: 1;
+                        }
+
+                        60% {
+                            box-shadow: 0 0 0 60px rgba(255, 255, 255, .1);
+                            opacity: 0;
+                        }
+
+                        100% {
+                            opacity: 0;
+                        }
+                    }
+
+                    @keyframes sdb03 {
+                        0% {
+                            opacity: 0;
+                        }
+
+                        30% {
+                            opacity: 1;
+                        }
+
+                        60% {
+                            box-shadow: 0 0 0 60px rgba(255, 255, 255, .1);
+                            opacity: 0;
+                        }
+
+                        100% {
+                            opacity: 0;
+                        }
+                    }
+
+
+
+                    #section04 a {
+                        padding-top: 60px;
+                    }
+
+                    #section04 a span {
+                        position: absolute;
+                        top: 0;
+                        left: 50%;
+                        width: 24px;
+                        height: 24px;
+                        margin-left: -12px;
+                        border-left: 1px solid #fff;
+                        border-bottom: 1px solid #fff;
+                        -webkit-transform: rotate(-45deg);
+                        transform: rotate(-45deg);
+                        -webkit-animation: sdb04 2s infinite;
+                        animation: sdb04 2s infinite;
+                        box-sizing: border-box;
+                    }
+
+                    @-webkit-keyframes sdb04 {
+                        0% {
+                            -webkit-transform: rotate(-45deg) translate(0, 0);
+                        }
+
+                        20% {
+                            -webkit-transform: rotate(-45deg) translate(-10px, 10px);
+                        }
+
+                        40% {
+                            -webkit-transform: rotate(-45deg) translate(0, 0);
+                        }
+                    }
+
+                    @keyframes sdb04 {
+                        0% {
+                            transform: rotate(-45deg) translate(0, 0);
+                        }
+
+                        20% {
+                            transform: rotate(-45deg) translate(-10px, 10px);
+                        }
+
+                        40% {
+                            transform: rotate(-45deg) translate(0, 0);
+                        }
+                    }
+
+
+
+                    #section05 a {
+                        padding-top: 70px;
+                    }
+
+                    #section05 a span {
+                        position: absolute;
+                        top: 0;
+                        left: 50%;
+                        width: 24px;
+                        height: 24px;
+                        margin-left: -12px;
+                        border-left: 1px solid #fff;
+                        border-bottom: 1px solid #fff;
+                        -webkit-transform: rotate(-45deg);
+                        transform: rotate(-45deg);
+                        -webkit-animation: sdb05 1.5s infinite;
+                        animation: sdb05 1.5s infinite;
+                        box-sizing: border-box;
+                    }
+
+                    @-webkit-keyframes sdb05 {
+                        0% {
+                            -webkit-transform: rotate(-45deg) translate(0, 0);
+                            opacity: 0;
+                        }
+
+                        50% {
+                            opacity: 1;
+                        }
+
+                        100% {
+                            -webkit-transform: rotate(-45deg) translate(-20px, 20px);
+                            opacity: 0;
+                        }
+                    }
+
+                    @keyframes sdb05 {
+                        0% {
+                            transform: rotate(-45deg) translate(0, 0);
+                            opacity: 0;
+                        }
+
+                        50% {
+                            opacity: 1;
+                        }
+
+                        100% {
+                            transform: rotate(-45deg) translate(-20px, 20px);
+                            opacity: 0;
+                        }
+                    }
+
+
+
+                    #section06 a {
+                        padding-top: 70px;
+                    }
+
+                    #section06 a span {
+                        position: absolute;
+                        top: 0;
+                        left: 50%;
+                        width: 24px;
+                        height: 24px;
+                        margin-left: -12px;
+                        border-left: 1px solid #fff;
+                        border-bottom: 1px solid #fff;
+                        -webkit-transform: rotateZ(-45deg);
+                        transform: rotateZ(-45deg);
+                        -webkit-animation: sdb06 1.5s infinite;
+                        animation: sdb06 1.5s infinite;
+                        box-sizing: border-box;
+                    }
+
+                    @-webkit-keyframes sdb06 {
+                        0% {
+                            -webkit-transform: rotateY(0) rotateZ(-45deg) translate(0, 0);
+                            opacity: 0;
+                        }
+
+                        50% {
+                            opacity: 1;
+                        }
+
+                        100% {
+                            -webkit-transform: rotateY(720deg) rotateZ(-45deg) translate(-20px, 20px);
+                            opacity: 0;
+                        }
+                    }
+
+                    @keyframes sdb06 {
+                        0% {
+                            transform: rotateY(0) rotateZ(-45deg) translate(0, 0);
+                            opacity: 0;
+                        }
+
+                        50% {
+                            opacity: 1;
+                        }
+
+                        100% {
+                            transform: rotateY(720deg) rotateZ(-45deg) translate(-20px, 20px);
+                            opacity: 0;
+                        }
+                    }
+
+
+
+                    #section07 a {
+                        padding-top: 80px;
+                    }
+
+                    #section07 a span {
+                        position: relative;
+                        size: 200px;
+                        top: 0;
+                        left: 50%;
+                        width: 28px;
+                        height: 28px;
+                        margin-left: -12px;
+                        border-left: 1px solid #fff;
+                        border-bottom: 1px solid #fff;
+                        -webkit-transform: rotate(-180deg);
+                        transform: rotate(-180deg);
+                        -webkit-animation: sdb07 2s infinite;
+                        animation: sdb07 2s infinite;
+                        opacity: 0;
+                        box-sizing: border-box;
+                        margin-top: 180px;
+
+                    }
+
+                    #section07 a span:nth-of-type(1) {
+                        -webkit-animation-delay: 0s;
+                        animation-delay: 0s;
+                    }
+
+                    #section07 a span:nth-of-type(2) {
+                        top: 16px;
+                        -webkit-animation-delay: .15s;
+                        animation-delay: .15s;
+                    }
+
+                    #section07 a span:nth-of-type(3) {
+                        top: 52px;
+                        -webkit-animation-delay: .3s;
+                        animation-delay: .3s;
+                    }
+
+                    @-webkit-keyframes sdb07 {
+                        0% {
+                            opacity: 0;
+                        }
+
+                        50% {
+                            opacity: 1;
+                        }
+
+                        100% {
+                            opacity: 0;
+                        }
+                    }
+
+                    @keyframes sdb07 {
+                        0% {
+                            opacity: 0;
+                        }
+
+                        50% {
+                            opacity: 1;
+                        }
+
+                        100% {
+                            opacity: 0;
+                        }
+                    }
+
+
+
+                    #section08 a {
+                        padding-top: 60px;
+                    }
+
+                    #section08 a span {
+                        position: absolute;
+                        top: 0;
+                        left: 50%;
+                        width: 30px;
+                        height: 50px;
+                        margin-left: -15px;
+                        border: 2px solid #fff;
+                        border-radius: 50px;
+                        box-sizing: border-box;
+                    }
+
+                    #section08 a span::before {
+                        position: absolute;
+                        top: 10px;
+                        left: 50%;
+                        content: '';
+                        width: 6px;
+                        height: 6px;
+                        margin-left: -3px;
+                        background-color: #fff;
+                        border-radius: 100%;
+                        box-sizing: border-box;
+                    }
+
+
+
+                    #section09 a {
+                        padding-top: 80px;
+                    }
+
+                    #section09 a span {
+                        position: absolute;
+                        top: 0;
+                        left: 50%;
+                        width: 30px;
+                        height: 50px;
+                        margin-left: -15px;
+                        border: 2px solid #fff;
+                        border-radius: 50px;
+                        box-sizing: border-box;
+                    }
+
+                    #section09 a span::before {
+                        position: absolute;
+                        top: 10px;
+                        left: 50%;
+                        content: '';
+                        width: 6px;
+                        height: 6px;
+                        margin-left: -3px;
+                        background-color: #fff;
+                        border-radius: 100%;
+                        box-sizing: border-box;
+                    }
+
+                    #section09 a span::after {
+                        position: absolute;
+                        bottom: -18px;
+                        left: 50%;
+                        width: 18px;
+                        height: 18px;
+                        content: '';
+                        margin-left: -9px;
+                        border-left: 1px solid #fff;
+                        border-bottom: 1px solid #fff;
+                        -webkit-transform: rotate(-45deg);
+                        transform: rotate(-45deg);
+                        box-sizing: border-box;
+                    }
+
+
+
+                    #section10 a {
+                        padding-top: 60px;
+                    }
+
+                    #section10 a span {
+                        position: absolute;
+                        top: 0;
+                        left: 50%;
+                        width: 30px;
+                        height: 50px;
+                        margin-left: -15px;
+                        border: 2px solid #fff;
+                        border-radius: 50px;
+                        box-sizing: border-box;
+                    }
+
+                    #section10 a span::before {
+                        position: absolute;
+                        top: 10px;
+                        left: 50%;
+                        content: '';
+                        width: 6px;
+                        height: 6px;
+                        margin-left: -3px;
+                        background-color: #fff;
+                        border-radius: 100%;
+                        -webkit-animation: sdb10 2s infinite;
+                        animation: sdb10 2s infinite;
+                        box-sizing: border-box;
+                    }
+
+                    @-webkit-keyframes sdb10 {
+                        0% {
+                            -webkit-transform: translate(0, 0);
+                            opacity: 0;
+                        }
+
+                        40% {
+                            opacity: 1;
+                        }
+
+                        80% {
+                            -webkit-transform: translate(0, 20px);
+                            opacity: 0;
+                        }
+
+                        100% {
+                            opacity: 0;
+                        }
+                    }
+
+                    @keyframes sdb10 {
+                        0% {
+                            transform: translate(0, 0);
+                            opacity: 0;
+                        }
+
+                        40% {
+                            opacity: 1;
+                        }
+
+                        80% {
+                            transform: translate(0, 20px);
+                            opacity: 0;
+                        }
+
+                        100% {
+                            opacity: 0;
+                        }
+                    }
+                </style>
+                <script>
+                    $(function () {
+                        $('a[href*=#]').on('click', function (e) {
+                            e.preventDefault();
+                            $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top }, 500, 'linear');
+                        });
+                    });
+                </script>
             </div>
 
         </div>
@@ -695,88 +1409,118 @@
 
 
 
-
-
-
     <!-- Service -->
-    <section class="service-area pb-70">
-        <div class="service-shape">
-            <img src="assets/img/sass/service-shape2.png" alt="Shape">
-        </div>
+    <section class="feature-area pt-100 pb-70">
+
         <div class="container">
+
             <div class="section-title">
-                <span class="sub-title">Offering Services</span>
-                <h2>Our Amazing Features</h2>
+                <span class="sub-title">Features</span>
+                <h2>We Provide Maximum</h2>
+                <p>
+                    IEEE: Connect, Learn, and Grow with a Global Community of Technology Professionals and Enthusiasts.
+                </p>
             </div>
             <div class="row">
                 <div class="col-sm-6 col-lg-4">
                     <div class="service-item">
-                        <i class="flaticon-cloud-storage"></i>
+                        <!-- <i class="flaticon-cloud-storage"></i> -->
+                        <!-- <i class="material-symbols-outlined">                            local_library</i> -->
+                        <i class="material-symbols-outlined">
+                            calendar_month
+                        </i>
                         <h3>
-                            <a href="service-details.html">Full Security</a>
+                            <a href="service-details.html">Events & Activities</a>
                         </h3>
-                        <p>Lorem ipsum dolor sit ametaut odiut perspiciatis unde omnis iste quuntur alquam quaerat rsit
-                            amet</p>
+                        <p>
+                            Explore IEEE events and activities worldwide with ease and discover new opportunities for
+                            learning, networking, and professional growth.
+                        </p>
                         <img class="img-one" src="assets/img/sass/service-shape.png" alt="Shape">
                         <img class="img-two" src="assets/img/sass/service-shape1.png" alt="Shape">
                     </div>
                 </div>
                 <div class="col-sm-6 col-lg-4">
                     <div class="service-item">
-                        <i class="flaticon-clock"></i>
+                        <!-- <i class="flaticon-clock"></i> -->
+                        <i class="material-symbols-outlined">
+                            diversity_2
+                        </i>
                         <h3>
-                            <a href="service-details.html">Fast And Optimized</a>
+                            <a href="service-details.html">Discussions</a>
                         </h3>
-                        <p>Lorem ipsum dolor sit ametaut odiut perspiciatis unde omnis iste quuntur alquam quaerat rsit
-                            amet</p>
+                        <p>
+
+                            Engage in technical discussions and connect with like-minded individuals by joining IEEE's
+                            community.
+                        </p>
                         <img class="img-one" src="assets/img/sass/service-shape.png" alt="Shape">
                         <img class="img-two" src="assets/img/sass/service-shape1.png" alt="Shape">
                     </div>
                 </div>
                 <div class="col-sm-6 col-lg-4">
                     <div class="service-item">
-                        <i class="flaticon-save-time"></i>
+                        <!-- <i class="flaticon-save-time"></i> -->
+                        <!-- <i class="fa-solid fa-diagram-project"></i> -->
+                        <i class="material-symbols-outlined">
+                            hub
+                        </i>
                         <h3>
-                            <a href="service-details.html">Time Saving</a>
+                            <a href="service-details.html">Establish Connections</a>
                         </h3>
-                        <p>Lorem ipsum dolor sit ametaut odiut perspiciatis unde omnis iste quuntur alquam quaerat rsit
-                            amet</p>
+                        <p>Expand your professional network and connect with other technology experts and enthusiasts
+                            through IEEE's global community.</p>
                         <img class="img-one" src="assets/img/sass/service-shape.png" alt="Shape">
                         <img class="img-two" src="assets/img/sass/service-shape1.png" alt="Shape">
                     </div>
                 </div>
                 <div class="col-sm-6 col-lg-4">
                     <div class="service-item">
-                        <i class="flaticon-administration"></i>
+                        <!-- <i class="flaticon-administration"></i> -->
+                        <i class="material-symbols-outlined">
+                            newspaper
+                        </i>
                         <h3>
-                            <a href="service-details.html">Easily Manage</a>
+                            <a href="service-details.html">Weekly Newsletter</a>
                         </h3>
-                        <p>Lorem ipsum dolor sit ametaut odiut perspiciatis unde omnis iste quuntur alquam quaerat rsit
-                            amet</p>
+                        <p>
+                            Stay up-to-date on the latest in technology news and trends with IEEE delivering curated
+                            content straight to you.
+                        </p>
                         <img class="img-one" src="assets/img/sass/service-shape.png" alt="Shape">
                         <img class="img-two" src="assets/img/sass/service-shape1.png" alt="Shape">
                     </div>
                 </div>
                 <div class="col-sm-6 col-lg-4">
                     <div class="service-item">
-                        <i class="flaticon-unlocked"></i>
+                        <!-- <i class="flaticon-unlocked"></i> -->
+                        <i class="material-symbols-outlined">
+                            stream
+                        </i>
                         <h3>
-                            <a href="service-details.html">Quick Access</a>
+                            <a href="service-details.html">Collavrations</a>
                         </h3>
-                        <p>Lorem ipsum dolor sit ametaut odiut perspiciatis unde omnis iste quuntur alquam quaerat rsit
-                            amet</p>
+                        <p>
+                            Collaborate and share projects with others by creating a group
+                            to connect technology professionals and enthusiasts.
+                        </p>
                         <img class="img-one" src="assets/img/sass/service-shape.png" alt="Shape">
                         <img class="img-two" src="assets/img/sass/service-shape1.png" alt="Shape">
                     </div>
                 </div>
                 <div class="col-sm-6 col-lg-4">
                     <div class="service-item">
-                        <i class="flaticon-scroll"></i>
+                        <!-- <i class="flaticon-scroll"></i> -->
+                        <i class="material-symbols-outlined">
+                            cast_for_education
+                        </i>
                         <h3>
-                            <a href="service-details.html">Drag And Drop</a>
+                            <a href="service-details.html">Gain knowledge</a>
                         </h3>
-                        <p>Lorem ipsum dolor sit ametaut odiut perspiciatis unde omnis iste quuntur alquam quaerat rsit
-                            amet</p>
+                        <p>
+                            Gain valuable insights and knowledge on the latest trends in technology by attending IEEE's
+                            webinars by industry innovators.
+                        </p>
                         <img class="img-one" src="assets/img/sass/service-shape.png" alt="Shape">
                         <img class="img-two" src="assets/img/sass/service-shape1.png" alt="Shape">
                     </div>
@@ -793,27 +1537,37 @@
                 <div class="col-lg-6">
                     <div class="about-content">
                         <div class="section-title">
+
                             <span class="sub-title">About Us</span>
-                            <h2>Our Company Is The Best To Serve</h2>
+
+                            <h3>The department's IEEE Club is a student branch of the Institute of Electrical and
+                                Electronics Engineers, the world's largest technical professional organization. </h3>
                         </div>
                         <ul>
                             <li>
                                 <i class="flaticon-checkmark"></i>
-                                <h4>QR Code Scanner</h4>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiumod tempor
-                                    incididunt ut labore</p>
+                                <h4>Biggest Community</h4>
+                                <p>Over 400,000 members in more than 160 countries, more than 60 percent of whom are
+                                    from outside the United States.
+                                </p>
                             </li>
                             <li>
                                 <i class="flaticon-checkmark"></i>
-                                <h4>CRM Software Management</h4>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiumod tempor
-                                    incididunt ut labore</p>
+                                <h4>Students & Sections</h4>
+                                <p>
+                                    More than 107,000 Student members & 342 Sections in ten geographic Regions
+                                    worldwide.
+
+
+                                </p>
                             </li>
                             <li>
                                 <i class="flaticon-checkmark"></i>
-                                <h4>Organization Skills & Management</h4>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiumod tempor
-                                    incididunt ut labore</p>
+                                <h4>Student Branch</h4>
+                                <p>
+                                    3,485 Student Branches at colleges and universities in over 100 countries.
+
+                                </p>
                             </li>
                         </ul>
                     </div>
@@ -849,14 +1603,59 @@
             <div class="row align-items-center">
                 <div class="col-lg-5">
                     <div class="inquiry-img">
-                        <img src="assets/img/sass/inquiry-main.png" alt="Inquiry">
+                        <img src="assets/img/sass/inquiry-main.png" id="rd_text1" alt="Inquiry">
                     </div>
                 </div>
                 <div class="col-lg-7">
                     <div class="inquiry-content">
                         <div class="section-title">
-                            <span class="sub-title">Project Inquiry</span>
-                            <h2>Have Any Questions Regarding The Project About?</h2>
+
+                            <span class="sub-title" id="rd_text2">Project Inquiry</span>
+                            <h2 id="rd_text3">Have Any Questions Regarding The Project About?</h2>
+
+
+
+
+                            <script>
+                                var textSets = [
+                                    [
+                                        "assets/img/sass/inquiry-main.png",
+                                        "Projects",
+                                        "Have A Project In Mind? Let's Work Together"
+
+                                    ],
+                                    [
+                                        "assets/img/it-startup/service3.png",
+                                        "Speaker",
+                                        "Have a Speaker for Event and want to organize feel free to Contact"
+
+                                    ],
+                                    [
+                                        "assets/img/it-startup/service2.png",
+                                        "Suggestion",
+                                        "Having Any Suggestions Regarding Events"
+
+                                    ]
+                                ];
+
+                                // Get references to the paragraph tags
+                                var image_src = document.getElementById("rd_text1");
+                                var title_h1 = document.getElementById("rd_text2");
+                                var main_text = document.getElementById("rd_text3");
+
+                                // Generate a random number between 0 and the length of the textSets array
+                                var randomNumber = Math.floor(Math.random() * textSets.length);
+
+                                // Select the set of text with the randomly generated index
+                                var randomTextSet = textSets[randomNumber];
+
+                                // Set the text of the paragraph tags to the corresponding strings in the selected set
+                                image_src.src = randomTextSet[0];
+                                title_h1.textContent = randomTextSet[1];
+                                main_text.textContent = randomTextSet[2];
+
+
+                            </script>
                         </div>
                         <a href="#" class="cmn-btn">
                             Start Project
@@ -867,6 +1666,8 @@
             </div>
         </div>
     </section>
+
+
     <!-- End Inquiry -->
 
     <!-- Feature -->
@@ -874,7 +1675,9 @@
         <div class="container">
             <div class="section-title">
                 <span class="sub-title">Features</span>
-                <h2>We Provide Maximum</h2>
+                <h2>
+                    IEEE VISION & MISSION
+                </h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor indunt ut labore et
                     dolore magna aliqua. Ut enim ad minim veniam</p>
             </div>
@@ -888,16 +1691,23 @@
                     <div class="feature-content">
                         <div class="feature-top">
                             <span>01</span>
-                            <h2>Getting Started Page</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                                incididunt ut labore et</p>
+                            <h2>Vision</h2>
+                            <p>
+                                IEEE will be essential to the global technical community and to technical professionals
+                                everywhere and be universally recognized for the contributions of technology and of
+                                technical professionals in improving global conditions.
+
+                            </p>
                         </div>
                         <div class="row">
                             <div class="col-sm-6 col-lg-6">
                                 <div class="feature-inner">
                                     <i class="flaticon-graphic-design"></i>
-                                    <h3>Unique Design</h3>
-                                    <p>Lorem ipsum dolor sit ame consetur adipisicing em ipsum</p>
+                                    <h3>Mision</h3>
+                                    <p>IEEE will be essential to the global technical community and to technical
+                                        professionals everywhere and be universally recognized for the contributions of
+                                        technology and of technical professionals in improving global conditions.
+                                    </p>
                                 </div>
                             </div>
                             <div class="col-sm-6 col-lg-6">
@@ -918,9 +1728,12 @@
                     <div class="feature-content">
                         <div class="feature-top">
                             <span>02</span>
-                            <h2>Review Code & Illustration</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                                incididunt ut labore et</p>
+                            <h2>Mision</h2>
+                            <p>
+                                IEEE’s core purpose is to foster technological innovation and excellence for the benefit
+                                of humanity.
+
+                            </p>
                         </div>
                         <div class="row">
                             <div class="col-sm-6 col-lg-6">
@@ -944,11 +1757,14 @@
                         </a>
                     </div>
                 </div>
+
+
                 <div class="col-lg-6">
                     <div class="feature-img">
                         <img src="assets/img/sass/feature2.png" alt="Feature">
                     </div>
                 </div>
+                <!--  
                 <div class="col-lg-6">
                     <div class="feature-img">
                         <img src="assets/img/sass/feature3.png" alt="Feature">
@@ -983,7 +1799,10 @@
                             <i class='bx bx-plus'></i>
                         </a>
                     </div>
-                </div>
+                </div> -->
+
+
+
             </div>
         </div>
     </section>
@@ -995,45 +1814,45 @@
             <img src="assets/img/sass/counter-bg.png" alt="Shape">
         </div>
         <div class="container">
-            <h2>The Secrets to Life Success People <span>Have Got</span></h2>
+            <h2>Our Success Numbers<span></span></h2>
             <div class="row">
                 <div class="col-6 col-sm-3 col-lg-3">
                     <div class="counter-item">
                         <h3>
-                            <span class="odometer" data-count="100">00</span>
-                            <span class="target">M</span>
+                            <span class="odometer" data-count="1000">00</span>
+                            <span class="target">k+</span>
                         </h3>
-                        <p>Data Entry</p>
+                        <p>Happy Members</p>
                         <img src="assets/img/sass/counter1.png" alt="Shape">
                     </div>
                 </div>
                 <div class="col-6 col-sm-3 col-lg-3">
                     <div class="counter-item">
                         <h3>
-                            <span class="odometer" data-count="850">00</span>
+                            <span class="odometer" data-count="50">00</span>
                             <span class="target">+</span>
                         </h3>
-                        <p>Appreciation</p>
+                        <p>Successful Events</p>
                         <img src="assets/img/sass/counter1.png" alt="Shape">
                     </div>
                 </div>
                 <div class="col-6 col-sm-3 col-lg-3">
                     <div class="counter-item">
                         <h3>
-                            <span class="odometer" data-count="1000K">00</span>
-                            <span class="target">K</span>
+                            <span class="odometer" data-count="50">00</span>
+                            <span class="target">+</span>
                         </h3>
-                        <p>Satisfied Client</p>
+                        <p>Speakers</p>
                         <img src="assets/img/sass/counter1.png" alt="Shape">
                     </div>
                 </div>
                 <div class="col-6 col-sm-3 col-lg-3">
                     <div class="counter-item">
                         <h3>
-                            <span class="odometer" data-count="140">00</span>
-                            <span class="target">K</span>
+                            <span class="odometer" data-count="100">00</span>
+                            <span class="target">+</span>
                         </h3>
-                        <p>Response Time</p>
+                        <p>Learning Programs</p>
                     </div>
                 </div>
             </div>
@@ -1547,83 +2366,54 @@
     </section>
     <!-- End Pricing -->
 
-    <!-- Feedback -->
-    <section class="feedback-area ptb-100">
+
+
+    <!-- Testimonials -->
+    <section class="testimonials-area ptb-100">
+        <div class="testimonials-img">
+            <img src="assets/img/sass/testimonial1.jpg" alt="Client">
+            <img src="assets/img/sass/testimonial2.jpg" alt="Client">
+            <img src="assets/img/sass/testimonial3.jpg" alt="Client">
+            <img src="assets/img/sass/test4441.jpeg" alt="Client"
+                style="max-width: 35%;max-height: 30%;object-fit: cover;">
+            <img src="assets/img/sass/testimonial5.jpg" alt="Client">
+            <img src="assets/img/sass/testimonial6.jpg" alt="Client">
+        </div>
         <div class="container">
-            <div class="section-title">
-                <h2>Client Feedbacks</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore</p>
+            <div class="section-title three">
+                <span class="sub-title">Testimonials</span>
+                <h2>Members Feedbacks</h2>
             </div>
-            <div class="outer">
-                <div class="shape">
-                    <img src="assets/img/sass/feedback-main.png" alt="Main">
+            <div class="testimonials-slider owl-theme owl-carousel">
+                <div class="testimonials-item">
+                    <p>Awesome dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                        et dolore magna aliquaenimminim veniam quis nostrud dolore magn dolore magna aliquaenim</p>
+                    <h3>Devit M. kolin</h3>
+                    <span>CEO & Founder</span>
                 </div>
-                <div class="row">
-                    <div class="col-lg-5">
-                        <div id="thumbs" class="owl-carousel owl-theme">
-                            <div class="item">
-                                <img src="assets/img/sass/feedback1.jpg" alt="Thumb">
-                            </div>
-                            <div class="item">
-                                <img src="assets/img/sass/feedback2.jpg" alt="Thumb">
-                            </div>
-                            <div class="item">
-                                <img src="assets/img/sass/feedback3.jpg" alt="Thumb">
-                            </div>
-                            <div class="item">
-                                <img src="assets/img/sass/feedback1.jpg" alt="Thumb">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-7">
-                        <div id="big" class="owl-carousel owl-theme">
-                            <div class="item">
-                                <div class="feedback-content">
-                                    <i class="flaticon-left-quote"></i>
-                                    <p>Awesome dolor sit amet, consectetur adipisicing elit, sed do eusmod tempor
-                                        incididunt ut labore et dolore magna aliquaenminim veniam quis nostrud dolore
-                                        magn dolore</p>
-                                    <h3>Devit M. Kolin</h3>
-                                    <span>CEO & Founder</span>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="feedback-content">
-                                    <i class="flaticon-left-quote"></i>
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                                        Ipsum has been the industry's standard dummy text ever since the 1500s, when an.
-                                    </p>
-                                    <h3>Tom Henry</h3>
-                                    <span>Manager</span>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="feedback-content">
-                                    <i class="flaticon-left-quote"></i>
-                                    <p>It is a long established fact that a reader will be distracted by the readable
-                                        content of a page when looking at its layout. The point of using Lorem Ipsum is
-                                        that it has a more-or-les.</p>
-                                    <h3>Jac Jacson</h3>
-                                    <span>Director</span>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="feedback-content">
-                                    <i class="flaticon-left-quote"></i>
-                                    <p>Awesome dolor sit amet, consectetur adipisicing elit, sed do eusmod tempor
-                                        incididunt ut labore et dolore magna aliquaenminim veniam quis nostrud dolore
-                                        magn dolore</p>
-                                    <h3>Devit M. Kolin</h3>
-                                    <span>CEO & Founder</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+
+                <div class="testimonials-item">
+                    <p>It is a long established fact that a reader will be distracted by the readable content of a page
+                        when looking at its layout. The point of using Lorem Ipsum is that it has a more-or.</p>
+                    <h3>Tom Henry</h3>
+                    <span>Director</span>
+                </div>
+
+                <div class="testimonials-item">
+                    <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
+                        classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock
+                        more-or.</p>
+                    <h3>Jac Jacson</h3>
+                    <span>Manager</span>
                 </div>
             </div>
         </div>
     </section>
+    <!-- End Testimonials -->
+
+
+    <!-- Feedback -->
+
     <!-- End Feedback -->
 
     <!-- Partner -->
@@ -1718,7 +2508,8 @@
                 </div>
                 <div class="col-lg-6">
                     <div class="faq-img">
-                        <img src="assets/img/sass/faq-main.png" alt="FAQ">
+                        <img src="https://templates.hibootstrap.com/dilx/default/assets/img/sass/faq-main.png"
+                            alt="FAQ">
                     </div>
                 </div>
             </div>
@@ -1727,7 +2518,7 @@
     <!-- End FAQ -->
 
     <!-- Mind -->
-    <div class="mind-area">
+    <!-- <div class="mind-area">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-5">
@@ -1745,8 +2536,32 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- End Mind -->
+
+    <!-- Subscribe -->
+    <div class="subscribe-area ptb-100">
+        <div class="container">
+            <div class="subscribe-item">
+                <div class="section-title two">
+                    <h2>Subscribe Newsletters</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor indunt ut labore
+                        et dolore magna aliqua</p>
+                </div>
+                <form class="newsletter-form" data-toggle="validator">
+                    <input type="email" class="form-control" placeholder="Enter email address" name="EMAIL" required
+                        autocomplete="off">
+
+                    <button class="btn cmn-btn" type="submit">
+                        Subscribe Now
+                        <i class='bx bx-plus'></i>
+                    </button>
+                    <div id="validator-newsletter" class="form-result"></div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- End Subscribe -->
 
     <!-- Footer -->
     <footer class="pt-100 pb-70">
@@ -1756,7 +2571,8 @@
                     <div class="footer-item">
                         <div class="footer-logo">
                             <a href="sass.html">
-                                <img src="assets/img/logo-two.png" alt="Logo">
+                                <img src="https://esciioit.org/wp-content/uploads/2021/09/IEEE-Student-logo-final-png-1.png"
+                                    alt="Logo">
                             </a>
                             <p>Lorem ipsum dolor sit amet, consectetur adiisicing elit, sed do eiusmod tempor inc Neque
                                 porro quisquam est, qui dolorem magnam aliquam quaerat luptatem.</p>

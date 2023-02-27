@@ -230,7 +230,6 @@ jQuery(function ($) {
 	$('body').append("<div class='switch-box'><label id='switch' class='switch'><input type='checkbox' onchange='toggleTheme()' id='slider' checked><span class='slider round'></span></label></div>");
 }(jQuery));
 
-$('body').append("<section id='section07' class='switch-box'><a href='#section08'><span></span><span></span><span></span>Scroll</a></section>");
 
 
 
