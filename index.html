@@ -99,7 +99,7 @@
     <!-- End Preloader -->
 
     <!-- Start Navbar Area -->
-    <div class="navbar-area fixed-top">
+    <div class="navbar-area fixed-top" style="user-select:none;">
         <!-- Menu For Mobile Device -->
         <div class="mobile-nav">
             <a href="sass.html" class="logo">
@@ -299,7 +299,7 @@
         particlesJS("particles-js", {
             "particles": {
                 "number": {
-                    "value": 180,
+                    "value": 200,
                     "density": {
                         "enable": true,
                         "value_area": 700
@@ -405,7 +405,7 @@
     </script>
     <!-- Banner -->
     <div class="banner-area">
-        <div class="banner-shape">
+        <div class="banner-shape" style="user-select:none;">
             <!-- <img class="animate__animated animate__fadeInUp"
                 src="https://templates.hibootstrap.com/dilx/default/assets/img/sass/banner-main.png" alt="Banner"> -->
             <img src="assets/img/sass/banner-shape1.png" alt="Banner">
@@ -413,7 +413,7 @@
             <!-- <img src="assets/img/sass/banner-shape3.png" alt="Banner"> -->
             <!-- <img src="assets/img/sass/Untitled1.png" alt="Banner"> -->
         </div>
-        <div class="d-table">
+        <div class="d-table" style="user-select:none;">
             <div class="d-table-cell">
                 <div class="container-fluid">
                     <div class="banner-content" style="margin-top: 12%;">
@@ -428,9 +428,12 @@
                             computing community and society through events, projects, and collaboration.
                         </p>
                         <div class="banner-btn">
-                            <a href="#" class="cmn-btn">
-                                Start Project
-                                <i class='bx bx-plus'></i>
+                            <a href="#" class="cmn-btn" style='font-size: 25px;'>
+                                New Eevents
+                                <!-- <i class='bx bx-plus'></i> -->
+                                <i class="material-symbols-outlined" style="font-size: 25px;">
+                                    event_note
+                                </i>
                             </a>
                             <a class="popup-youtube banner-btn-right" style='font-size: 25px;'
                                 href="http://www.youtube.com/watch?v=0O2aH4XLbto">
@@ -1866,54 +1869,192 @@
             <img src="assets/img/sass/application1.png" alt="Shape">
             <img src="assets/img/sass/application2.png" alt="Shape">
         </div>
-        <div class="container-fluid p-0">
-            <div class="row m-0 align-items-center">
-                <div class="col-sm-6 col-lg-7">
-                    <div class="application-content">
-                        <div class="section-title">
-                            <span class="sub-title">Application Building</span>
-                            <h2>Way To Build Beautiful Interface's Your Application</h2>
+
+
+        <div class="blog-details-area ptb-10" id="wrapper1">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div class="details-item">
+
+                            <div class="section-title">
+                                <span class="sub-title">Features</span>
+                                <h2>Message By Factly of AISSMS IOIT</h2>
+                                <p>
+                                    IEEE: Connect, Learn, and Grow with a Global Community of Technology Professionals
+                                    and Enthusiasts.
+                                </p>
+                            </div>
+
+
+                            <style>
+                                #wrapper1 {
+                                    overflow: hidden;
+                                    display: flex;
+                                    /* clears any floated element inside the wrapper */
+                                }
+
+                                #left-d-user {
+                                    float: left;
+                                    /* floats the left div to the left */
+
+                                    /* sets the width to 50% of the wrapper */
+                                    box-sizing: border-box;
+
+                                    width: 100%;
+                                    /* includes padding and border in the width */
+
+                                    flex: 1;
+
+                                }
+
+
+                                @media only screen and (min-width: 768px) {
+
+                                    /* styles for desktop devices with a screen width of 768px or more */
+                                    #left-d-user {
+                                        margin-left: 50%;
+                                    }
+                                }
+
+
+                                #right-d-user {
+                                    display: inline-block;
+                                    /* makes the right div display as inline-block */
+
+                                    /* sets the width to 50% of the wrapper */
+                                    box-sizing: border-box;
+                                    /* includes padding and border in the width */
+                                    clear: both;
+                                    /* clears the float on the left, forcing the right div to a new line */
+                                    flex: 1;
+                                }
+                            </style>
+
+                            <div class="details-user" id="left-d-user">
+                                <img src="assets/img/blog-details4.jpg" alt="Details">
+                                <img src="assets/img/blog-details5.jpg" alt="Details">
+                                <img src="assets/img/blog-details6.jpg" alt="Details">
+                                <div class="top">
+                                    <div class="row align-items-end">
+                                        <div class="col-lg-6">
+                                            <div class="top-left">
+                                                <h3>Mrs. P.B MANE</h3>
+                                                <span>Principal, AISSMS IOIT</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="top-right">
+                                                <ul>
+                                                    <li>
+                                                        <a href="#" target="_blank">
+                                                            <i class='bx bxl-facebook'></i>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" target="_blank">
+                                                            <i class='bx bxl-twitter'></i>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" target="_blank">
+                                                            <i class='bx bxl-instagram'></i>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" target="_blank">
+                                                            <i class='bx bxl-pinterest-alt'></i>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" target="_blank">
+                                                            <i class='bx bxl-youtube'></i>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bottom">
+                                    <p>I’m devit hack from an initial feasibility study, continuing through sucessl
+                                        implna
+                                        business you have to be But we know there</p>
+                                </div>
+                            </div>
+
+                            <br />
+
+                            <div class="details-user" id="right-d-user">
+                                <img src="assets/img/blog-details4.jpg" alt="Details">
+                                <img src="assets/img/blog-details5.jpg" alt="Details">
+                                <img src="assets/img/blog-details6.jpg" alt="Details">
+                                <div class="top">
+                                    <div class="row align-items-end">
+                                        <div class="col-lg-6">
+                                            <div class="top-left">
+                                                <h3>Mrs. P.B MANE</h3>
+                                                <span>Principal, AISSMS IOIT</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="top-right">
+                                                <ul>
+                                                    <li>
+                                                        <a href="#" target="_blank">
+                                                            <i class='bx bxl-facebook'></i>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" target="_blank">
+                                                            <i class='bx bxl-twitter'></i>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" target="_blank">
+                                                            <i class='bx bxl-instagram'></i>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" target="_blank">
+                                                            <i class='bx bxl-pinterest-alt'></i>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" target="_blank">
+                                                            <i class='bx bxl-youtube'></i>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bottom">
+                                    <p>I’m devit hack from an initial feasibility study, continuing through sucessl
+                                        implna
+                                        business you have to be But we know there</p>
+                                </div>
+                            </div>
+
+
+
+
                         </div>
-                        <ul>
-                            <li>
-                                <i class="flaticon-checkmark"></i>
-                                QR Code Scanner
-                            </li>
-                            <li>
-                                <i class="flaticon-checkmark"></i>
-                                Start Coding Format
-                            </li>
-                            <li>
-                                <i class="flaticon-checkmark"></i>
-                                Organizations Skills & Management
-                            </li>
-                            <li>
-                                <i class="flaticon-checkmark"></i>
-                                Add Favourite Contact
-                            </li>
-                            <li>
-                                <i class="flaticon-checkmark"></i>
-                                Unlimited Video Call
-                            </li>
-                        </ul>
-                        <a href="#" class="cmn-btn">
-                            Read More
-                            <i class='bx bx-plus'></i>
-                        </a>
                     </div>
-                </div>
-                <div class="col-sm-6 col-lg-5 pr-0">
-                    <div class="application-img">
-                        <img src="assets/img/sass/application-main.png" alt="Application">
-                    </div>
+
                 </div>
             </div>
+
         </div>
+
+
     </section>
     <!-- End Application -->
 
     <!-- Pricing -->
-    <section class="pricing-area pb-70">
+    <!-- <section class="pricing-area pb-70">
         <div class="pricing-shape">
             <img src="assets/img/sass/pricing-shape.png" alt="Shape">
         </div>
@@ -2363,7 +2504,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
     <!-- End Pricing -->
 
 
