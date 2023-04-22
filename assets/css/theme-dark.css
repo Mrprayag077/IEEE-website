@@ -5,6 +5,35 @@
   z-index: 9999;
 }
 
+
+
+@media (width: 375px) and (height: 667px),
+(width: 390px) and (height: 844px),
+(width: 360px) and (height: 740px),
+(width: 1280px) and (height: 800px) {
+#pp1 {
+display: block;
+}
+}
+
+@media (width: 414px) and (height: 896px),
+(width: 412px) and (height: 915px),
+(width: 820px) and (height: 1180px),
+(width: 768px) and (height: 1024px),
+(width: 921px) and (height: 1368px),
+(width: 540px) and (height: 720px),
+(width: 280px) and (height: 653px),
+(width: 412px) and (height: 914px),
+(width: 1024px) and (height: 600px){
+#pp1 {
+display: none;
+}
+}
+
+
+
+
+
 .switch-box .slider {
   position: absolute;
   cursor: pointer;
@@ -304,9 +333,9 @@
   color: #0e0e0e;
 }
 
-.theme-dark .team-area-two .team-item .bottom {
+/* .theme-dark .team-area-two .team-item .bottom {
   background-color: #0e0e0e;
-}
+} */
 
 .theme-dark .testimonials-area {
   background-color: #252525;

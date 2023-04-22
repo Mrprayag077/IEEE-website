@@ -1,0 +1,1072 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- Meanmenu CSS -->
+    <link rel="stylesheet" href="assets/css/meanmenu.css">
+    <!-- Boxicons CSS -->
+    <link rel="stylesheet" href="assets/css/boxicons.min.css">
+    <!-- Flaticons CSC -->
+    <link rel="stylesheet" href="assets/fonts/flaticon.css">
+    <!-- Popup CSS -->
+    <link rel="stylesheet" href="assets/css/magnific-popup.min.css">
+    <!-- Odometer CSS -->
+    <link rel="stylesheet" href="assets/css/odometer.min.css">
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <!-- Theme Dark CSS -->
+    <link rel="stylesheet" href="assets/css/theme-dark.css">
+    <link rel="stylesheet" href="assets/css/button.css">
+
+    <title>Dilx - IT & Marketing Startup Bootstrap 5 Template</title>
+
+    <link rel="icon" type="image/png" href="assets/img/favicon.png">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+        integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <style>
+        .box {
+
+            transform: translate(-50%, -50%);
+            position: absolute;
+            margin-top: 20px;
+            padding: 15px 50px;
+            display: inline-block;
+            text-decoration: none;
+            text-transform: uppercase;
+            overflow: hidden;
+            cursor: pointer;
+            font: 16px/24px Arial, sans-serif;
+            background-color: #0c0c0c;
+            border-radius: 8%;
+            transition:
+                box-shadow 0.4s ease,
+                background-color 0.4s ease,
+                color 0.4s ease;
+            box-shadow:
+                0 0 2px 0 rgba(73, 115, 255, .1),
+                0 0 4px 0 rgba(73, 115, 255, .2),
+                0 0 6px 0 rgba(73, 115, 255, .3),
+                0 0 8px 0 rgba(73, 115, 255, .4),
+                0 0 12px 0 rgba(73, 115, 255, .5),
+                0 0 18px 0 rgba(73, 115, 255, .6);
+        }
+
+        .box:hover {
+            background-color: rgba(72, 115, 235, 0.8);
+            box-shadow:
+                0 0 2px 0 rgba(73, 115, 225, 0.1),
+                0 0 4px 0 rgba(73, 115, 225, 0.2),
+                0 0 6px 0 rgba(73, 115, 225, 0.3),
+                0 0 8px 0 rgba(73, 115, 225, 0.4),
+                0 0 12px 0 rgba(73, 115, 225, 0.5),
+                0 0 18px 0 rgba(73, 115, 225, 0.6),
+                0 0 4px 0 rgba(73, 115, 225, 0.7);
+        }
+
+        .box span {
+            color: #fff;
+            letter-spacing: 8px;
+        }
+
+        .box i {
+            position: absolute;
+            z-index: -1;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 100%;
+            height: 200px;
+            background-color: inherit;
+            box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.5);
+            transition:
+                transform 0.4s linear,
+                top 1s linear;
+            overflow: hidden;
+        }
+
+        .box i:before,
+        .box i:after {
+            content: "";
+            position: absolute;
+            width: 200%;
+            height: 200%;
+            top: 0;
+            left: 50%;
+            transform: translate(-50%, -75%);
+        }
+
+        .box i:before {
+            border-radius: 46%;
+            background-color: rgba(20, 20, 20, 0.2);
+            animation: animate 5s linear infinite;
+        }
+
+        .box i:after {
+            border-radius: 40%;
+            background-color: rgba(20, 20, 20, 0.5);
+            animation: animate 10s linear infinite;
+        }
+
+        @keyframes animate {
+            0% {
+                transform:
+                    translate(-50%, -75%) rotate(0deg);
+            }
+
+            100% {
+                transform:
+                    translate(-50%, -75%) rotate(360deg);
+            }
+        }
+
+
+        /* ---- reset ---- */
+
+        body {
+            margin: 0;
+            background-color: #060606;
+        }
+
+        canvas {
+            display: block;
+            vertical-align: bottom;
+        }
+
+
+        /* ---- particles.js container ---- */
+
+        #particles-js {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+
+        .hello {
+            padding-top: 40px;
+        }
+
+
+        /* .card {
+            width: 100%;
+            height: 254px;
+            border-radius: 30px;
+            background: #212121;
+            box-shadow: 15px 15px 30px rgb(25, 25, 25),
+                        -15px -15px 30px rgb(60, 60, 60);
+           }
+           
+           .card h2{
+            text-align: center;
+           } */
+
+        @media screen and (max-width: 800px) {
+
+            .col-8,
+            .col-4 {
+                width: 100%;
+            }
+        }
+
+        .space {
+            padding-top: 60px;
+        }
+
+
+        /*General CSS*/
+        :root {
+            --blue: #007bff;
+            --indigo: #6610f2;
+            --purple: #6f42c1;
+            --pink: #e83e8c;
+            --red: #dc3545;
+            --orange: #fd7e14;
+            --yellow: #ffc107;
+            --green: #28a745;
+            --teal: #20c997;
+            --cyan: #17a2b8;
+            --white: #fff;
+            --gray: #6c757d;
+            --gray-dark: #343a40;
+            --primary: #007bff;
+            --secondary: #6c757d;
+            --success: #28a745;
+            --info: #17a2b8;
+            --warning: #ffc107;
+            --danger: #dc3545;
+            --light: #f8f9fa;
+            --dark: #343a40;
+            --breakpoint-xs: 0;
+            --breakpoint-sm: 576px;
+            --breakpoint-md: 768px;
+            --breakpoint-lg: 992px;
+            --breakpoint-xl: 1200px;
+            --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI",
+                Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+                "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+            --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
+                "Liberation Mono", "Courier New", monospace;
+        }
+
+        *,
+        *:before,
+        *:after {
+            -webkit-box-sizing: border-box !important;
+            -moz-box-sizing: border-box !important;
+            box-sizing: border-box !important;
+            padding: 0;
+            margin: 0;
+        }
+
+        #result {
+            height: 500vh !important;
+        }
+
+        /* body {
+            width: 100%;
+            height: 100%;
+            min-height: 100% !important;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+            font-size: 1rem;
+            font-weight: 450;
+            line-height: 1.5;
+            color: #212529;
+            text-align: left;
+            margin: 0px auto;
+            background: #eee;
+          } */
+        /* html {
+            position: relative;
+            height: 100%;
+            width: 100%;
+          }  */
+
+        .oo {
+            padding-bottom: 20px;
+        }
+
+        .social {
+
+            /* transform: translate(-50%, -50%); */
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+
+
+        .hey {
+            position: absolute;
+            /* top:50%;
+            left:50%; */
+            /* margin-left: 70px; */
+            transform: translate(-50%, -50%);
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        .hey li {
+            list-style: none;
+        }
+
+        .hey li a {
+            position: relative;
+            width: 30px;
+            height: 30px;
+            display: block;
+            text-align: center;
+            margin: 0 10px;
+            border-radius: 40%;
+            padding: 6px;
+            box-sizing: border-box;
+            text-decoration: none;
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+            background: linear-gradient(0deg, #ddd, #fff);
+            transition: .5s;
+        }
+
+        .hey li a:hover {
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+            text-decoration: none;
+        }
+
+        .hey li a .fab {
+            width: 100%;
+            height: 100%;
+            display: block;
+            background: linear-gradient(0deg, #fff, #ddd);
+            border-radius: 50%;
+            line-height: calc(34px - 12px);
+            font-size: 24px;
+            color: #262626;
+            transition: .5s;
+        }
+
+        .hey li:nth-child(1) a:hover .fab {
+            color: #3b5998;
+        }
+
+        .hey li:nth-child(2) a:hover .fab {
+            color: #00aced;
+        }
+
+        .hey li:nth-child(3) a:hover .fab {
+            color: #dd4b39;
+        }
+
+        .hey li:nth-child(4) a:hover .fab {
+            color: #007bb6;
+        }
+
+        .hey li:nth-child(5) a:hover .fab {
+            color: #e4405f;
+        }
+
+        .ii {
+            margin-left: 100px;
+        }
+    </style>
+    <!-- Preloader -->
+    <div class="loader">
+        <div class="d-table">
+            <div class="d-table-cell">
+                <div class="spinner">
+                    <div class="rect1"></div>
+                    <div class="rect2"></div>
+                    <div class="rect3"></div>
+                    <div class="rect4"></div>
+                    <div class="rect5"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Preloader -->
+
+    <!-- Start Navbar Area -->
+    <div class="navbar-area fixed-top">
+        <!-- Menu For Mobile Device -->
+        <div class="mobile-nav">
+            <a href="sass.html" class="logo">
+                <img src="assets/img/logo-two.png" alt="Logo">
+            </a>
+        </div>
+
+        <!-- Menu For Desktop Device -->
+        <div class="main-nav two">
+            <div class="container-fluid">
+                <nav class="navbar navbar-expand-md navbar-light">
+                    <a class="navbar-brand" href="sass.html">
+                        <img src="assets/img/logo-two.png" alt="Logo">
+                    </a>
+                    <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link dropdown-toggle">Home <i class='bx bx-chevron-down'></i></a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item">
+                                        <a href="sass.html" class="nav-link">Sass Startup Demo</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="it-startup.html" class="nav-link">IT Startup Demo</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="digital.html" class="nav-link">Digital Marketing Demo</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link dropdown-toggle">Pages <i
+                                        class='bx bx-chevron-down'></i></a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link dropdown-toggle">User <i
+                                                class='bx bx-chevron-down'></i></a>
+                                        <ul class="dropdown-menu">
+                                            <li class="nav-item">
+                                                <a href="sign-in.html" class="nav-link">Sign In</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a href="sign-up.html" class="nav-link">Sign Up</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="features.html" class="nav-link">Features</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="team.html" class="nav-link">Team</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="testimonials.html" class="nav-link">Testimonials</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="pricing.html" class="nav-link">Pricing</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="faq.html" class="nav-link">FAQ</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="404.html" class="nav-link">404 Error Page</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="privacy-policy.html" class="nav-link">Privacy Policy</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="terms-conditions.html" class="nav-link">Terms & Conditions</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="about.html" class="nav-link">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link dropdown-toggle">Services <i
+                                        class='bx bx-chevron-down'></i></a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item">
+                                        <a href="services.html" class="nav-link">Service Style One</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="services-2.html" class="nav-link">Service Style Two</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="service-details.html" class="nav-link">Service Details</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link dropdown-toggle">Projects <i
+                                        class='bx bx-chevron-down'></i></a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item">
+                                        <a href="projects.html" class="nav-link">Projects</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="project-details.html" class="nav-link">Project Details</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link dropdown-toggle">Blog <i class='bx bx-chevron-down'></i></a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item">
+                                        <a href="blog.html" class="nav-link">Blog</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="blog-details.html" class="nav-link">Blog Details</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="contact.html" class="nav-link active">Contact</a>
+                            </li>
+                        </ul>
+                        <div class="side-nav">
+                            <a class="left-btn" href="sign-in.html">
+                                <i class='bx bx-log-out'></i>
+                                Sign In
+                            </a>
+                            <a href="projects.html" class="cmn-btn">
+                                Start Project
+                                <i class='bx bx-plus'></i>
+                            </a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <!-- End Navbar Area -->
+
+    <!-- Page Title -->
+
+    <div class="page-title-area">
+        <div class="bg-text">
+            <span>IEEE IEEE<br>IEE IEEE<br>IEEE IEEE<br>IEEE IEEEEE</span>
+        </div>
+        <div class="d-table">
+            <div class="d-table-cell">
+                <div class="container">
+
+                    <div class="title-item">
+
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm">
+                                    <h2>Who We Are?</h2>
+                                    <p class="text-left">Lorem ipsum dolor sit amet, consectetur
+                                        adipisicing elit. Expedita eos, soluta eaque libero
+                                        corrupti placeat molestiae nesciunt vel maiores dolores
+                                        voluptatum aliquid, perferendis
+                                        sit dolorem ipsam magni in aliquam ratione.</p>
+                                </div>
+
+                                <div class="col-sm">
+                                    <img src="https://i.pinimg.com/originals/5b/cf/51/5bcf5109367e1e5420a83e56330b9333.gif"
+                                        height="250" width="400">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="particles-js">
+
+    </div>
+
+
+
+
+    <div class="hello">
+
+        <div class="container">
+            <div class="row">
+
+                <div class="col-sm">
+                    <img src="https://i.pinimg.com/originals/5b/cf/51/5bcf5109367e1e5420a83e56330b9333.gif" height="250"
+                        width="400">
+                </div>
+                <div class="col-sm">
+                    <h2>IEEE</h2>
+                    <p class="text-left">Lorem ipsum dolor sit amet, consectetur
+                        adipisicing elit. Expedita eos, soluta eaque libero
+                        corrupti placeat molestiae nesciunt vel maiores dolores
+                        voluptatum aliquid, perferendis
+                        sit dolorem ipsam magni in aliquam ratione.</p>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+        <!-- End Page Title -->
+
+
+
+
+
+
+
+
+        <div class="hello">
+
+
+            <div class="container">
+                <div class="row justify-content-around">
+
+                    <div class="col-8">
+
+                        <div class="contact-area ptb-100">
+                            <div class="container">
+                                <div class="section-title">
+                                    <h2>Get In Touch</h2>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis distinctio
+                                        quaerat corrupti natus dolores officiis quidem? Dolore repellat id unde nemo.
+                                    </p>
+                                </div>
+                                <form id="contactForm">
+                                    <div class="row">
+                                        <div class="col-sm-6 col-lg-6">
+                                            <div class="form-group">
+                                                <label>
+                                                    <i class='bx bx-user'></i>
+                                                </label>
+                                                <input type="text" name="name" id="name" class="form-control"
+                                                    placeholder="Name*" required data-error="Please enter your name">
+                                                <div class="help-block with-errors"></div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-sm-6 col-lg-6">
+                                            <div class="form-group">
+                                                <label>
+                                                    <i class='bx bx-mail-send'></i>
+                                                </label>
+                                                <input type="email" name="email" id="email" class="form-control"
+                                                    placeholder="Email" required data-error="Please enter your email">
+                                                <div class="help-block with-errors"></div>
+                                            </div>
+                                        </div>
+
+
+
+                                        <div class="col-md-12 col-lg-12">
+                                            <div class="form-group">
+                                                <label>
+                                                    <i class='bx bx-comment-detail'></i>
+                                                </label>
+                                                <textarea name="message" class="form-control" id="message" cols="30"
+                                                    rows="8" placeholder="Write message" required
+                                                    data-error="Write your message"></textarea>
+                                                <div class="help-block with-errors"></div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-12 col-md-12">
+                                            <div class="form-group">
+                                                <div class="form-check agree-label">
+                                                    <input name="gridCheck"
+                                                        value="I agree to the terms and privacy policy."
+                                                        class="form-check-input" type="checkbox" id="gridCheck"
+                                                        required>
+                                                    <label class="form-check-label" for="gridCheck">
+                                                        Accept <a href="terms-condition.html">Terms & Conditions</a> And
+                                                        <a href="privacy-policy.html">Privacy Policy.</a>
+                                                    </label>
+                                                    <div class="help-block with-errors gridCheck-error"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-12 col-lg-12">
+
+                                            <div class="box">
+                                                <a href="#"><span>Button</span></a>
+                                                <i></i>
+
+                                            </div>
+
+                                            <div id="msgSubmit" class="h3 text-center hidden"></div>
+                                            <div class="clearfix"></div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
+
+
+                    <div class="col-4">
+
+
+                        <div class="contact-area ptb-100">
+                            <div class="container">
+                                <div class="section-title">
+                                    <h2>Reach us</h2>
+
+                                    <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis distinctio quaerat corrupti natus dolores officiis quidem? Dolore repellat id unde nemo.</p> -->
+                                </div>
+                                <div class="space">
+
+                                    <form id="contactForm">
+
+                                        <div><i class="fa fa-envelope" style="font-size:36px"></i>
+                                            <h6>rutu@gmail.com</h6>
+                                        </div>
+                                        <div></div>
+                                        <div></div>
+                                        <div><i class='fas fa-search-location'></i>
+                                            <h6>Kennedy Road, Near R.T.O., Pune – 411 001 Maharashtra (INDIA).</h6>
+                                        </div>
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                        <div class="row">
+                                            <p><iframe
+                                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.9481299187564!2d73.86494741481337!3d18.531245987402876!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c0f55639f89f%3A0x22ed3d7c6b61cdf3!2sAISSMS%20Institute%20of%20Information%20Technology!5e0!3m2!1sen!2sin!4v1651598465943!5m2!1sen!2sin"
+                                                    width="150" height="200" style="border:0;" allowfullscreen=""
+                                                    loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                            </p>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+
+
+        <div id="particles-js">
+
+        </div>
+
+
+        <!-- Contact Info -->
+
+
+
+        <div class="container">
+
+            <div class="row justify-content-around">
+                <div class="col-4">
+                    <h2>Contact For Sponsorship</h2>
+                    <div class="container">
+                        <div class="row justify-content-around">
+                            <div class="col-4">
+                                <h3>XYZ</h2>
+                                    <div><i class="fa fa-envelope" style="font-size:16px"></i>
+                                        <h6>rutu@gmail.com</h6>
+                                    </div>
+                            </div>
+                            <div class="col-4">
+                                <h3>XYZ</h2>
+                                    <div><i class="fa fa-envelope" style="font-size:16px"></i>
+                                        <h6>rutu@gmail.com</h6>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+
+                    <h2 class="oo">Our Socials</h2>
+                    <div class="ii">
+
+                        <ul class="hey">
+                            <li><a href="#"><i class="fab fa-facebook" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fab fa-google-plus-g" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+
+
+
+                </div>
+
+
+            </div>
+
+            <!-- End Contact Info -->
+
+
+
+
+
+
+
+
+            <!-- Footer -->
+            <footer class="pt-100 pb-70">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6 col-lg-3">
+                            <div class="footer-item">
+                                <div class="footer-logo">
+                                    <a href="sass.html">
+                                        <img src="assets/img/logo-two.png" alt="Logo">
+                                    </a>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adiisicing elit, sed do eiusmod tempor
+                                        inc Neque porro quisquam est, qui dolorem magnam aliquam quaerat luptatem.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-3">
+                            <div class="footer-item">
+                                <div class="footer-links">
+                                    <h3>Support</h3>
+                                    <ul>
+                                        <li>
+                                            <a href="faq.html" target="_blank">FAQ</a>
+                                        </li>
+                                        <li>
+                                            <a href="privacy-policy.html" target="_blank">Privacy Policy</a>
+                                        </li>
+                                        <li>
+                                            <a href="terms-condiitons.html" target="_blank">Terms & Condiitons</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" target="_blank">Community</a>
+                                        </li>
+                                        <li>
+                                            <a href="conatct.html" target="_blank">Contact Us</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-2">
+                            <div class="footer-item">
+                                <div class="footer-links">
+                                    <h3>Compnay</h3>
+                                    <ul>
+                                        <li>
+                                            <a href="about.html" target="_blank">About Us</a>
+                                        </li>
+                                        <li>
+                                            <a href="services.html" target="_blank">Services</a>
+                                        </li>
+                                        <li>
+                                            <a href="features.html" target="_blank">Features</a>
+                                        </li>
+                                        <li>
+                                            <a href="pricing.html" target="_blank">Our Pricing</a>
+                                        </li>
+                                        <li>
+                                            <a href="blog.html" target="_blank">Latest News</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-4">
+                            <div class="footer-item">
+                                <div class="footer-address">
+                                    <h3>Address</h3>
+                                    <ul>
+                                        <li>
+                                            <span>Address:</span>
+                                            2659 Autostrad St, London, UK
+                                        </li>
+                                        <li>
+                                            <span>Message:</span>
+                                            <a href="mailto:hello@dilx.com">hello@dilx.com</a>
+                                        </li>
+                                        <li>
+                                            <span>Phone:</span>
+                                            <a href="tel:2151234567">215 - 123 - 4567</a>
+                                        </li>
+                                        <li>
+                                            <span>Open:</span>
+                                            Mon - Fri/9:00 AM - 6:00 PM
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- End Footer -->
+
+            <!-- Copyright -->
+            <div class="copyright-area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="copyright-item">
+                                <p>Copyright @
+                                    <script>document.write(new Date().getFullYear())</script> Dilx. Designed By <a
+                                        href="https://hibootstrap.com/" target="_blank">HiBootstrap</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="copyright-item">
+                                <ul>
+                                    <li>
+                                        <a href="#" target="_blank">
+                                            <i class='bx bxl-facebook'></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" target="_blank">
+                                            <i class='bx bxl-twitter'></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" target="_blank">
+                                            <i class='bx bxl-instagram'></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" target="_blank">
+                                            <i class='bx bxl-pinterest-alt'></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" target="_blank">
+                                            <i class='bx bxl-youtube'></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Copyright -->
+
+            <!-- Go Top -->
+            <div class="go-top">
+                <i class='bx bx-up-arrow'></i>
+                <i class='bx bx-up-arrow'></i>
+            </div>
+            <!-- End Go Top -->
+
+
+            <!-- Essential JS -->
+            <script src="assets/js/jquery.min.js"></script>
+            <script src="assets/js/bootstrap.bundle.min.js"></script>
+            <!-- Form Validator JS -->
+            <script src="assets/js/form-validator.min.js"></script>
+            <!-- Contact JS -->
+            <script src="assets/js/contact-form-script.js"></script>
+            <!-- Ajax Chip JS -->
+            <script src="assets/js/jquery.ajaxchimp.min.js"></script>
+            <!-- Meanmenu JS -->
+            <script src="assets/js/jquery.meanmenu.js"></script>
+            <!-- Popup JS -->
+            <script src="assets/js/jquery.magnific-popup.min.js"></script>
+            <!-- Odometer JS -->
+            <script src="assets/js/odometer.min.js"></script>
+            <script src="assets/js/jquery.appear.js"></script>
+            <!-- Owl Carousel JS -->
+            <script src="assets/js/owl.carousel.min.js"></script>
+            <!-- Thumb Slider JS -->
+            <script src="assets/js/thumb-slide.js"></script>
+            <!-- Wow JS -->
+            <script src="assets/js/wow.min.js"></script>
+            <!-- Custom JS -->
+            <script src="assets/js/custom.js"></script>
+            <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+            <script src="./assets/js/j.js"></script>
+
+            <script>
+                particlesJS("particles-js", {
+                    "particles": {
+                        "number": {
+                            "value": 355,
+                            "density": {
+                                "enable": true,
+                                "value_area": 789.1476416322727
+                            }
+                        },
+                        "color": {
+                            "value": "#ffffff"
+                        },
+                        "shape": {
+                            "type": "circle",
+                            "stroke": {
+                                "width": 0,
+                                "color": "#000000"
+                            },
+                            "polygon": {
+                                "nb_sides": 5
+                            },
+                            "image": {
+                                "src": "img/github.svg",
+                                "width": 100,
+                                "height": 100
+                            }
+                        },
+                        "opacity": {
+                            "value": 0.48927153781200905,
+                            "random": false,
+                            "anim": {
+                                "enable": true,
+                                "speed": 0.5,
+                                "opacity_min": 0,
+                                "sync": false
+                            }
+                        },
+                        "size": {
+                            "value": 2,
+                            "random": true,
+                            "anim": {
+                                "enable": true,
+                                "speed": 2,
+                                "size_min": 0,
+                                "sync": false
+                            }
+                        },
+                        "line_linked": {
+                            "enable": false,
+                            "distance": 150,
+                            "color": "#ffffff",
+                            "opacity": 0.4,
+                            "width": 1
+                        },
+                        "move": {
+                            "enable": true,
+                            "speed": 1,
+                            "direction": "none",
+                            "random": true,
+                            "straight": false,
+                            "out_mode": "out",
+                            "bounce": false,
+                            "attract": {
+                                "enable": false,
+                                "rotateX": 600,
+                                "rotateY": 1200
+                            }
+                        }
+                    },
+                    "interactivity": {
+                        "detect_on": "canvas",
+                        "events": {
+                            "onhover": {
+                                "enable": true,
+                                "mode": "bubble"
+                            },
+                            "onclick": {
+                                "enable": true,
+                                "mode": "push"
+                            },
+                            "resize": true
+                        },
+                        "modes": {
+                            "grab": {
+                                "distance": 400,
+                                "line_linked": {
+                                    "opacity": 1
+                                }
+                            },
+                            "bubble": {
+                                "distance": 83.91608391608392,
+                                "size": 1.5,
+                                "duration": 3,
+                                "opacity": 1.5,
+                                "speed": 5
+                            },
+                            "repulse": {
+                                "distance": 200,
+                                "duration": 0.4
+                            },
+                            "push": {
+                                "particles_nb": 4
+                            },
+                            "remove": {
+                                "particles_nb": 2
+                            }
+                        }
+                    },
+                    "retina_detect": true
+                });
+            </script>
+</body>
+
+</html>

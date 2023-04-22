@@ -1,0 +1,1610 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/webteam.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- Meanmenu CSS -->
+    <link rel="stylesheet" href="assets/css/meanmenu.css">
+    <!-- Boxicons CSS -->
+    <link rel="stylesheet" href="assets/css/boxicons.min.css">
+    <!-- Flaticons CSC -->
+    <link rel="stylesheet" href="assets/fonts/flaticon.css">
+    <!-- Popup CSS -->
+    <link rel="stylesheet" href="assets/css/magnific-popup.min.css">
+    <!-- Odometer CSS -->
+    <link rel="stylesheet" href="assets/css/odometer.min.css">
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <!-- Theme Dark CSS -->
+    <link rel="stylesheet" href="assets/css/theme-dark.css">
+
+    <link rel="stylesheet" href="assets/css/material-cards-auto-height.css">
+    <link rel="stylesheet" href="assets/css/material-cards.css">
+
+
+    <title>Dilx - IT & Marketing Startup Bootstrap 5 Template</title>
+
+    <link rel="icon" type="image/png" href="assets/img/favicon.png">
+</head>
+
+<body>
+    <style>
+        /**********************************/
+        /********** Common CSS ************/
+        /**********************************/
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+
+        .container {
+            position: relative;
+            width: 100%;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1.title {
+            position: relative;
+            color: #353535;
+            font-size: 25px;
+            line-height: 35px;
+            text-align: center;
+            margin: 30px auto;
+        }
+
+        h1.title a {
+            font-size: 22px;
+        }
+
+        /**********************************/
+        /************ Team CSS ************/
+        /**********************************/
+        .team {
+            position: relative;
+            margin: 0 auto;
+            width: 100%;
+            text-align: center;
+            max-width: 300px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8);
+        }
+
+        .team .team-img {
+            position: relative;
+            font-size: 0;
+            color: #353535;
+        }
+
+        .team .team-img img {
+            width: 100%;
+            height: auto;
+        }
+
+        .team .team-social {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            padding: 20px;
+            top: 0;
+            left: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(255, 255, 255, .5);
+            transition: all .3s;
+            font-size: 0;
+            z-index: 1;
+            opacity: 0;
+        }
+
+        .team:hover .team-social {
+            opacity: 1;
+        }
+
+        .team .team-social a {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            margin-right: 5px;
+            padding: 11px 0 10px 0;
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 16px;
+            text-align: center;
+            color: #ffffff;
+            transition: all .5s;
+            margin-top: 100px;
+        }
+
+        .team .team-social a.social-tw {
+            background: #00acee;
+        }
+
+        .team .team-social a.social-fb {
+            background: #3b5998;
+        }
+
+        .team .team-social a.social-li {
+            background: #0e76a8;
+        }
+
+        .team .team-social a.social-in {
+            background: #3f729b;
+        }
+
+        .team .team-social a.social-yt {
+            background: #c4302b;
+        }
+
+        .team .team-social a:last-child {
+            margin-right: 0;
+        }
+
+        .team:hover .team-social a {
+            margin-top: 0;
+        }
+
+        .team .team-social a:hover {
+            color: #222222;
+            background: #ffffff;
+        }
+
+        .team .team-content {
+            padding: 20px;
+        }
+
+        .team .team-content h2 {
+            margin: 0 0 5px 0;
+            color: #353535;
+            font-size: 25px;
+            font-weight: 600;
+            letter-spacing: 2px;
+        }
+
+        .team .team-content h3 {
+            margin: 0 0 15px 0;
+            color: #353535;
+            font-size: 14px;
+            font-weight: 300;
+        }
+
+        .team .team-content p {
+            margin: 0 0 15px 0;
+            color: #353535;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+        }
+
+        .team .team-skill {
+            width: 100%;
+        }
+
+        .team .skill-name {
+            text-align: left;
+        }
+
+        .team .skill-name p {
+            display: inline-block;
+            color: #353535;
+            font-size: 14px;
+            font-weight: 600;
+            margin: 0;
+        }
+
+        .team .skill-name p:last-child {
+            float: right;
+        }
+
+        .team .progress {
+            position: relative;
+            width: 100%;
+            height: 5px;
+            margin-bottom: 10px;
+            background: #dddddd;
+        }
+
+        .team .progress:last-child {
+            margin: 0;
+        }
+
+        .team .progress-bar {
+            position: absolute;
+            width: 0%;
+            height: 5px;
+            top: 0;
+            left: 0;
+            background: #454545;
+            transition: all .7s;
+            z-index: 1;
+        }
+
+        .team:hover .progress-bar.w-70 {
+            width: 70%;
+        }
+
+        .team:hover .progress-bar.w-80 {
+            width: 80%;
+        }
+
+        .team:hover .progress-bar.w-90 {
+            width: 90%;
+        }
+
+        .better {
+            background-color: #252525;
+        }
+
+        .row {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        :root {
+            --gm-Red-50: #FFEBEE;
+            --gm-Red-100: #FFCDD2;
+            --gm-Red-200: #EF9A9A;
+            --gm-Red-300: #E57373;
+            --gm-Red-400: #EF5350;
+            --gm-Red-500: #F44336;
+            --gm-Red-600: #E53935;
+            --gm-Red-700: #D32F2F;
+            --gm-Red-800: #C62828;
+            --gm-Red-900: #B71C1C;
+            --gm-Red-A100: #FF8A80;
+            --gm-Red-A200: #FF5252;
+            --gm-Red-A400: #FF1744;
+            --gm-Red-A700: #D50000;
+            --gm-Pink-50: #FCE4EC;
+            --gm-Pink-100: #F8BBD0;
+            --gm-Pink-200: #F48FB1;
+            --gm-Pink-300: #F06292;
+            --gm-Pink-400: #EC407A;
+            --gm-Pink-500: #E91E63;
+            --gm-Pink-600: #D81B60;
+            --gm-Pink-700: #C2185B;
+            --gm-Pink-800: #AD1457;
+            --gm-Pink-900: #880E4F;
+            --gm-Pink-A100: #FF80AB;
+            --gm-Pink-A200: #FF4081;
+            --gm-Pink-A400: #F50057;
+            --gm-Pink-A700: #C51162;
+            --gm-Purple-50: #F3E5F5;
+            --gm-Purple-100: #E1BEE7;
+            --gm-Purple-200: #CE93D8;
+            --gm-Purple-300: #BA68C8;
+            --gm-Purple-400: #AB47BC;
+            --gm-Purple-500: #9C27B0;
+            --gm-Purple-600: #8E24AA;
+            --gm-Purple-700: #7B1FA2;
+            --gm-Purple-800: #6A1B9A;
+            --gm-Purple-900: #4A148C;
+            --gm-Purple-A100: #EA80FC;
+            --gm-Purple-A200: #E040FB;
+            --gm-Purple-A400: #D500F9;
+            --gm-Purple-A700: #AA00FF;
+            --gm-Deep-Purple-50: #EDE7F6;
+            --gm-Deep-Purple-100: #D1C4E9;
+            --gm-Deep-Purple-200: #B39DDB;
+            --gm-Deep-Purple-300: #9575CD;
+            --gm-Deep-Purple-400: #7E57C2;
+            --gm-Deep-Purple-500: #673AB7;
+            --gm-Deep-Purple-600: #5E35B1;
+            --gm-Deep-Purple-700: #512DA8;
+            --gm-Deep-Purple-800: #4527A0;
+            --gm-Deep-Purple-900: #311B92;
+            --gm-Deep-Purple-A100: color: var(--gm-Indigo-300);
+        }
+
+        .btn-blue {
+            background-color: var(--gm-Blue-500);
+            color: #fff;
+            border-color: var(--gm-Blue-500);
+        }
+
+        .btn-blue:hover {
+            background-color: var(--gm-Blue-700);
+            border-color: var(--gm-Blue-700);
+        }
+
+        .btn-purple {
+            background-color: var(--gm-Purple-500);
+            color: #fff;
+            border-color: var(--gm-Purple-500);
+        }
+
+        .btn-purple:hover {
+            background-color: var(--gm-Purple-700);
+            border-color: var(--gm-Purple-700);
+        }
+
+        .btn-pink {
+            background-color: var(--gm-Pink-500);
+            color: #fff;
+            border-color: var(--gm-Pink-500);
+        }
+
+        .btn-pink:hover {
+            background-color: var(--gm-Pink-700);
+            border-color: var(--gm-Pink-700);
+        }
+
+        .btn-deep-purple {
+            background-color: var(--gm-Deep-Purple-500);
+            color: #fff;
+            border-color: var(--gm-Deep-Purple-500);
+        }
+
+        .btn-deep-purple:hover {
+            background-color: var(--gm-Deep-Purple-700);
+            border-color: var(--gm-Deep-Purple-700);
+        }
+
+        .btn-indigo {
+            background-color: var(--gm-Indigo-500);
+            color: #fff;
+            border-color: var(--gm-Indigo-500);
+        }
+
+        .btn-indigo:hover {
+            background-color: var(--gm-Indigo-700);
+            border-color: var(--gm-Indigo-700);
+        }
+    </style>
+    <script>
+        $(function () {
+            $('.material-card > .mc-btn-action').click(function () {
+                var card = $(this).parent('.material-card');
+                var icon = $(this).children('i');
+                icon.addClass('fa-spin-fast');
+
+                if (card.hasClass('mc-active')) {
+                    card.removeClass('mc-active');
+
+                    window.setTimeout(function () {
+                        icon
+                            .removeClass('fa-arrow-left')
+                            .removeClass('fa-spin-fast')
+                            .addClass('fa-bars');
+
+                    }, 800);
+                } else {
+                    card.addClass('mc-active');
+
+                    window.setTimeout(function () {
+                        icon
+                            .removeClass('fa-bars')
+                            .removeClass('fa-spin-fast')
+                            .addClass('fa-arrow-left');
+
+                    }, 800);
+                }
+            });
+        });
+    </script>
+    <!-- Preloader -->
+    <div class="loader">
+        <div class="d-table">
+            <div class="d-table-cell">
+                <div class="spinner">
+                    <div class="rect1"></div>
+                    <div class="rect2"></div>
+                    <div class="rect3"></div>
+                    <div class="rect4"></div>
+                    <div class="rect5"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Preloader -->
+
+    <!-- Start Navbar Area -->
+    <div class="navbar-area fixed-top">
+        <!-- Menu For Mobile Device -->
+        <div class="mobile-nav">
+            <a href="sass.html" class="logo">
+                <img src="assets/img/logo-two.png" alt="Logo">
+            </a>
+        </div>
+
+        <!-- Menu For Desktop Device -->
+        <div class="main-nav two">
+            <div class="container-fluid">
+                <nav class="navbar navbar-expand-md navbar-light">
+                    <a class="navbar-brand" href="sass.html">
+                        <img src="assets/img/logo-two.png" alt="Logo">
+                    </a>
+                    <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link dropdown-toggle">Home <i class='bx bx-chevron-down'></i></a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item">
+                                        <a href="sass.html" class="nav-link">Sass Startup Demo</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="it-startup.html" class="nav-link">IT Startup Demo</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="digital.html" class="nav-link">Digital Marketing Demo</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link dropdown-toggle active">Pages <i
+                                        class='bx bx-chevron-down'></i></a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link dropdown-toggle">User <i
+                                                class='bx bx-chevron-down'></i></a>
+                                        <ul class="dropdown-menu">
+                                            <li class="nav-item">
+                                                <a href="sign-in.html" class="nav-link">Sign In</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a href="sign-up.html" class="nav-link">Sign Up</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="features.html" class="nav-link">Features</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="team.html" class="nav-link active">Team</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="testimonials.html" class="nav-link">Testimonials</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="pricing.html" class="nav-link">Pricing</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="faq.html" class="nav-link">FAQ</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="404.html" class="nav-link">404 Error Page</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="privacy-policy.html" class="nav-link">Privacy Policy</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="terms-conditions.html" class="nav-link">Terms & Conditions</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="about.html" class="nav-link">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link dropdown-toggle">Services <i
+                                        class='bx bx-chevron-down'></i></a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item">
+                                        <a href="services.html" class="nav-link">Service Style One</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="services-2.html" class="nav-link">Service Style Two</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="service-details.html" class="nav-link">Service Details</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link dropdown-toggle">Projects <i
+                                        class='bx bx-chevron-down'></i></a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item">
+                                        <a href="projects.html" class="nav-link">Projects</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="project-details.html" class="nav-link">Project Details</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link dropdown-toggle">Blog <i class='bx bx-chevron-down'></i></a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item">
+                                        <a href="blog.html" class="nav-link">Blog</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="blog-details.html" class="nav-link">Blog Details</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="contact.html" class="nav-link">Contact</a>
+                            </li>
+                        </ul>
+                        <div class="side-nav">
+                            <a class="left-btn" href="sign-in.html">
+                                <i class='bx bx-log-out'></i>
+                                Sign In
+                            </a>
+                            <a href="projects.html" class="cmn-btn">
+                                Start Project
+                                <i class='bx bx-plus'></i>
+                            </a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <!-- End Navbar Area -->
+
+    <!-- Page Title -->
+    <div class="page-title-area">
+        <!-- <div class="bg-text">
+                <span>Dilx<br>Digital<br>Informative<br>Solution</span>
+            </div> -->
+        <div class="d-table">
+            <div class="d-table-cell">
+                <div class="container">
+                    <div class="title-item">
+                        <h2>Team</h2>
+                        <ul>
+                            <!-- <li>
+                                    <a href="sass.html">Home</a>
+                                </li> -->
+                            <li>
+                                <span>Faculty</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Team -->
+    <section class="team-area-two ptb-100">
+        <div class="section-title three">
+            <span class="sub-title">Our Special Team</span>
+            <h2>
+                Our Faculty Mentor's
+            </h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiumod tempor incididunt ut labore et
+                dolore magna minimtur </p>
+        </div>
+        <div class="container">
+            <div class="row">
+
+                <div class="col-sm-6 col-lg-3">
+                    <div class="team-item">
+                        <div class="top">
+                            <img src="assets/img/digital/team1.jpg" alt="Team">
+                            <ul class="team-social">
+                                <li>
+                                    <a href="#" target="_blank">
+                                        <!-- <i class='bx bxl-facebook'></i> -->
+                                        <box-icon type="logo" size="md" name="github"></box-icon>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" target="_blank">
+                                        <!-- <i class='bx bxl-twitter'></i> -->
+                                        <box-icon type="logo" color="lightblue" size="md" name="twitter"></box-icon>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" target="_blank">
+                                        <!-- <i class='bx bxl-pinterest-alt'></i> -->
+                                        <box-icon type="logo" color="purple" size="md" name="instagram"></box-icon>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" target="_blank">
+                                        <!-- <i class='bx bxl-youtube'></i> -->
+                                        <box-icon type="logo" color="blue" size="md" name="linkedin"></box-icon>
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="share-btn">
+                                <span>
+                                    <i class="bx bx-share-alt"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="bottom">
+                            <h3>P B Mane</h3>
+                            <span>Principal</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-3">
+                    <div class="team-item two">
+                        <div class="top">
+                            <img src="assets/img/digital/team2.jpg" alt="Team">
+                            <ul class="team-social">
+                                <li>
+                                    <a href="#" target="_blank">
+                                        <i class='bx bxl-facebook'></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" target="_blank">
+                                        <i class='bx bxl-twitter'></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" target="_blank">
+                                        <i class='bx bxl-pinterest-alt'></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" target="_blank">
+                                        <i class='bx bxl-youtube'></i>
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="share-btn">
+                                <span>
+                                    <i class="bx bx-share-alt"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="bottom">
+                            <h3>Jermin Jekson</h3>
+                            <span>HOD</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <!-- End Team -->
+
+    <!-- 
+        <div class="page-title-area">
+            <div class="d-table">
+                <div class="d-table-cell">
+                    <div class="container">
+                        <div class="title-item">
+                            <h2>Team</h2>
+                            <ul>
+                                <li>
+                                    <span>Core  </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+
+    </div>
+    <!-- End Page Title -->
+
+    <div class="portfolio-area ptb-100 " style="background-color: #252525;">
+        <div class="section-title " style="text-align: center;">
+            <span class="sub-title">Our Special Team</span>
+            <h2 >
+                Our Core Team
+            </h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiumod tempor incididunt ut labore et
+                dolore magna minimtur </p>
+        </div>
+        <div class="section-title three" style="text-align: center;">
+          
+        </div>
+        <div class="container">
+
+            <section class="container">
+
+                <div class="row active-with-click">
+
+
+
+                </div>
+            </section>
+<!-- 
+            <style>
+                .github-corner:hover .octo-arm {
+                    animation: octocat-wave 560ms ease-in-out
+                }
+
+                @keyframes octocat-wave {
+
+                    0%,
+                    100% {
+                        transform: rotate(0)
+                    }
+
+                    20%,
+                    60% {
+                        transform: rotate(-25deg)
+                    }
+
+                    40%,
+                    80% {
+                        transform: rotate(10deg)
+                    }
+                }
+
+                @media (max-width:500px) {
+                    .github-corner:hover .octo-arm {
+                        animation: none
+                    }
+
+                    .github-corner .octo-arm {
+                        animation: octocat-wave 560ms ease-in-out
+                    }
+                }
+            </style> -->
+
+            <!-- <div class="team">
+                  <div class="team-img">
+                    <img src="https://demo.htmlcodex.com/660/team-page-html-template/img/team-2-2.jpg" alt="Team Image">
+                    <div class="team-social">
+                      <a class="social-tw" href=""><i class='bx bxl-twitter'></i></a>
+                      <a class="social-fb" href=""> <i class='bx bxl-facebook'></i></a>
+                      <a class="social-fb" href=""> <i class='bx bxl-linkedin'></i></a>
+                      <a class="social-fb" href=""> <i class='bx bxl-github'></i></a>
+                    </div>
+                  </div>
+                  <div class="team-content">
+                    <h2>Josh Dunn</h2>
+                    <h3>CEO &amp; Founder</h3>
+                   
+                  </div>
+                </div> -->
+              
+            <div class="container-fluid">
+
+                <div class="portfolio-slider owl-theme owl-carousel">
+                    <div class="portfolio-item">
+                        <img src="assets/img/digital/portfolio1.jpg" alt="Portfolio">
+                        <div class="portfolio-inner">
+                            <span>SEO</span>
+                            <h3>
+                                <a href="project-details.html">1000 Bulk Email Collection For Multiple Companies</a>
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="assets/img/digital/portfolio2.jpg" alt="Portfolio">
+                        <div class="portfolio-inner">
+                            <span>Web Design</span>
+                            <h3>
+                                <a href="project-details.html">We Designed A Creative Website For Your Company</a>
+                            </h3>
+                        </div>
+                     
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="assets/img/digital/portfolio3.jpg" alt="Portfolio">
+                        <div class="portfolio-inner">
+                            <span>Web Development</span>
+                            <h3>
+                                <a href="project-details.html">We Developed A Creative Website For China Company</a>
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="assets/img/digital/portfolio4.jpg" alt="Portfolio">
+                        <div class="portfolio-inner">
+                            <span>UX/UI</span>
+                            <h3>
+                                <a href="project-details.html">We Made A Creative Website For USA Company</a>
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="assets/img/digital/portfolio5.jpg" alt="Portfolio">
+                        <div class="portfolio-inner">
+                            <span>Data Entry</span>
+                            <h3>
+                                <a href="project-details.html">We Are Very Careful To Keep Your Data Safe</a>
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="assets/img/digital/portfolio6.jpg" alt="Portfolio">
+                        <div class="portfolio-inner">
+                            <span>SEO</span>
+                            <h3>
+                                <a href="project-details.html">1000 Bulk Email Collection For Multiple Companies</a>
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Better Team  -->
+    <!-- <section class="team-area-two pt-100 pb-70 better">
+        <div class="container">
+            <div class="section-title three">
+                <span class="sub-title">Our Special Team</span>
+                <h2>
+                    Our Core Team
+                </h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiumod tempor incididunt ut labore et
+                    dolore magna minimtur </p>
+            </div>
+            <div class="container-fluid">
+                <div class="portfolio-slider owl-theme owl-carousel">
+                    <div class="portfolio-item">
+                        <img src="assets/img/digital/portfolio1.jpg" alt="Portfolio">
+                        <div class="portfolio-inner">
+                            <span>SEO</span>
+                            <h3>
+                                <a href="project-details.html">1000 Bulk Email Collection For Multiple Companies</a>
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="assets/img/digital/portfolio2.jpg" alt="Portfolio">
+                        <div class="portfolio-inner">
+                            <span>Web Design</span>
+                            <h3>
+                                <a href="project-details.html">We Designed A Creative Website For Your Company</a>
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="assets/img/digital/portfolio3.jpg" alt="Portfolio">
+                        <div class="portfolio-inner">
+                            <span>Web Development</span>
+                            <h3>
+                                <a href="project-details.html">We Developed A Creative Website For China Company</a>
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="assets/img/digital/portfolio4.jpg" alt="Portfolio">
+                        <div class="portfolio-inner">
+                            <span>UX/UI</span>
+                            <h3>
+                                <a href="project-details.html">We Made A Creative Website For USA Company</a>
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="assets/img/digital/portfolio5.jpg" alt="Portfolio">
+                        <div class="portfolio-inner">
+                            <span>Data Entry</span>
+                            <h3>
+                                <a href="project-details.html">We Are Very Careful To Keep Your Data Safe</a>
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="assets/img/digital/portfolio6.jpg" alt="Portfolio">
+                        <div class="portfolio-inner">
+                            <span>SEO</span>
+                            <h3>
+                                <a href="project-details.html">1000 Bulk Email Collection For Multiple Companies</a>
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="row">
+
+
+                <div class="col-sm-6 col-lg-3">
+                    <div class="team-item">
+                        <div class="top">
+                            <img src="assets/img/digital/team1.jpg" alt="Team">
+                            <ul class="team-social">
+                                <li>
+                                    <a href="#" target="_blank">
+                                        <i class='bx bxl-facebook'></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" target="_blank">
+                                        <i class='bx bxl-twitter'></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" target="_blank">
+                                        <i class='bx bxl-pinterest-alt'></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" target="_blank">
+                                        <i class='bx bxl-youtube'></i>
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="share-btn">
+                                <span>
+                                    <i class="bx bx-share-alt"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="bottom">
+                            <h3>Cristiono Kopper</h3>
+                            <span>Web Developer</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-3">
+                    <div class="team-item two">
+                        <div class="top">
+                            <img src="assets/img/digital/team2.jpg" alt="Team">
+                            <ul class="team-social">
+                                <li>
+                                    <a href="#" target="_blank">
+                                        <i class='bx bxl-facebook'></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" target="_blank">
+                                        <i class='bx bxl-twitter'></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" target="_blank">
+                                        <i class='bx bxl-pinterest-alt'></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" target="_blank">
+                                        <i class='bx bxl-youtube'></i>
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="share-btn">
+                                <span>
+                                    <i class="bx bx-share-alt"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="bottom">
+                            <h3>Jermin Jekson</h3>
+                            <span>Marketing Manager</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-3">
+                    <div class="team-item three">
+                        <div class="top">
+                            <img src="assets/img/digital/team3.jpg" alt="Team">
+                            <ul class="team-social">
+                                <li>
+                                    <a href="#" target="_blank">
+                                        <i class='bx bxl-facebook'></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" target="_blank">
+                                        <i class='bx bxl-twitter'></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" target="_blank">
+                                        <i class='bx bxl-pinterest-alt'></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" target="_blank">
+                                        <i class='bx bxl-youtube'></i>
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="share-btn">
+                                <span>
+                                    <i class="bx bx-share-alt"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="bottom">
+                            <h3>Olfard Zain</h3>
+                            <span>General Developer</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-3">
+                    <div class="team-item four">
+                        <div class="top">
+                            <img src="assets/img/digital/team4.jpg" alt="Team">
+                            <ul class="team-social">
+                                <li>
+                                    <a href="#" target="_blank">
+                                        <i class='bx bxl-facebook'></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" target="_blank">
+                                        <i class='bx bxl-twitter'></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" target="_blank">
+                                        <i class='bx bxl-pinterest-alt'></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" target="_blank">
+                                        <i class='bx bxl-youtube'></i>
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="share-btn">
+                                <span>
+                                    <i class="bx bx-share-alt"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="bottom">
+                            <h3>Julfiker Jeain</h3>
+                            <span>UX/UI Desiner</span>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </section> 
+
+    <!-- Team -->
+
+    <div class="portfolio-area ptb-100">
+        <div class="container">
+            <div class="section-title three">
+                <h2>Our Awesome Web Team</h2>
+                <h3 style="padding-left: 20px;">Quote-</h3>
+            </div>
+        </div>
+
+        <div class="container">
+
+            <section class="container">
+
+                <div class="row active-with-click">
+
+
+
+                </div>
+            </section>
+
+            <style>
+                .github-corner:hover .octo-arm {
+                    animation: octocat-wave 560ms ease-in-out
+                }
+
+                @keyframes octocat-wave {
+
+                    0%,
+                    100% {
+                        transform: rotate(0)
+                    }
+
+                    20%,
+                    60% {
+                        transform: rotate(-25deg)
+                    }
+
+                    40%,
+                    80% {
+                        transform: rotate(10deg)
+                    }
+                }
+
+                @media (max-width:500px) {
+                    .github-corner:hover .octo-arm {
+                        animation: none
+                    }
+
+                    .github-corner .octo-arm {
+                        animation: octocat-wave 560ms ease-in-out
+                    }
+                }
+            </style>
+
+            <!-- <div class="team">
+                  <div class="team-img">
+                    <img src="https://demo.htmlcodex.com/660/team-page-html-template/img/team-2-2.jpg" alt="Team Image">
+                    <div class="team-social">
+                      <a class="social-tw" href=""><i class='bx bxl-twitter'></i></a>
+                      <a class="social-fb" href=""> <i class='bx bxl-facebook'></i></a>
+                      <a class="social-fb" href=""> <i class='bx bxl-linkedin'></i></a>
+                      <a class="social-fb" href=""> <i class='bx bxl-github'></i></a>
+                    </div>
+                  </div>
+                  <div class="team-content">
+                    <h2>Josh Dunn</h2>
+                    <h3>CEO &amp; Founder</h3>
+                   
+                  </div>
+                </div> -->
+            <section class="container">
+
+                <div class="row active-with-click">
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <article class="material-card Red">
+                            <h2>
+                                <span>Christopher Walken</span>
+                                <strong>
+                                    <i class="fa fa-fw fa-star"></i>
+                                    The Deer Hunter
+                                </strong>
+                            </h2>
+                            <div class="mc-content">
+                                <div class="img-container">
+                                    <img class="img-responsive"
+                                        src="https://material-cards.s3-eu-west-1.amazonaws.com/thumb-christopher-walken.jpg">
+                                </div>
+                                <div class="mc-description">
+                                    He has appeared in more than 100 films and television shows, including The Deer
+                                    Hunter,
+                                    Annie Hall, The Prophecy trilogy, The Dogs of War ...
+                                </div>
+                            </div>
+                            <a class="mc-btn-action">
+                                <i class="fa fa-bars"></i>
+                            </a>
+                            <div class="mc-footer">
+                                <h4>
+                                    Social
+                                </h4>
+                                <a class="fa fa-fw fa-facebook"></a>
+                                <a class="fa fa-fw fa-twitter"></a>
+                                <a class="fa fa-fw fa-linkedin"></a>
+                                <a class="fa fa-fw fa-google-plus"></a>
+                            </div>
+                        </article>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+                </div>
+            </section>
+
+            <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+            <script>
+                $(function () {
+                    $('.material-card > .mc-btn-action').click(function () {
+                        var card = $(this).parent('.material-card');
+                        var icon = $(this).children('i');
+                        icon.addClass('fa-spin-fast');
+
+                        if (card.hasClass('mc-active')) {
+                            card.removeClass('mc-active');
+
+                            window.setTimeout(function () {
+                                icon
+                                    .removeClass('fa-arrow-left')
+                                    .removeClass('fa-spin-fast')
+                                    .addClass('fa-bars');
+
+                            }, 800);
+                        } else {
+                            card.addClass('mc-active');
+
+                            window.setTimeout(function () {
+                                icon
+                                    .removeClass('fa-bars')
+                                    .removeClass('fa-spin-fast')
+                                    .addClass('fa-arrow-left');
+
+                            }, 800);
+                        }
+                    });
+                });
+            </script>
+
+            <div class="container-fluid">
+                <div class="portfolio-slider owl-theme owl-carousel">
+                    <div class="portfolio-item">
+                        <img src="assets/img/digital/portfolio1.jpg" alt="Portfolio">
+                        <div class="portfolio-inner">
+                            <span>SEO</span>
+                            <h3>
+                                <a href="project-details.html">1000 Bulk Email Collection For Multiple Companies</a>
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="assets/img/digital/portfolio2.jpg" alt="Portfolio">
+                        <div class="portfolio-inner">
+                            <span>Web Design</span>
+                            <h3>
+                                <a href="project-details.html">We Designed A Creative Website For Your Company</a>
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="assets/img/digital/portfolio3.jpg" alt="Portfolio">
+                        <div class="portfolio-inner">
+                            <span>Web Development</span>
+                            <h3>
+                                <a href="project-details.html">We Developed A Creative Website For China Company</a>
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="assets/img/digital/portfolio4.jpg" alt="Portfolio">
+                        <div class="portfolio-inner">
+                            <span>UX/UI</span>
+                            <h3>
+                                <a href="project-details.html">We Made A Creative Website For USA Company</a>
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="assets/img/digital/portfolio5.jpg" alt="Portfolio">
+                        <div class="portfolio-inner">
+                            <span>Data Entry</span>
+                            <h3>
+                                <a href="project-details.html">We Are Very Careful To Keep Your Data Safe</a>
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="assets/img/digital/portfolio6.jpg" alt="Portfolio">
+                        <div class="portfolio-inner">
+                            <span>SEO</span>
+                            <h3>
+                                <a href="project-details.html">1000 Bulk Email Collection For Multiple Companies</a>
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Team -->
+
+
+    <!-- 
+        <div class="container-fluid">
+   
+            <div class="scrolling-wrapper row flex-row flex-nowrap mt-4 pb-4 pt-2">
+
+                <div class="top">
+                    <img src="assets/img/digital/team2.jpg" alt="Team">
+                    <ul class="team-social">
+                        <li>
+                            <a href="#" target="_blank">
+                                <i class='bx bxl-facebook'></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">
+                                <i class='bx bxl-twitter'></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">
+                                <i class='bx bxl-pinterest-alt'></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">
+                                <i class='bx bxl-youtube'></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="share-btn">
+                        <span>
+                            <i class="bx bx-share-alt"></i>
+                        </span>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <h3>Jermin Jekson</h3>
+                    <span>HOD</span>
+                </div>
+                <div class="top">
+                    <img src="assets/img/digital/team2.jpg" alt="Team">
+                    <ul class="team-social">
+                        <li>
+                            <a href="#" target="_blank">
+                                <i class='bx bxl-facebook'></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">
+                                <i class='bx bxl-twitter'></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">
+                                <i class='bx bxl-pinterest-alt'></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">
+                                <i class='bx bxl-youtube'></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="share-btn">
+                        <span>
+                            <i class="bx bx-share-alt"></i>
+                        </span>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <h3>Jermin Jekson</h3>
+                    <span>HOD</span>
+                </div>
+
+                <div class="top">
+                    <img src="assets/img/digital/team2.jpg" alt="Team">
+                    <ul class="team-social">
+                        <li>
+                            <a href="#" target="_blank">
+                                <i class='bx bxl-facebook'></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">
+                                <i class='bx bxl-twitter'></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">
+                                <i class='bx bxl-pinterest-alt'></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">
+                                <i class='bx bxl-youtube'></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="share-btn">
+                        <span>
+                            <i class="bx bx-share-alt"></i>
+                        </span>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <h3>Jermin Jekson</h3>
+                    <span>HOD</span>
+                </div>
+
+                <div class="top">
+                    <img src="assets/img/digital/team2.jpg" alt="Team">
+                    <ul class="team-social">
+                        <li>
+                            <a href="#" target="_blank">
+                                <i class='bx bxl-facebook'></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">
+                                <i class='bx bxl-twitter'></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">
+                                <i class='bx bxl-pinterest-alt'></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">
+                                <i class='bx bxl-youtube'></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="share-btn">
+                        <span>
+                            <i class="bx bx-share-alt"></i>
+                        </span>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <h3>Jermin Jekson</h3>
+                    <span>HOD</span>
+                </div>
+            </div>
+        </div>     -->
+
+    <!-- Footer -->
+    <footer class="pt-100 pb-70">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-lg-3">
+                    <div class="footer-item">
+                        <div class="footer-logo">
+                            <a href="sass.html">
+                                <img src="assets/img/logo-two.png" alt="Logo">
+                            </a>
+                            <p>Lorem ipsum dolor sit amet, consectetur adiisicing elit, sed do eiusmod tempor inc Neque
+                                porro quisquam est, qui dolorem magnam aliquam quaerat luptatem.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="footer-item">
+                        <div class="footer-links">
+                            <h3>Support</h3>
+                            <ul>
+                                <li>
+                                    <a href="faq.html" target="_blank">FAQ</a>
+                                </li>
+                                <li>
+                                    <a href="privacy-policy.html" target="_blank">Privacy Policy</a>
+                                </li>
+                                <li>
+                                    <a href="terms-condiitons.html" target="_blank">Terms & Condiitons</a>
+                                </li>
+                                <li>
+                                    <a href="#" target="_blank">Community</a>
+                                </li>
+                                <li>
+                                    <a href="conatct.html" target="_blank">Contact Us</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-2">
+                    <div class="footer-item">
+                        <div class="footer-links">
+                            <h3>Compnay</h3>
+                            <ul>
+                                <li>
+                                    <a href="about.html" target="_blank">About Us</a>
+                                </li>
+                                <li>
+                                    <a href="services.html" target="_blank">Services</a>
+                                </li>
+                                <li>
+                                    <a href="features.html" target="_blank">Features</a>
+                                </li>
+                                <li>
+                                    <a href="pricing.html" target="_blank">Our Pricing</a>
+                                </li>
+                                <li>
+                                    <a href="blog.html" target="_blank">Latest News</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <div class="footer-item">
+                        <div class="footer-address">
+                            <h3>Address</h3>
+                            <ul>
+                                <li>
+                                    <span>Address:</span>
+                                    2659 Autostrad St, London, UK
+                                </li>
+                                <li>
+                                    <span>Message:</span>
+                                    <a href="mailto:hello@dilx.com">hello@dilx.com</a>
+                                </li>
+                                <li>
+                                    <span>Phone:</span>
+                                    <a href="tel:2151234567">215 - 123 - 4567</a>
+                                </li>
+                                <li>
+                                    <span>Open:</span>
+                                    Mon - Fri/9:00 AM - 6:00 PM
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+    <!-- Copyright -->
+    <div class="copyright-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="copyright-item">
+                        <p>Copyright @
+                            <script>document.write(new Date().getFullYear())</script> Dilx. Designed By <a
+                                href="https://hibootstrap.com/" target="_blank">HiBootstrap</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="copyright-item">
+                        <ul>
+                            <li>
+                                <a href="#" target="_blank">
+                                    <i class='bx bxl-facebook'></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank">
+                                    <i class='bx bxl-twitter'></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank">
+                                    <i class='bx bxl-instagram'></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank">
+                                    <i class='bx bxl-pinterest-alt'></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank">
+                                    <i class='bx bxl-youtube'></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Copyright -->
+
+    <!-- Go Top -->
+    <div class="go-top">
+        <i class='bx bx-up-arrow'></i>
+        <i class='bx bx-up-arrow'></i>
+    </div>
+    <!-- End Go Top -->
+
+
+    <!-- Essential JS -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- Form Validator JS -->
+    <script src="assets/js/form-validator.min.js"></script>
+    <!-- Contact JS -->
+    <script src="assets/js/contact-form-script.js"></script>
+    <!-- Ajax Chip JS -->
+    <script src="assets/js/jquery.ajaxchimp.min.js"></script>
+    <!-- Meanmenu JS -->
+    <script src="assets/js/jquery.meanmenu.js"></script>
+    <!-- Popup JS -->
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <!-- Odometer JS -->
+    <script src="assets/js/odometer.min.js"></script>
+    <script src="assets/js/jquery.appear.js"></script>
+    <!-- Owl Carousel JS -->
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <!-- Thumb Slider JS -->
+    <script src="assets/js/thumb-slide.js"></script>
+    <!-- Wow JS -->
+    <script src="assets/js/wow.min.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/custom.js"></script>
+
+
+
+    <script src="https://unpkg.com/boxicons@2.1.3/dist/boxicons.js"></script>
+</body>
+
+</html>

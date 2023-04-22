@@ -30,10 +30,26 @@ This files table contents are outlined below>>>>>
 /*----- Default CSS -----*/
 body {
   font-family: "Rubik", sans-serif;
-  color: #565353;
+  color: #686464;
   background-color: #fff;
   font-size: 16px;
 }
+
+
+/* Show "side-nav" on laptops and hide on mobile screens */
+/* @media screen and (min-width: 768px) {
+  .side-nav {
+    display: block;
+  }
+} */
+
+/* Hide "side-nav" on mobile screens */
+/* @media screen and (max-width: 767px) {
+  .side-nav {
+    display: none;
+  }
+} */
+
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Quicksand", sans-serif;
@@ -63,6 +79,7 @@ img {
 
 .d-table-cell {
   vertical-align: middle;
+  width: 100%;
 }
 
 .ptb-100 {
@@ -553,12 +570,13 @@ button:focus {
   color: #252525;
   font-size: 80px;
   margin-bottom: 10px;
-  line-height: 100px;
+  /* line-height: 100px; */
 }
 
 .banner-content p {
   font-size: 20px;
   margin-bottom: 25px;
+  align-items: center;
 }
 
 .banner-content .banner-btn .banner-btn-right {
@@ -566,8 +584,8 @@ button:focus {
   color: #2948ff;
   background-color: #d4daff;
   border-radius: 30px;
-  padding-right: 30px;
-  padding-left: 28px;
+  /* padding-right: 30px;
+  padding-left: 28px; */
   position: relative;
   overflow: hidden;
   z-index: 1;
