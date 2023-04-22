@@ -759,6 +759,7 @@ button:focus {
 .section-title h2 {
   font-size: 45px;
   margin-bottom: 0;
+ 
 }
 
 .service-area {
@@ -1160,6 +1161,7 @@ button:focus {
 .inquiry-area .inquiry-content .section-title h2 {
   color: #fff;
   font-size: 40px;
+  
 }
 
 .inquiry-area .inquiry-content .cmn-btn {
@@ -3224,7 +3226,7 @@ footer {
 }
 
 .service-area .section-title.three h2 {
-  max-width: 600px;
+  max-width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -3543,7 +3545,20 @@ footer {
   font-weight: 600;
 }
 
+.support-area .support-item h2 {
+  margin-bottom: 40px;
+  color: #fff;
+  font-size: 30px;
+  font-weight: 600;
+}
+
 .support-area .support-item h3 span {
+  font-weight: 700;
+  border-bottom: 1px solid #fff;
+  display: inline-block;
+}
+
+.support-area .support-item h2 span {
   font-weight: 700;
   border-bottom: 1px solid #fff;
   display: inline-block;
@@ -5374,6 +5389,7 @@ footer {
 
 .contact-area .section-title h2 {
   margin-bottom: 3px;
+  
 }
 
 .contact-area .section-title p {
