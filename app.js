@@ -206,7 +206,7 @@ app.get('/blogg/:id', async (req, res) => {
 });
 
 
-app.listen(9000, function (req, res) {
+app.listen(process.env.PORT || 5000, function (req, res) {
     console.log("https://localhost:9000/");
 });
 
