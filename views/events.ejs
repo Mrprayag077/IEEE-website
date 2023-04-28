@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!DOCTYPE html>
+    <html>
+
+    <head>
+        <title>Events</title>
+    </head>
+
+    <body>
+
+
+
+
+
+
+
+        <style>
+            .card {
+                margin-bottom: 20px;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+                max-width: 300px;
+                margin: auto;
+                text-align: center;
+                font-family: arial;
+            }
+
+            .card img {
+                max-width: 100%;
+                height: auto;
+            }
+
+            .card-body {
+                padding: 10px;
+            }
+
+            .card-title {
+                font-size: 20px;
+            }
+
+            .card-date {
+                color: gray;
+                font-size: 14px;
+            }
+        </style>
+
+
+        <h1>Events</h1>
+        <div class="card-container">
+
+            <% usl.forEach( users=> { %>
+                <div class="card" onclick="location.href='/events/<%= users._id %>';">
+                    <img class="card-img-top"
+                        src="https://th.bing.com/th/id/OIP.f24_aJtAci8GXye8VlQ0IwHaFD?w=216&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7"
+                        alt="">
+                    <div class="card-body">
+                        <h3 class="card-title">
+                            <%= users.idser %>
+                        </h3>
+                        <p class="card-date">
+                            <%= users.heading %>
+                        </p>
+                        <p class="card-desc">
+                            <%= users.body %>
+                        </p>
+                    </div>
+                </div>
+                <% }) %>
+        </div>
+    </body>
+
+    </html>
+
+
+</body>
+
+</html>

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <title>IOIT IEEE-Connect, Learn, and Grow with a Global Community of Technology Professionals and
         Enthusiasts.
     </title>
@@ -1408,8 +1408,9 @@
                             <label>
                                 <i class='bx bx-user'></i>
                             </label>
-                            <input type="text" name="LeaderName" id="LeaderName" class="form-control"
+                            <input type="text" name="first_name" id="LeaderName" class="form-control"
                                 placeholder="Name*" required data-error="Please enter your name">
+
                             <div class="help-block with-errors"></div>
                         </div>
                     </div>
@@ -1419,7 +1420,7 @@
                             <label>
                                 <i class='bx bx-mail-send'></i>
                             </label>
-                            <input type="email" name="email" id="email" class="form-control" placeholder="Email"
+                            <input type="email" name="last_name" id="email" class="form-control" placeholder="Email"
                                 required data-error="Please enter your email">
                             <div class="help-block with-errors"></div>
                         </div>
@@ -1430,7 +1431,7 @@
                             <label>
                                 <i class='bx bx-phone-call'></i>
                             </label>
-                            <input type="text" name="ContactNumber" id="ContactNumber" placeholder="Phone" required
+                            <input type="text" name="gender" id="ContactNumber" placeholder="Phone" required
                                 data-error="Please enter your number" class="form-control">
                             <div class="help-block with-errors"></div>
                         </div>
@@ -1441,7 +1442,7 @@
                             <label>
                                 <i class='bx bxs-edit'></i>
                             </label>
-                            <input type="text" name="ss" id="ss" class="form-control" placeholder="Subject" required
+                            <input type="text" name="email" id="ss" class="form-control" placeholder="Subject" required
                                 data-error="Please enter your subject">
                             <div class="help-block with-errors"></div>
                         </div>
@@ -1470,7 +1471,9 @@
                     <div class="but1 col-md-12 col-lg-12">
 
                         <div>
-                            <a class="button-29" onclick="testVariable()">Submit</a>
+                            <!-- <a class="button-29" onclick="testVariable()">Submit</a> -->
+                            <button type="submit" onclick="validateForm1()">Submit11</button>
+
                         </div>
 
 
@@ -1492,8 +1495,12 @@
                     <p>Domain : <span id="result7"></span></p>
                     <p>Transaction Id : <span id="result8"></span></p>
                     <p>Payment Method : <span id="result9"></span></p>
-                    <a href="#" onclick="hide('popup2')"><input class="btn" type="submit" name="submit"
-                            value="Submit"></a>
+
+                    <!-- <a href="#" onclick="hide('popup2')"><input class="btn" type="submit" name="submit" value="Submit"
+                            ></a> -->
+
+                    <button type="submit" class="button-29" onclick="validateForm1()">Submit</button>
+
                 </div>
             </form>
         </div>
@@ -1629,15 +1636,31 @@
 
 
     <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbwozYUNWb16rCspbFaZTD4k5FkX12lc48xxSbWWJ6PXADrpCAouFIoaRwCvbY5oTrA/exec'
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzBnllF5ayoirtMs_0zrRuVWcyiArwKG9w1I6eAn2s7v00zI44MvdJmAyb_fusbQ_4/exec'
         const form = document.forms['submit-to-google-sheet']
 
-        form.addEventListener('submit', e => {
-            e.preventDefault()
-            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-                .then(response => console.log('Success!', response))
-                .catch(error => console.error('Error!', error.message))
-        })
+        function validateForm1() {
+            var name = document.forms["google-sheet"]["first_name"].value;
+            var email = document.forms["google-sheet"]["last_name"].value;
+
+            if (name == "" || email == "") {
+                alert("Please fill in all Required fields.");
+                return false;
+
+            } else {
+                fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                    .then(response => {
+                        console.log('Data saved to Google Sheets!');
+                        showPopup2();
+                    })
+                    .catch(error => console.error('Error!', error.message));
+
+            }
+        }
+
+        function showPopup2() {
+            alert('thank u');
+        }
     </script>
 
 
