@@ -1,3 +1,9 @@
+const http = require('http');
+const hostname = '0.0.0.0';
+
+const dotenv = require('dotenv');
+dotenv.config();
+
 const express = require("express");
 const mongoose = require("mongoose");
 const User = require("./users");
@@ -21,7 +27,6 @@ app.use('/Wave-10s-1223px.svg', express.static('Wave-10s-1223px.svg'));
 app.use('/layer2.svg', express.static('layer2.svg'));
 app.use('/Wave-10s-1223px.svg', express.static('Wave-10s-1223px.svg'));
 app.use('/assets/img/OIPLL.jpg', express.static('OIPLL.jpg'));
-app.use(express.static(path.join(__dirname, "/assets")));
 
 // app.use(express.static('/assets'));
 
@@ -29,14 +34,16 @@ app.set('view engine', 'ejs');
 
 
 // async function main() {
-mongoose.connect("mongodb+srv://prayag_SIHH:pp1234@cluster0.tuna9.mongodb.net/tutorial?retryWrites=true&w=majority",
+const MONGO_URL = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0.tuna9.mongodb.net/${process.env.DB_NAME}?retryWrites=true&w=majority`;
+mongoose.connect(MONGO_URL,
     {
         useNewUrlParser: true,
         useUnifiedTopology: true,
-    })
-    .then(() => console.log('Connected Successfully'))
+    });
 
-    .catch((err) => { console.error(err); });
+
+console.log("HIIIIIIIIIIIIIIIIIIIIIIIIII=");
+console.log(MONGO_URL);
 
 
 // const client = new MongoClient(url);
@@ -200,7 +207,7 @@ app.get('/blogg/:id', async (req, res) => {
 
 
 app.listen(9000, function (req, res) {
-    console.log("https://localhost:3000/");
+    console.log("https://localhost:9000/");
 });
 
 
