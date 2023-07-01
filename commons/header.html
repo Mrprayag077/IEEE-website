@@ -52,7 +52,7 @@
             <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a href="index.html" class="nav-link dropdown-toggle" id="homelink">Home </a>
+                        <a href="index.html" class="nav-link dropdown-toggle" id="homeLink">Home </a>
 
                     </li>
 
@@ -138,8 +138,9 @@
     var currentPageUrl = window.location.href;
     console.log(currentPageUrl);
     // function setActiveLink() {
-    console.log('deteceddddddddddddddddddddddddddddddddddd')
+    console.log('startttttttttttttttt')
     var homeLink = document.getElementById('homeLink');
+
     var abLink = document.getElementById('abLink');
     var memLink = document.getElementById('memLink');
     var eventLink = document.getElementById('eventLink');
@@ -153,34 +154,51 @@
 
     if (currentPageUrl.endsWith('/aboutus.html')) {
         abLink.classList.add('active');
+        console.log('startttttttttttttttt1')
+
     }
 
     if (currentPageUrl.endsWith('/membership.html')) {
         acheivementsLink.classList.add('active');
+        console.log('startttttttttttttttt')
+
     }
 
     if (currentPageUrl.endsWith('/events.html') || currentPageUrl.endsWith('/eventdetail.html')) {
         eventLink.classList.add('active');
+        console.log('startttttttttttttttt')
+
     }
 
     if (currentPageUrl.endsWith('/faq.html')) {
         faqLink.classList.add('active');
+        console.log('startttttttttttttttt')
+
     }
 
     if (currentPageUrl.endsWith('/team-2023.html')) {
         teamLink.classList.add('active');
+        console.log('startttttttttttttttt')
+
     }
 
 
 
-    if (currentPageUrl.endsWith('/sigin.html') || currentPageUrl.endsWith('/acheivements.html') || currentPageUrl.endsWith('/eentform.html')) {
+    if (currentPageUrl.endsWith('/sigin.html') || currentPageUrl.endsWith('/acheivements.html') || currentPageUrl.endsWith('/eventform.html')) {
         moreLink.classList.add('active');
+        console.log('startttttttttttttttt')
+
+    }
+
+    if (currentPageUrl.endsWith('/index.html') || currentPageUrl.endsWith('/') || currentPageUrl.endsWith('/IEEE-website')) {
+        homeLink.classList.add('active');
+        console.log('homeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee')
+
     }
 
     else {
         homeLink.classList.add('active');
-        console.log('deteceddddddddddddddddddddddddddddddddddd')
-
+        console.log('homeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee')
     }
   //  }
  //   window.addEventListener('DOMContentLoaded', setActiveLink);
