@@ -1475,7 +1475,8 @@
     max-width: 85px;
   }
   .mean-container .mean-bar {
-    background-color: #2948ff;
+    /*background-color: #2948ff;*/
+    background-color: transparent;
   }
   .mean-container a.meanmenu-reveal span {
     position: relative;

@@ -37,6 +37,11 @@
     <link rel="stylesheet" href="assets/css/theme-dark.css">
 
 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.5.0/jquery.mobile-1.5.0.min.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.5.0/jquery.mobile-1.5.0.min.css">
+
+
 </head>
 
 <body>
@@ -50,16 +55,48 @@
 
 
 
-    <div class="navbar-area fixed-top" id="header" style="user-select:none;"></div>
+    <div class="navbar-area fixed-top" id="header" style="user-select:none;">
 
 
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    </div>
+
+
+
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
         $(document).ready(function () {
+            // This code will execute before the page finishes loading
+
+            // Load header.html into #header element
             $('#header').load('./commons/header.html');
-            $('#loader').load('./commons/preloader.html');            
+
+            // Load preloader.html into #loader element
+            $('#loader').load('./commons/preloader.html');
+
+            // Load footer.html into #footer element
             $('#footer').load('./commons/footer.html');
+
+            // Load copyright.html into #copyright element
+            $('#copyright').load('./commons/copyright.html');
+        });
+    </script> -->
+
+
+    <script>
+        $(document).on("pagebeforeshow", "#page", function () {
+            // This code will execute before the page is shown
+
+            // Load header.html into #header element
+            $('#header').load('./commons/header.html');
+
+            // Load preloader.html into #loader element
+            $('#loader').load('./commons/preloader.html');
+
+            // Load footer.html into #footer element
+            $('#footer').load('./commons/footer.html');
+
+            // Load copyright.html into #copyright element
             $('#copyright').load('./commons/copyright.html');
         });
     </script>
