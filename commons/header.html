@@ -52,35 +52,36 @@
             <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a href="/" class="nav-link dropdown-toggle active" id="home-link">Home </a>
+                        <a href="/" class="nav-link dropdown-toggle" id="home-link">Home </a>
 
                     </li>
 
                     <li class="nav-item">
-                        <a href="aboutus.html" class="nav-link" id="ab-link">About Us</a>
+                        <a href="aboutus.html" class="nav-link" id="abLink">About Us</a>
                     </li>
 
                     <li class="nav-item">
-                        <a href="membership.html" class="nav-link">Membership</a>
+                        <a href="membership.html" class="nav-link" id="memLink">Membership</a>
                     </li>
 
                     <li class="nav-item">
-                        <a href="events.html" class="nav-link">Events</a>
+                        <a href="events.html" class="nav-link" id="eventLink">Events</a>
                     </li>
 
                     <li class="nav-item">
-                        <a href="team-2023.html" class="nav-link">Team</a>
+                        <a href="team-2023.html" class="nav-link" id="teamLink">Team</a>
                     </li>
 
 
 
                     <li class="nav-item">
-                        <a href="faq.html" class="nav-link">FAQ's</a>
+                        <a href="faq.html" class="nav-link" id="faqLink">FAQ's</a>
                     </li>
 
 
                     <li class="nav-item">
-                        <a href="#" class="nav-link dropdown-toggle">More <i class='bx bx-chevron-down'></i></a>
+                        <a href="#" class="nav-link dropdown-toggle" id="moreLink">More <i
+                                class='bx bx-chevron-down'></i></a>
                         <ul class="dropdown-menu">
                             <li class="nav-item">
                                 <a href="eventform.html" class="nav-link">Join New Event</a>
@@ -133,27 +134,56 @@
 </script>
 
 
-
 <script>
-    document.addEventListener("DOMContentLoaded", function () {
-        const currentUrl = window.location.href;
-        const homeLink = document.getElementById('home-link');
-        const abLink = document.getElementById('ab-link');
+    var currentPageUrl = window.location.href;
+    console.log(currentPageUrl);
+    // function setActiveLink() {
+    console.log('deteceddddddddddddddddddddddddddddddddddd')
+    var homeLink = document.getElementById('homeLink');
+    var abLink = document.getElementById('abLink');
+    var memLink = document.getElementById('memLink');
+    var eventLink = document.getElementById('eventLink');
+    var faqLink = document.getElementById('eventLink');
+    var teamLink = document.getElementById('eventLink');
 
-        if (currentUrl.includes('/index.html')) {
-            abLink.style.color = 'red';
-            alert('jjdjeked');
-            console.log('homeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee')
+    var moreLink = document.getElementById('moreLink');
 
-        }
 
-        else {
-            abLink.style.color = 'red'; // Change color to red
-            console.log('jdejeedejebi')
 
-        }
 
-    });
+    if (currentPageUrl.endsWith('/aboutus.html')) {
+        abLink.classList.add('active');
+    }
+
+    if (currentPageUrl.endsWith('/membership.html')) {
+        acheivementsLink.classList.add('active');
+    }
+
+    if (currentPageUrl.endsWith('/events.html') || currentPageUrl.endsWith('/eventdetail.html')) {
+        eventLink.classList.add('active');
+    }
+
+    if (currentPageUrl.endsWith('/faq.html')) {
+        faqLink.classList.add('active');
+    }
+
+    if (currentPageUrl.endsWith('/team-2023.html')) {
+        teamLink.classList.add('active');
+    }
+
+
+
+    if (currentPageUrl.endsWith('/sigin.html') || currentPageUrl.endsWith('/acheivements.html') || currentPageUrl.endsWith('/eentform.html')) {
+        moreLink.classList.add('active');
+    }
+
+    else {
+        homeLink.classList.add('active');
+        console.log('deteceddddddddddddddddddddddddddddddddddd')
+
+    }
+  //  }
+ //   window.addEventListener('DOMContentLoaded', setActiveLink);
 </script>
 
 <!-- End Navbar Area -->
