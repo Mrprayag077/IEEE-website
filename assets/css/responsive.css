@@ -1476,7 +1476,7 @@
   }
   .mean-container .mean-bar {
     /*background-color: #2948ff;*/
-    background-color: transparent;
+    background-color: #00356b;
   }
   .mean-container a.meanmenu-reveal span {
     position: relative;
