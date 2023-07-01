@@ -360,10 +360,22 @@
                                     event_note
                                 </i>
                             </a>
-                            <a class="popup-youtube banner-btn-right" style='font-size: 25px;' href="membership.html">
+                            <a class="popup-youtube banner-btn-right" id="jj" style='font-size: 25px;'
+                                href="membership.html">
                                 <i class='bx bx-play' style="font-size: 25px;"></i>
                                 Join IEEE
                             </a>
+
+
+                            <script>
+                                document.addEventListener('DOMContentLoaded', function () {
+                                    const bannerBtnRight = document.querySelector('a.popup-youtube.banner-btn-right');
+
+                                    bannerBtnRight.click();
+                                });
+                            </script>
+
+
 
 
                         </div>
