@@ -170,6 +170,26 @@
   </div>
   <!-- End Preloader -->
 
+
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      setTimeout(function () {
+        alert('Wait until the admin starts the service');
+
+        const button = document.getElementById('loginbut');
+
+        // Disable the button
+        button.disabled = true;
+      }, 2000); // Delay in milliseconds (3 seconds = 3000 milliseconds)
+    });
+
+
+
+
+  </script>
+
+
   <!-- Sign Up -->
   <div class="user-form-area">
     <div class="container-fluid p-0">
@@ -218,7 +238,7 @@
                         <h1>Login</h1>
                         <input type="text" id="username" name="username" placeholder="Username" />
                         <input type="password" id="password" name="password" placeholder="Password" />
-                        <button>Login</button>
+                        <button id="loginbut">Login</button>
                         <!-- <p>Not a member? <span>Sign Up</span></p> -->
                       </div>
                     </form>
