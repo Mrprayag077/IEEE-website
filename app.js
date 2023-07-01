@@ -6,7 +6,7 @@ dotenv.config();
 
 const express = require("express");
 const mongoose = require("mongoose");
-const User = require("./users");
+// const User = require("./users");
 const bodyParser = require("body-parser");
 const { MongoClient } = require("mongodb");
 const ejs = require("ejs");
@@ -16,6 +16,27 @@ var jsonParser = bodyParser.json();
 const MongoStore = require('connect-mongo');
 const path = require('path');
 const mime = require('mime');
+
+
+const cors = require("cors");
+
+
+
+app.use(express.json());
+
+
+app.use(
+    cors({
+        origin: ["http://localhost:8000"],
+        methods: ["GET", "POST"],
+        credentials: true,
+    })
+);
+
+
+mongoose.set('strictQuery', false);
+
+
 
 app.use('/dist', express.static('dist'));
 
@@ -34,7 +55,7 @@ app.set('view engine', 'ejs');
 
 
 // async function main() {
-const MONGO_URL = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0.tuna9.mongodb.net/${process.env.DB_NAME}?retryWrites=true&w=majority`;
+const MONGO_URL = `mongodb+srv://prayag_SIHH:pp1234@cluster0.tuna9.mongodb.net/tutorialtutorial?retryWrites=true&w=majority`;
 mongoose.connect(MONGO_URL,
     {
         useNewUrlParser: true,
@@ -44,6 +65,23 @@ mongoose.connect(MONGO_URL,
 
 console.log("HIIIIIIIIIIIIIIIIIIIIIIIIII=");
 console.log(MONGO_URL);
+
+
+
+let userSchema = new mongoose.Schema({
+    _id: mongoose.Schema.Types.ObjectId,
+    email_id: String,
+    password: String,
+    idser: String,
+    heading: String,
+    category: String,
+    img1: String,
+    body: String,
+    Datee: Date
+
+})
+
+const User = mongoose.model('users', userSchema);
 
 
 // const client = new MongoClient(url);
@@ -56,193 +94,84 @@ console.log(MONGO_URL);
 app.use(bodyParser.urlencoded({ extended: true }));
 
 
+
+
+
+
 app.get("/", function (req, res) {
-    // res.send("hello world")
-    res.render("index");
+    res.send('jjj');
 });
-
-
-app.get("/aboutus", function (req, res) {
-    // res.send("hello world")
-    res.render("aboutus");
-});
-
-
-app.get("/membership", function (req, res) {
-    // res.send("hello world")
-    res.render("membership");
-});
-
-
-app.get("/contactus", function (req, res) {
-    // res.send("hello world")
-    res.render("aboutus");
-});
-
-
-app.get("/eventreg", function (req, res) {
-    // res.send("hello world")
-    res.render("neweventreg");
-});
-
-app.get("/acheivements", function (req, res) {
-    // res.send("hello world")
-    res.render("acheivement");
-});
-
-
-app.get("/faq", function (req, res) {
-    // res.send("hello world")
-    res.render("faq");
-});
-
-app.get("/acheivements", function (req, res) {
-    // res.send("hello world")
-    res.render("acheivement");
-});
-
-
-
-
-
-
-
-app.post('/formm', function (req, res) {
-
-    const currentDate = new Date().toISOString();
-
-
-    try {
-        // Create a new event instance
-        const newEvent = new User({
-            _id: new mongoose.Types.ObjectId(),
-            heading: req.body.heading,
-            body: req.body.body,
-            Datee: new Date()
-        });
-
-        // Add the new event to the events array in the main schema and save
-        newEvent.save();
-
-        res.redirect('/formm');
-    } catch (err) {
-        console.error(err);
-        res.status(500).send('Error adding event');
-    }
-});
-
-
 
 
 app.get("/events", function (req, res) {
-
-
-
     User.find({ "idser": 'eventss' }).sort({ Datee: -1 }).exec(function (err, users) {
-
-        res.render("events", {
-
-            people: [55, 49, 44, 24, 15],
-            usl: users
-
-
-
-        });
-
-
-        // res.send("the sum is"+`<br/><br />email:${s11}<br />password:${c11}<br />`);
-
-    });
-});
-
-
-
-app.get("/blogg", function (req, res) {
-
-
-
-    User.find({ "idser": 'eventss' }).sort({ Datee: -1 }).exec(function (err, users) {
-
-        res.render("projectpg", {
-
-            people: [55, 49, 44, 24, 15],
-            usl: users
-
-
-
-        });
-
-
-        // res.send("the sum is"+`<br/><br />email:${s11}<br />password:${c11}<br />`);
-
+        if (err) {
+            console.error(err);
+            res.status(500).json({ error: 'Error retrieving events' });
+        } else {
+            console.log(users)
+            res.json(users);
+        }
     });
 });
 
 
 
 app.get('/events/:id', async (req, res) => {
+    const id_user = req.params.id;
+    console.log(id_user);
+
     try {
-        const event = await User.findById(req.params.id);
+        const event = await User.findById(id_user);
         console.log("hiiiii");
-        res.render('eventinfo', { people: 'sssss', event });
-        console.log(event);
-    } catch (err) {
-        console.log(err);
-        res.send('Error retrieving event details');
+
+        if (event) {
+            res.json(event);
+        } else {
+            res.status(404).json({ error: 'Event not found' });
+        }
+    } catch (error) {
+        console.log(error);
+        res.status(500).json({ error: 'Error retrieving event details' });
     }
 });
 
 
-app.get('/blogg/:id', async (req, res) => {
+
+app.get("/post", function (req, res) {
+    User.find({ "idser": 'eventss' }).sort({ Datee: -1 }).exec(function (err, users) {
+        if (err) {
+            console.error(err);
+            res.status(500).json({ error: 'Error retrieving events' });
+        } else {
+            res.json(users);
+        }
+    });
+});
+
+
+
+app.get('/post/:id', async (req, res) => {
+    const id_user = req.params.id;
+    console.log(id_user);
+
     try {
-        const event = await User.findById(req.params.id);
+        const event = await User.findById(id_user);
         console.log("hiiiii");
-        res.render('projdet', { people: 'sssss', event });
-        console.log(event);
-    } catch (err) {
-        console.log(err);
-        res.send('Error retrieving event details');
+
+        if (event) {
+            res.json(event);
+        } else {
+            res.status(404).json({ error: 'Event not found' });
+        }
+    } catch (error) {
+        console.log(error);
+        res.status(500).json({ error: 'Error retrieving event details' });
     }
 });
 
 
-app.listen(process.env.PORT || 5000, function (req, res) {
-    console.log("https://localhost:9000/");
-});
+
+app.listen(8000, () => console.log('listening on port: 8000'));
 
 
-
-
-
-
-
-app.get("/signin.sih", jsonParser, function (req, res) {
-    // res.send("hello world")
-
-    res.render("signin");
-    // res.render("signin");
-});
-
-app.post('/signinj', function (req, res) {
-    res.render("signin");
-});
-
-
-app.post('/signinjjj', function (req, res) {
-
-    res.render("index");
-});
-
-// const collection = client.db("tutorial").collection("users");
-// const users = await collection.find({});
-
-
-app.post("/insertt", function (req, res) {
-    res.render("/insertt");
-});
-
-
-app.get("/insertt", function (req, res) {
-    // res.send("hello world")
-    res.render("insertt");
-});

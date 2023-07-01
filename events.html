@@ -38,12 +38,10 @@
 
     <title>Dilx - IT & Marketing Startup Bootstrap 5 Template</title>
 
-    <link rel="icon" type="image/png" href="assets/img/OIPLL.jpg">
-
+    <link rel="icon" type="image/png" href="assets/img/favicon.png">
 </head>
 
 <body>
-
 
     <!-- Preloader -->
     <div class="loader" id="loader">
@@ -61,14 +59,11 @@
     <script>
         $(document).ready(function () {
             $('#header').load('./commons/header.html');
-            $('#loader').load('./commons/preloader.html');            
+            $('#loader').load('./commons/preloader.html');
             $('#footer').load('./commons/footer.html');
             $('#copyright').load('./commons/copyright.html');
         });
     </script>
-
-
-
 
     <!-- Page Title -->
     <div class="page-title-area">
@@ -223,7 +218,7 @@
                         <div class="container">
                             <div class="row">
                                 <div class="col-md-12 text-center">
-                                    <h3 class="animate-charcter">FAQ's</h3>
+                                    <h3 class="animate-charcter">Events</h3>
                                 </div>
                             </div>
                         </div>
@@ -268,7 +263,7 @@
                                 <a href="/" style="">Home</a>
                             </li>
                             <li>
-                                <span>FAQ's</span>
+                                <span>Events</span>
                             </li>
                         </ul>
                     </div>
@@ -277,70 +272,240 @@
         </div>
     </div>
     <!-- End Page Title -->
-    <br />
-    <br />
 
-
-
-    <!-- FAQ -->
-    <div class="faq-area pt-100 pb-70">
+    <!-- Portfolio -->
+    <div class="portfolio-area two ptb-100">
         <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6">
-                    <div class="faq-content">
-                        <ul class="accordion">
-                            <li>
-                                <a>
-                                    How can I cancel/pause my subscription?
-                                    <i class="flaticon-visibility"></i>
-                                    <i class="flaticon-eye two"></i>
+            <div class="row" id="pp">
+
+
+
+
+
+
+
+
+
+                <!-- 
+                <div class="col-sm-6 col-lg-4" onclick="location.href='/post/<%= users._id %>';">
+                    <div class="portfolio-item">
+                        <div class="image-container">
+                            <img src="<%= users.img1 %>" alt="Portfolio" class="portfolio-image">
+                        </div>
+                        <div class="portfolio-inner">
+                            <span class="date">
+                                <%= users.Datee %>
+                            </span>
+                            <h3>
+                                <a href="#">
+                                    <%= users.heading %>
                                 </a>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniaquis nostrud
-                                    ullamco nisi ut aliquip</p>
-                            </li>
-                            <li>
-                                <a>
-                                    Does the price go up as my team gets larger?
-                                    <i class="flaticon-visibility"></i>
-                                    <i class="flaticon-eye two"></i>
-                                </a>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniaquis nostrud
-                                    ullamco nisi ut aliquip</p>
-                            </li>
-                            <li>
-                                <a>
-                                    What access do I have on a free trial?
-                                    <i class="flaticon-visibility"></i>
-                                    <i class="flaticon-eye two"></i>
-                                </a>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniaquis nostrud
-                                    ullamco nisi ut aliquip</p>
-                            </li>
-                            <li>
-                                <a>
-                                    What access do I have on the free plan?
-                                    <i class="flaticon-visibility"></i>
-                                    <i class="flaticon-eye two"></i>
-                                </a>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniaquis nostrud
-                                    ullamco nisi ut aliquip</p>
-                            </li>
-                        </ul>
+                            </h3>
+                        </div>
                     </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="faq-img">
-                        <img src="assets/img/faq-mainp.png" alt="FAQ">
-                    </div>
-                </div>
+                </div> -->
+
+
+
+
             </div>
+
+
+
+            <div class="pagination-area">
+                <ul>
+                    <li>
+                        <a href="#">Prev</a>
+                    </li>
+                    <li>
+                        <a href="#" class="active">1</a>
+                    </li>
+                    <li>
+                        <a href="#">2</a>
+                    </li>
+                    <li>
+                        <a href="#">3</a>
+                    </li>
+                    <li>
+                        <a href="#">4</a>
+                    </li>
+                    <li>
+                        <a href="#">5</a>
+                    </li>
+                    <li>
+                        <a href="#">Next</a>
+                    </li>
+                </ul>
+            </div>
+
         </div>
     </div>
-    <!-- End FAQ -->
+    <!-- End Portfolio -->
+    <!-- <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script>
+        // Fetch data using Axios
+        axios.get('http://localhost:8000/post')
+            .then(function (response) {
+                var data = response.data;
+                var dataContainer = document.getElementById('pp');
+
+                // Loop through the data and create HTML elements
+                data.forEach(function (user) {
+                    var divCol = document.createElement('div');
+                    divCol.className = 'col-sm-6 col-lg-4';
+
+                    var divPortfolioItem = document.createElement('div');
+                    divPortfolioItem.className = 'portfolio-item';
+
+                    var divImageContainer = document.createElement('div');
+                    divImageContainer.className = 'image-container';
+
+                    var image = document.createElement('img');
+                    image.src = user.img1;
+                    image.alt = 'Portfolio';
+                    image.className = 'portfolio-image';
+
+                    divImageContainer.appendChild(image);
+
+                    var divPortfolioInner = document.createElement('div');
+                    divPortfolioInner.className = 'portfolio-inner';
+
+                    var spanDate = document.createElement('span');
+                    spanDate.className = 'date';
+                    spanDate.textContent = user.Datee;
+
+                    var heading = document.createElement('h3');
+                    var link = document.createElement('a');
+                    link.href = '#';
+                    link.textContent = user.heading;
+
+                    heading.appendChild(link);
+                    divPortfolioInner.appendChild(spanDate);
+                    divPortfolioInner.appendChild(heading);
+
+                    divPortfolioItem.appendChild(divImageContainer);
+                    divPortfolioItem.appendChild(divPortfolioInner);
+
+                    divCol.appendChild(divPortfolioItem);
+
+                    dataContainer.appendChild(divCol);
+                });
+            })
+            .catch(function (error) {
+                console.log(error);
+            });
+    </script> -->
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        function redirectToBlog(id) {
+            console.log(id);
+            window.location.href = 'eventdetail.html?id=' + id;
+        }
+
+        $.ajax({
+            url: 'https://ieee-backend-testing2.onrender.com/post',
+            method: 'GET',
+            dataType: 'json',
+            success: function (response) {
+                var data = response;
+                var dataContainer = $('#pp');
+
+                $.each(data, function (index, user) {
+                    var divCol = $('<div></div>').addClass('col-sm-6 col-lg-4');
+
+                    var divPortfolioItem = $('<div></div>').addClass('portfolio-item');
+
+                    var divImageContainer = $('<div></div>').addClass('image-container');
+
+                    var image = $('<img>').attr({
+                        src: user.img1,
+                        alt: 'Portfolio'
+                    }).addClass('portfolio-image');
+
+                    divImageContainer.append(image);
+
+                    var divPortfolioInner = $('<div></div>').addClass('portfolio-inner');
+
+                    var spanDate = $('<span></span>').addClass('date');
+                    var date = new Date(user.Datee);
+                    var formattedDate = date.toLocaleDateString('en-US', {
+                        weekday: 'short',
+                        month: 'short',
+                        day: 'numeric',
+                        year: 'numeric'
+                    });
+                    spanDate.text(formattedDate);
+
+                    var heading = $('<h3></h3>');
+                    var link = $('<a></a>').attr('href', '#').text(user.heading);
+
+                    heading.append(link);
+                    divPortfolioInner.append(spanDate);
+                    divPortfolioInner.append(heading);
+
+                    divPortfolioItem.append(divImageContainer);
+                    divPortfolioItem.append(divPortfolioInner);
+
+                    divCol.append(divPortfolioItem);
+
+                    divCol.removeClass('default');
+
+                    dataContainer.append(divCol);
+
+                    divCol.attr('data-id', user._id);
+
+                    divCol.on('click', function () {
+                        redirectToBlog($(this).attr('data-id'));
+                    });
+                });
+            },
+            error: function (error) {
+                console.log(error);
+            }
+        });
+    </script>
+
+    <script>
+        $('#date').each(function () {
+            var date = new Date($(this).text());
+            var formattedDate = date.toLocaleDateString('en-US', {
+                weekday: 'short',
+                month: 'short',
+                day: 'numeric',
+                year: 'numeric'
+            });
+            $(this).text(formattedDate);
+        });
+    </script>
+
+
+    <style>
+        .portfolio-item {
+            /* Set the desired width for the container */
+            width: 100%;
+        }
+
+        .image-container {
+            /* Ensure the image fits within the container */
+            width: 100%;
+            height: 0;
+            padding-bottom: 100%;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .portfolio-image {
+            /* Set the image to cover the container */
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    </style>
+
 
 
     <!-- Footer -->
@@ -352,6 +517,7 @@
 
     </div>
     <!-- End Copyright -->
+
     <!-- Go Top -->
     <div class="go-top">
         <i class='bx bx-up-arrow'></i>
