@@ -44,22 +44,238 @@
 
 
     <!-- Preloader -->
-    <div class="loader" id="loader">
-
+    <div class="loader">
+        <div class="d-table">
+            <div class="d-table-cell">
+                <div class="spinner">
+                    <div class="rect1"></div>
+                    <div class="rect2"></div>
+                    <div class="rect3"></div>
+                    <div class="rect4"></div>
+                    <div class="rect5"></div>
+                </div>
+            </div>
+        </div>
     </div>
     <!-- End Preloader -->
 
+    <!-- Start Navbar Area -->
+    <div class="navbar-area fixed-top" style="user-select:none;">
+        <!-- Menu For Mobile Device -->
+        <div class="mobile-nav">
+            <a href="index.html" class="logo">
+                <img src="https://esciioit.org/wp-content/uploads/2021/09/IEEE-Student-logo-final-png-1.png" alt="Logo">
+            </a>
+        </div>
+
+        <!-- Menu For Desktop Device -->
+        <div class="main-nav">
+            <div class="container-fluid">
+                <nav class="navbar navbar-expand-md navbar-light">
+                    <a class="navbar-brand" href="index.html">
+                        <!-- <img src="assets/img/logo.png" class="logo-one" alt="Logo">
+                    <img src="assets/img/logo-two.png" class="logo-two" alt="Logo"> -->
 
 
-    <div class="navbar-area fixed-top" id="header" style="user-select:none;"></div>
+                        <img src="https://esciioit.org/wp-content/uploads/2021/09/IEEE-Student-logo-final-png-1.png"
+                            style="max-width: 40%;max-height: 40%;" class="logo-two" alt="Logo" id="logo-twoo">
+
+                        <style>
+                            .logo-two {
+                                transition: all 0.2s ease-in-out;
+                            }
+
+                            .logo-two:hover {
+                                transform: scale(1.5);
+                            }
+                        </style>
+
+                        <script>
+                            function changeImageSizeOnScroll() {
+                                const image = document.getElementById('logo-twoo');
+                                const scrollPosition = window.scrollY;
+
+                                // set new image width and height based on scroll position
+                                if (scrollPosition > 500) {
+                                    image.style.height = '30%';
+                                    image.style.width = '30%';
+                                } else {
+                                    image.style.height = '40%';
+                                    image.style.width = '40%';
+                                }
+                            }
+
+                            // add event listener for scroll event
+                            window.addEventListener('scroll', changeImageSizeOnScroll);
+                        </script>
+
+                    </a>
+                    <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a href="index.html" class="nav-link dropdown-toggle" id="homeLink">Home </a>
+
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="aboutus.html" class="nav-link" id="abLink">About Us</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="membershipp.html" class="nav-link" id="memLink">Membership</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="events.html" class="nav-link" id="eventLink">Events</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="team-2023.html" class="nav-link" id="teamLink">Team</a>
+                            </li>
+
+
+
+                            <li class="nav-item">
+                                <a href="faq.html" class="nav-link" id="faqLink">FAQ's</a>
+                            </li>
+
+
+                            <li class="nav-item">
+                                <a href="#" class="nav-link dropdown-toggle" id="moreLink">More <i
+                                        class='bx bx-chevron-down'></i></a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item">
+                                        <a href="eventform.html" class="nav-link">Join New Event</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="acheivements.html" class="nav-link"> Acheivements</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="contact11.html" class="nav-link">Contact</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                        </ul>
+
+                        <div class="side-nav" style="background-color: #00356b;">
+                            <a class="left-btn" href="sigin.html">
+                                <i class='bx bx-log-out'></i>
+                                Sign In
+                            </a>
+                            <!-- <a href="projects.html" class="cmn-btn" id="journey-link">
+
+                            <i class='bx bx-plus'></i>
+                        </a> -->
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <!-- End Navbar Area -->
+
+
+    <script>
+        const isHover2 = e => e.parentElement.querySelector(':hover') === e;
+
+        const myDiv2 = document.getElementById('journey-link');
+        document.addEventListener('mousemove', function checkHover2() {
+            const hovered = isHover2(myDiv2);
+
+            if (hovered !== checkHover.hovered) {
+                console.log(hovered ? 'hovered' : 'not hovered');
+                checkHover.hovered = hovered;
+            }
+
+            if (hovered) {
+                document.getElementById('journey-link').textContent = 'hiddenssss';
+
+            }
+        });
+
+    </script>
+
+
+
+    <script>
+        var currentPageUrl = window.location.href;
+        console.log(currentPageUrl);
+        // function setActiveLink() {
+        console.log('startttttttttttttttt')
+        var homeLink = document.getElementById('homeLink');
+
+        var abLink = document.getElementById('abLink');
+        var memLink = document.getElementById('memLink');
+        var eventLink = document.getElementById('eventLink');
+        var faqLink = document.getElementById('faqLink');
+        var teamLink = document.getElementById('teamLink');
+
+        var moreLink = document.getElementById('moreLink');
+
+
+
+
+        if (currentPageUrl.endsWith('/aboutus.html')) {
+            abLink.classList.add('active');
+            console.log('startttttttttttttttt1')
+
+        }
+
+        if (currentPageUrl.endsWith('/membership.html')) {
+            acheivementsLink.classList.add('active');
+            console.log('startttttttttttttttt')
+
+        }
+
+        if (currentPageUrl.endsWith('/events.html') || currentPageUrl.endsWith('/eventdetail.html')) {
+            eventLink.classList.add('active');
+            console.log('startttttttttttttttt')
+
+        }
+
+        if (currentPageUrl.endsWith('/faq.html')) {
+            faqLink.classList.add('active');
+            console.log('startttttttttttttttt')
+
+        }
+
+        if (currentPageUrl.endsWith('/team-2023.html')) {
+            teamLink.classList.add('active');
+            console.log('startttttttttttttttt')
+
+        }
+
+
+
+        if (currentPageUrl.endsWith('/sigin.html') || currentPageUrl.endsWith('/acheivements.html') || currentPageUrl.endsWith('/eventform.html')) {
+            moreLink.classList.add('active');
+            console.log('startttttttttttttttt')
+
+        }
+
+        if (currentPageUrl.endsWith('/index.html') || currentPageUrl.endsWith('/') || currentPageUrl.endsWith('/IEEE-website')) {
+            homeLink.classList.add('active');
+            console.log('homeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee')
+
+        }
+
+     //   else {
+      //      homeLink.classList.add('active');
+        //    console.log('homeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee')
+        //}
+      //  }
+     //   window.addEventListener('DOMContentLoaded', setActiveLink);
+    </script>
+
 
 
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
         $(document).ready(function () {
-            $('#header').load('./commons/header.html');
-            $('#loader').load('./commons/preloader.html');
+            //  $('#header').load('./commons/header.html');
+            // $('#loader').load('./commons/preloader.html');
             $('#footer').load('./commons/footer.html');
             $('#copyright').load('./commons/copyright.html');
 
