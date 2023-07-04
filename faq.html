@@ -62,7 +62,7 @@
     </div>
 
 
-
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
         $(document).ready(function () {
@@ -83,23 +83,17 @@
     </script> -->
 
 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
-        $(document).on("pagebeforeshow", "#page", function () {
-            // This code will execute before the page is shown
-
-            // Load header.html into #header element
+        $(document).ready(function () {
             $('#header').load('./commons/header.html');
-
-            // Load preloader.html into #loader element
             $('#loader').load('./commons/preloader.html');
-
-            // Load footer.html into #footer element
             $('#footer').load('./commons/footer.html');
-
-            // Load copyright.html into #copyright element
             $('#copyright').load('./commons/copyright.html');
         });
     </script>
+
+
 
 
 
@@ -312,7 +306,7 @@
     </div>
     <!-- End Page Title -->
     <br />
-    <br />
+
 
 
 
