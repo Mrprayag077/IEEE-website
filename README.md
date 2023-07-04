@@ -1,4 +1,13 @@
-Hello :)
+# IEEE-website
 
+LINK: https://mrprayag077.github.io/IEEE-website/
 
-https://mrprayag077.github.io/IEEE-website/
+# TECH STACK:
+NODEJS
+EJS
+MONGODB MONGOOSE
+API POSTMAN
+HTML CSS JS 
+
+# ISSUSES
+NODEJS COMMIT REMAINING, PRAYAG-- DB CONNECTION, DYANMIC EVENT DONE (2/2)
